@@ -5,5 +5,6 @@
 int main()
 {
   std::cout << "desde el otro archivo" << std::endl;
+  std::cout << "Otra línea" << std::endl;
   return 0;
 }
