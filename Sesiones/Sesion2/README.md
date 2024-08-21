@@ -1,4 +1,4 @@
-# Sesión 1
+# Sesión 2
 
 Esta sesión incluye archivos de código C++ en los que se practican temas como bucles, operadores arimeticos, lógicos y de asignación, condicionales y variables.
 
