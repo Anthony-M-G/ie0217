@@ -1,6 +1,7 @@
 #include <iostream>
 #include "./funciones.hpp"
 #include <cstring>
+#include <string.h>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ void agregarLibro(Libro libro[], int &cantidadLibros)
   cin.getline(libro[cantidadLibros].autor, 100);
   cout << "Ingrese el ISBN del libro: ";
   cin.getline(libro[cantidadLibros].ISBN, 13);
-  cout << "Ingrese el anio del libro: ";
+  cout << "Ingrese el año del libro: ";
   cin >> libro[cantidadLibros].anio;
 
   cantidadLibros++;
@@ -21,28 +22,27 @@ void agregarLibro(Libro libro[], int &cantidadLibros)
 
 void mostrarLibros(Libro libros[], int cantidadLibros)
 {
+
+  if (cantidadLibros == 0)
+  {
+    cout << "No hay libros registrados" << endl;
+    return;
+  }
   for (int i = 0; i < cantidadLibros; i++)
   {
-    if (cantidadLibros == 0)
-    {
-      cout << "No hay libros registrados" << endl;
-      return;
-    }
-    for (int i = 0; i < cantidadLibros; i++)
-    {
-      cout << cantidadLibros << ".Titulo: " << libros[i].titulo << endl;
-      cout << "Autor: " << libros[i].autor << endl;
-      cout << "ISBN: " << libros[i].ISBN << endl;
-      cout << "Anio: " << libros[i].anio << endl;
-      cout << endl;
-    }
+    cout << i + 1 << ".Titulo: " << libros[i].titulo << endl;
+    cout << "Autor: " << libros[i].autor << endl;
+    cout << "ISBN: " << libros[i].ISBN << endl;
+    cout << "Año: " << libros[i].anio << endl;
+    cout << endl;
   }
 }
 
 void buscarLibroPorTitulo(Libro libros[], int cantidadLibros)
 {
   char titulo[100];
-  cout << "Ingrese el título del libro que desea buscar: " << endl;
+  cout << "Ingrese el título del libro que desea buscar: ";
+  cin.ignore();
   cin.getline(titulo, 100);
   bool encontrado = false;
   for (int i = 0; i < cantidadLibros; i++)
@@ -53,7 +53,7 @@ void buscarLibroPorTitulo(Libro libros[], int cantidadLibros)
       cout << "Titulo: " << libros[i].titulo << endl;
       cout << "Autor: " << libros[i].autor << endl;
       cout << "ISBN: " << libros[i].ISBN << endl;
-      cout << "Anio: " << libros[i].anio << endl;
+      cout << "Año: " << libros[i].anio << endl;
       cout << endl;
       encontrado = true;
       break;
