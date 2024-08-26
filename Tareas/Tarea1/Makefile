@@ -10,20 +10,23 @@ endif
 # Compilador
 CXX = g++
 
-# Flags de compilación
+# banderas de compilación
 CXXFLAGS = -Iincludes -Wall -Wextra -std=c++17
 
-# Directorios
+# rutas de los directorios
 INCLUDES_DIR = includes
 SRC_DIR = src
 
-# Archivos de origen
-SRC_P1 = programa_uno.cpp $(SRC_DIR)/conversiones.cpp $(SRC_DIR)/convertidor.cpp
+
+SRC_P1 = programa_uno.cpp $(SRC_DIR)/conversiones.cpp $(SRCzz_DIR)/convertidor.cpp
 SRC_P2 = programa_dos.cpp $(SRC_DIR)/funciones_estadisticas.cpp $(SRC_DIR)/funcion_busqueda.cpp
 
+OBJ_P1 = p1.o
+OBJ_P2 = p2.o
+
 # Ejecutables
-EXE_P1 = programa_uno.o
-EXE_P2 = programa_dos.o
+EXE_P1 = programa_uno
+EXE_P2 = programa_dos
 
 # Definir las extensiones y comandos para cada SO
 ifeq ($(DETECTED_OS), Windows)
@@ -34,12 +37,9 @@ else
     RM = rm -f
 endif
 
-# Reglas para: compilar, ejecutar programa_uno, pedir números y ejecutar programa_dos
+# Reglas para compilar los programas
 
 all: $(EXE_P1) $(EXE_P2)
-	./$(EXE_P1)
-	@echo "Introduce números separados por espacio:"
-	@read nums; ./$(EXE_P2) $$nums
 
 $(EXE_P1): $(SRC_P1)
 	$(CXX) $(CXXFLAGS) -o $(EXE_P1) $(SRC_P1)
@@ -47,9 +47,17 @@ $(EXE_P1): $(SRC_P1)
 $(EXE_P2): $(SRC_P2)
 	$(CXX) $(CXXFLAGS) -o $(EXE_P2) $(SRC_P2)
 
-# Borrar los archivos generados
+# Reglas para compilar los objetos
+
+$(OBJ_P1): $(SRC_P1)
+	$(CXX) $(CXXFLAGS) -c -o $(OBJ_P1) $(SRC_P1)
+
+$(OBJ_P2): $(SRC_P2)
+	$(CXX) $(CXXFLAGS) -c -o $(OBJ_P2) $(SRC_P2)
+
+# Limpiar los archivos generados
 
 clean:
-	$(RM) $(EXE_P1) $(EXE_P2)
+	$(RM) $(OBJ_P1) $(OBJ_P2) $(EXE_P1) $(EXE_P2)
 
 .PHONY: all clean
