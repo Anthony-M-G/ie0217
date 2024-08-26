@@ -10,17 +10,18 @@ endif
 # Compilador
 CXX = g++
 
-# banderas de compilación
+# Flags de compilación
 CXXFLAGS = -Iincludes -Wall -Wextra -std=c++17
 
-# rutas de los directorios
+# Directorios
 INCLUDES_DIR = includes
 SRC_DIR = src
 
-
-SRC_P1 = programa_uno.cpp $(SRC_DIR)/conversiones.cpp $(SRCzz_DIR)/convertidor.cpp
+# Archivos de origen
+SRC_P1 = programa_uno.cpp $(SRC_DIR)/conversiones.cpp $(SRC_DIR)/convertidor.cpp
 SRC_P2 = programa_dos.cpp $(SRC_DIR)/funciones_estadisticas.cpp $(SRC_DIR)/funcion_busqueda.cpp
 
+# Archivos de objeto
 OBJ_P1 = p1.o
 OBJ_P2 = p2.o
 
