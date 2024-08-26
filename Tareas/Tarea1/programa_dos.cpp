@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
       busqueda(numeros, cantidad_numeros, numero_a_buscar);
       break;
     case Opcion::Salir:
-      cout << "Saliendo" << endl;
+      cout << "Saliendo del programa dos" << endl;
       break;
     }
   }

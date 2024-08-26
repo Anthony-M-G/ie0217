@@ -8,8 +8,9 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
+int main()
 {
+  // Declara las variables necesarias
   enum Opciones opcionSeleccionada;
   enum UnidadesDeLongitud conversionMetrica;
   enum UnidadesDeMasa conversionMasa;
@@ -186,6 +187,12 @@ int main(int argc, char const *argv[])
       default:
         break;
       }
+      break;
+    case Opciones::salir:
+      cout << "Saliendo del programa uno" << endl;
+      break;
+    default:
+      cout << "Entrada inválida" << endl;
       break;
     }
   }
