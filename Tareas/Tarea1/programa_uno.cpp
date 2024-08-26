@@ -18,7 +18,7 @@ int main()
   double valor;
   int opcion;
   int opcion2;
-  while (opcionSeleccionada != Opciones::salir)
+  do
   {
     cout << "Conversor de unidades" << endl;
     cout << "Seleccione la conversion que desea realizar:" << endl;
@@ -195,6 +195,6 @@ int main()
       cout << "Entrada inválida" << endl;
       break;
     }
-  }
+  } while (opcionSeleccionada != Opciones::salir);
   return 0;
 }

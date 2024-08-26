@@ -24,7 +24,7 @@ int main(int argc, char const *argv[])
     *(ptr + i) = atoi(argv[i + 1]);
   }
 
-  while (opcionSeleccionada != Opcion::Salir)
+  do
   {
     cout << "Selecciona una opción " << endl;
     cout << "1. Mostrar estadísticas" << endl;
@@ -53,6 +53,6 @@ int main(int argc, char const *argv[])
       cout << "Saliendo del programa dos" << endl;
       break;
     }
-  }
+  } while (opcionSeleccionada != Opcion::Salir);
   return 0;
 }
