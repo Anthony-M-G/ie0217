@@ -1,3 +1,8 @@
+/**
+ * @file convertidor.cpp
+ * @brief Implementación de funciones de conversión para unidades de longitud, masa y temperatura usando el puntero a función del struct Convertidor.
+ */
+
 #include "../includes/unidades_de_conversion.hpp"
 #include "../includes/conversiones.hpp"
 #include "../includes/convertidor.hpp"
@@ -7,14 +12,20 @@
 
 using namespace std;
 
+/**
+ * @brief Realiza la conversión de unidades de longitud.
+ *
+ * @param t_conversion El tipo de conversión de longitud a realizar (enum UnidadesDeLongitud).
+ * @param t_valor El valor en la unidad original que se va a convertir.
+ */
 void conversor(UnidadesDeLongitud t_conversion, double t_valor)
 {
-  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor)); // Crea un puntero a un struct Convertidor que posteriormqente se le asigna memoria
+  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor)); // Reserva memoria para un struct Convertidor
 
-  switch (t_conversion) // switch que evalua el enum UnidadesDeLongitud e identifica la conversion a realizar
+  switch (t_conversion)
   {
   case UnidadesDeLongitud::metros_a_kilometros:
-    convertidor->func_conversion = &metros_a_kilometros; // Asigna la funcion metros_a_kilometros al puntero func_conversion y accede a ella mediante el operador flecha
+    convertidor->func_conversion = &metros_a_kilometros;
     cout << "El resultado de la conversion es: " << convertidor->func_conversion(t_valor) << " km" << endl;
     break;
   case UnidadesDeLongitud::kilometros_a_metros:
@@ -40,14 +51,20 @@ void conversor(UnidadesDeLongitud t_conversion, double t_valor)
   default:
     break;
   }
-  free(convertidor);
+  free(convertidor); // Libera la memoria asignada al struct Convertidor
 
   return;
 }
 
+/**
+ * @brief Realiza la conversión de unidades de masa.
+ *
+ * @param t_conversion El tipo de conversión de masa a realizar (enum UnidadesDeMasa).
+ * @param t_valor El valor en la unidad original que se va a convertir.
+ */
 void conversor(UnidadesDeMasa t_conversion, double t_valor)
 {
-  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor));
+  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor)); // Reserva memoria para un struct Convertidor
 
   switch (t_conversion)
   {
@@ -78,14 +95,20 @@ void conversor(UnidadesDeMasa t_conversion, double t_valor)
   default:
     break;
   }
-  free(convertidor);
+  free(convertidor); // Libera la memoria asignada al struct Convertidor
 
   return;
 }
 
+/**
+ * @brief Realiza la conversión de unidades de temperatura.
+ *
+ * @param t_conversion El tipo de conversión de temperatura a realizar (enum UnidadesDeTemperatura).
+ * @param t_valor El valor en la unidad original que se va a convertir.
+ */
 void conversor(UnidadesDeTemperatura t_conversion, double t_valor)
 {
-  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor));
+  Convertidor *convertidor = (Convertidor *)malloc(sizeof(Convertidor)); // Reserva memoria para un struct Convertidor
 
   switch (t_conversion)
   {
@@ -116,7 +139,7 @@ void conversor(UnidadesDeTemperatura t_conversion, double t_valor)
   default:
     break;
   }
-  free(convertidor);
+  free(convertidor); // Libera la memoria asignada al struct Convertidor
 
   return;
 }
