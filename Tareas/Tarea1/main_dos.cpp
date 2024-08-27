@@ -19,6 +19,13 @@ int main(int argc, char const *argv[])
   int opcion;                      // Opción seleccionada por el usuario
   int numeros[cantidad_numeros];
   int *ptr = numeros;
+
+  if (cantidad_numeros == 0) // Valida que se ingresen números por consola
+  {
+    cout << "No se ingresaron números" << endl;
+    return 0;
+  }
+
   for (int i = 0; i < cantidad_numeros; i++)
   {
     *(ptr + i) = atoi(argv[i + 1]);
