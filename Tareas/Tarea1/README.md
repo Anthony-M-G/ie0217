@@ -131,3 +131,7 @@ Esto eliminará los ejecutables generados por los programas.
 | **25. ¿Qué es un memory leak?**                                                                      | Es una fuga de memoria que ocurre cuando la memoria asignada dinámicamente no se libera, lo que puede agotar los recursos de memoria.                                                                                                                                                                                         |
 | **26. ¿Qué es la memoria dinámica en C++?**                                                          | Es la memoria que se asigna en tiempo de ejecución usando `new` y debe ser liberada manualmente usando `delete`.                                                                                                                                                                                                              |
 | **27. ¿Qué es la memoria estática en C++?**                                                          | Es la memoria que se asigna en tiempo de compilación y se libera automáticamente al final del programa.                                                                                                                                                                                                                       |
+
+## Documentación oficial en:
+
+[Click aquí](https://ie0217-gvdrnnm12-anthonys-projects-fc83cd10.vercel.app/index.html)
