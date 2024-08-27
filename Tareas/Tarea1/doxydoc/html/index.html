@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tarea 01 IE0217 Antony Medina 2024 Universidad de Costa Rica: Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217</title>
+<title>Tarea 01 IE0217 Antony Medina 2024 Universidad de Costa Rica: Documentación de Programas en C++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,70 +84,36 @@ $(function(){ initResizable(false); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217 </div></div>
+  <div class="headertitle"><div class="title">Documentación de Programas en C++ </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_Index"></a></p>
-<p>Descripción del Proyecto Este proyecto contiene dos programas principales desarrollados en C++ como parte de la asignatura IE0217. El primer programa se centra en la conversión de unidades, mientras que el segundo realiza cálculos estadísticos y búsqueda en un arreglo de números enteros.</p>
+<p>Bienvenido a la documentación de los programas en C++ desarrollados como parte del proyecto. A continuación se presenta un resumen de los dos programas principales incluidos en este proyecto.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-Requisitos Previos</h1>
+Programa de Conversión de Unidades</h1>
+<p>Este programa permite a los usuarios realizar conversiones entre diferentes unidades de medida en tres categorías principales: longitud, peso y temperatura. Utiliza un menú interactivo que permite al usuario seleccionar el tipo de conversión, ingresar el valor a convertir y obtener el resultado en la unidad deseada.</p>
+<p><b>Opciones del menú principal:</b></p>
 <ul>
-<li>Compilador C++: Es necesario tener un compilador compatible con C++11 o superior (por ejemplo, g++).</li>
-<li>Sistema Operativo: Windows o Linux.</li>
+<li>Convertir entre unidades de longitud (metros, kilómetros, etc.).</li>
+<li>Convertir entre unidades de peso (gramos, kilogramos, etc.).</li>
+<li>Convertir entre unidades de temperatura (Celsius, Fahrenheit, Kelvin).</li>
+<li>Salir del programa.</li>
 </ul>
+<p>El programa utiliza Enums, Structs, sobrecarga de funciones y recursividad para realizar las conversiones.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
-Compilación y Ejecución</h1>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Compilación</h2>
-<p>Para compilar ambos programas, simplemente utiliza el comando:</p>
-<h3><a class="anchor" id="autotoc_md4"></a>
-Linux</h3>
-<div class="fragment"><div class="line">make</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
-Windows</h3>
-<p>En dado caso que estés usando mingw</p>
-<div class="fragment"><div class="line">mingw32-make</div>
-</div><!-- fragment --><p>Este comando compilará ambos programas y generará los ejecutables programa_uno, programa_dos para Linux o programa_uno.exe, programa_dos.exe para Windows</p>
-<h2><a class="anchor" id="autotoc_md6"></a>
-1. Conversión de Unidades</h2>
-<p>Este programa permite convertir entre diferentes unidades de longitud, peso y temperatura.</p>
-<h3><a class="anchor" id="autotoc_md7"></a>
-Ejecución</h3>
-<h3><a class="anchor" id="autotoc_md8"></a>
-Linux</h3>
-<div class="fragment"><div class="line">./programa_uno</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md9"></a>
-Windows</h3>
-<div class="fragment"><div class="line">./programa_uno.exe</div>
-</div><!-- fragment --><p>Al ejecutar este comando, se iniciará el programa de conversión de unidades, donde podrás seleccionar la unidad de origen, la unidad de destino y el valor a convertir.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
-2. Calculadora de Estadísticas y Búsqueda en un Arreglo</h2>
-<p>Este programa permite calcular estadísticas como suma, promedio, valor máximo y mínimo, además de realizar una búsqueda en un arreglo de números enteros.</p>
-<h3><a class="anchor" id="autotoc_md11"></a>
-Ejecución</h3>
-<h3><a class="anchor" id="autotoc_md12"></a>
-Linux</h3>
-<div class="fragment"><div class="line">./programa_dos [numeros]</div>
-</div><!-- fragment --><p>Donde [números] es una lista de números enteros que debes pasar como argumentos en la línea de comandos. Por ejemplo:</p>
-<div class="fragment"><div class="line">./programa_dos 10 34 56 78 21</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
-Windows</h3>
-<div class="fragment"><div class="line">./programa_dos.exe [numeros]</div>
-</div><!-- fragment --><div class="fragment"><div class="line">./programa_dos.exe 10 34 56 78 21</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
-Uso del Makefile</h2>
-<p>El Makefile está configurado para compilar ambos programas con el comando make. Si solo deseas compilar un programa específico, puedes utilizar:</p>
+Calculadora de Estadísticas y Búsqueda en un Arreglo</h1>
+<p>Este programa permite calcular estadísticas básicas (suma, promedio, máximo y mínimo) y realizar una búsqueda de un número específico dentro de un conjunto de números. Los números se reciben como argumentos desde la línea de comandos y se almacenan en un arreglo utilizando punteros.</p>
+<p><b>Opciones del menú principal:</b></p>
 <ul>
-<li>make programa_uno: Compila solo el programa de conversión de unidades.</li>
-<li>make programa_dos: Compila solo el programa de cálculos estadísticos y búsqueda. Para limpiar los archivos generados por la compilación (ejecutables), puedes usar:</li>
+<li>Mostrar estadísticas (suma, promedio, máximo y mínimo).</li>
+<li>Buscar un número en el arreglo.</li>
+<li>Salir del programa.</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md15"></a>
-Linux</h3>
-<div class="fragment"><div class="line">make clean</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md16"></a>
-Windows</h3>
-<div class="fragment"><div class="line">mingw32-make clean</div>
-</div><!-- fragment --><p>Esto eliminará los ejecutables generados por los programas. </p>
+<p>Las estadísticas se calculan utilizando funciones con punteros, y el programa permite realizar búsquedas de manera eficiente.</p>
+<p><b>Notas:</b></p>
+<ul>
+<li>Ambas aplicaciones están diseñadas para ser ejecutadas en un entorno de consola y proporcionan una interfaz interactiva al usuario. </li>
+</ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

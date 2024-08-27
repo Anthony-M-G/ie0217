@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['datos_20y_20algoritmos_20para_20ingeniería_20ie0217_0',['Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217',['../index.html',1,'']]],
-  ['de_20datos_20y_20algoritmos_20para_20ingeniería_20ie0217_1',['Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217',['../index.html',1,'']]],
-  ['de_20estadísticas_20y_20búsqueda_20en_20un_20arreglo_2',['2. Calculadora de Estadísticas y Búsqueda en un Arreglo',['../index.html#autotoc_md10',1,'']]],
-  ['de_20unidades_3',['1. Conversión de Unidades',['../index.html#autotoc_md6',1,'']]],
-  ['del_20curso_20estructuras_20abstractas_20de_20datos_20y_20algoritmos_20para_20ingeniería_20ie0217_4',['Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217',['../index.html',1,'']]],
-  ['del_20makefile_5',['Uso del Makefile',['../index.html#autotoc_md14',1,'']]]
+  ['gramos_5fa_5fkilogramos_0',['gramos_a_kilogramos',['../conversiones_8cpp.html#af90ff760e7fd5099612a6fb138c1faa9',1,'gramos_a_kilogramos(double valor):&#160;conversiones.cpp'],['../conversiones_8hpp.html#af90ff760e7fd5099612a6fb138c1faa9',1,'gramos_a_kilogramos(double valor):&#160;conversiones.cpp'],['../unidades__de__conversion_8hpp.html#ad22da200463a50ef9b8401cfca17419ea9f179f5834f744bbfdcb16e4053221ea',1,'gramos_a_kilogramos:&#160;unidades_de_conversion.hpp']]],
+  ['gramos_5fa_5fmiligramos_1',['gramos_a_miligramos',['../conversiones_8cpp.html#ad871e925ecbe3a66a1e536ca34a97c5e',1,'gramos_a_miligramos(double valor):&#160;conversiones.cpp'],['../conversiones_8hpp.html#ad871e925ecbe3a66a1e536ca34a97c5e',1,'gramos_a_miligramos(double valor):&#160;conversiones.cpp'],['../unidades__de__conversion_8hpp.html#ad22da200463a50ef9b8401cfca17419eaa1294a8a7ff7b1faab8e809b8274d607',1,'gramos_a_miligramos:&#160;unidades_de_conversion.hpp']]]
 ];

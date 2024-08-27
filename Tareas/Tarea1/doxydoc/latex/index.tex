@@ -1,97 +1,39 @@
-\chapter{Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217}
-\hypertarget{index}{}\label{index}\index{Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217@{Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217}}
+\chapter{Documentación de Programas en C++}
+\hypertarget{index}{}\label{index}\index{Documentación de Programas en C++@{Documentación de Programas en C++}}
 \label{index_md_Index}%
 \Hypertarget{index_md_Index}%
 
 
-Descripción del Proyecto Este proyecto contiene dos programas principales desarrollados en C++ como parte de la asignatura IE0217. El primer programa se centra en la conversión de unidades, mientras que el segundo realiza cálculos estadísticos y búsqueda en un arreglo de números enteros.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Requisitos Previos}{Requisitos Previos}}\label{index_autotoc_md1}
+Bienvenido a la documentación de los programas en C++ desarrollados como parte del proyecto. A continuación se presenta un resumen de los dos programas principales incluidos en este proyecto.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Programa de Conversión de Unidades}{Programa de Conversión de Unidades}}\label{index_autotoc_md1}
+Este programa permite a los usuarios realizar conversiones entre diferentes unidades de medida en tres categorías principales\+: longitud, peso y temperatura. Utiliza un menú interactivo que permite al usuario seleccionar el tipo de conversión, ingresar el valor a convertir y obtener el resultado en la unidad deseada.
 
-\begin{DoxyItemize}
-\item Compilador C++\+: Es necesario tener un compilador compatible con C++11 o superior (por ejemplo, g++).
-\item Sistema Operativo\+: Windows o Linux.
-\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Compilación y Ejecución}{Compilación y Ejecución}}\label{index_autotoc_md2}
-\hypertarget{index_autotoc_md3}{}\doxysubsection{\texorpdfstring{Compilación}{Compilación}}\label{index_autotoc_md3}
-Para compilar ambos programas, simplemente utiliza el comando\+:\hypertarget{index_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Linux}{Linux}}\label{index_autotoc_md4}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{make}
-
-\end{DoxyCode}
-\hypertarget{index_autotoc_md5}{}\doxysubsubsection{\texorpdfstring{Windows}{Windows}}\label{index_autotoc_md5}
-En dado caso que estés usando mingw
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{mingw32-\/make}
-
-\end{DoxyCode}
-
-
-Este comando compilará ambos programas y generará los ejecutables programa\+\_\+uno, programa\+\_\+dos para Linux o programa\+\_\+uno.\+exe, programa\+\_\+dos.\+exe para Windows\hypertarget{index_autotoc_md6}{}\doxysubsection{\texorpdfstring{1. Conversión de Unidades}{1. Conversión de Unidades}}\label{index_autotoc_md6}
-Este programa permite convertir entre diferentes unidades de longitud, peso y temperatura.\hypertarget{index_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Ejecución}{Ejecución}}\label{index_autotoc_md7}
-\hypertarget{index_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Linux}{Linux}}\label{index_autotoc_md8}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_uno}
-
-\end{DoxyCode}
-\hypertarget{index_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{Windows}{Windows}}\label{index_autotoc_md9}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_uno.exe}
-
-\end{DoxyCode}
-
-
-Al ejecutar este comando, se iniciará el programa de conversión de unidades, donde podrás seleccionar la unidad de origen, la unidad de destino y el valor a convertir.\hypertarget{index_autotoc_md10}{}\doxysubsection{\texorpdfstring{2. Calculadora de Estadísticas y Búsqueda en un Arreglo}{2. Calculadora de Estadísticas y Búsqueda en un Arreglo}}\label{index_autotoc_md10}
-Este programa permite calcular estadísticas como suma, promedio, valor máximo y mínimo, además de realizar una búsqueda en un arreglo de números enteros.\hypertarget{index_autotoc_md11}{}\doxysubsubsection{\texorpdfstring{Ejecución}{Ejecución}}\label{index_autotoc_md11}
-\hypertarget{index_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{Linux}{Linux}}\label{index_autotoc_md12}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_dos\ [numeros]}
-
-\end{DoxyCode}
-
-
-Donde \mbox{[}números\mbox{]} es una lista de números enteros que debes pasar como argumentos en la línea de comandos. Por ejemplo\+:
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_dos\ 10\ 34\ 56\ 78\ 21}
-
-\end{DoxyCode}
-\hypertarget{index_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{Windows}{Windows}}\label{index_autotoc_md13}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_dos.exe\ [numeros]}
-
-\end{DoxyCode}
-
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{./programa\_dos.exe\ 10\ 34\ 56\ 78\ 21}
-
-\end{DoxyCode}
-\hypertarget{index_autotoc_md14}{}\doxysubsection{\texorpdfstring{Uso del Makefile}{Uso del Makefile}}\label{index_autotoc_md14}
-El Makefile está configurado para compilar ambos programas con el comando make. Si solo deseas compilar un programa específico, puedes utilizar\+:
+{\bfseries{Opciones del menú principal\+:}}
 
 
 \begin{DoxyItemize}
-\item make programa\+\_\+uno\+: Compila solo el programa de conversión de unidades.
-\item make programa\+\_\+dos\+: Compila solo el programa de cálculos estadísticos y búsqueda. Para limpiar los archivos generados por la compilación (ejecutables), puedes usar\+:
-\end{DoxyItemize}\hypertarget{index_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Linux}{Linux}}\label{index_autotoc_md15}
+\item Convertir entre unidades de longitud (metros, kilómetros, etc.).
+\item Convertir entre unidades de peso (gramos, kilogramos, etc.).
+\item Convertir entre unidades de temperatura (Celsius, Fahrenheit, Kelvin).
+\item Salir del programa.
+\end{DoxyItemize}
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{make\ clean}
+El programa utiliza Enums, Structs, sobrecarga de funciones y recursividad para realizar las conversiones.\hypertarget{index_autotoc_md2}{}\doxysection{\texorpdfstring{Calculadora de Estadísticas y Búsqueda en un Arreglo}{Calculadora de Estadísticas y Búsqueda en un Arreglo}}\label{index_autotoc_md2}
+Este programa permite calcular estadísticas básicas (suma, promedio, máximo y mínimo) y realizar una búsqueda de un número específico dentro de un conjunto de números. Los números se reciben como argumentos desde la línea de comandos y se almacenan en un arreglo utilizando punteros.
 
-\end{DoxyCode}
-\hypertarget{index_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{Windows}{Windows}}\label{index_autotoc_md16}
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{mingw32-\/make\ clean}
-
-\end{DoxyCode}
+{\bfseries{Opciones del menú principal\+:}}
 
 
-Esto eliminará los ejecutables generados por los programas. 
+\begin{DoxyItemize}
+\item Mostrar estadísticas (suma, promedio, máximo y mínimo).
+\item Buscar un número en el arreglo.
+\item Salir del programa.
+\end{DoxyItemize}
+
+Las estadísticas se calculan utilizando funciones con punteros, y el programa permite realizar búsquedas de manera eficiente.
+
+{\bfseries{Notas\+:}}
+
+
+\begin{DoxyItemize}
+\item Ambas aplicaciones están diseñadas para ser ejecutadas en un entorno de consola y proporcionan una interfaz interactiva al usuario. 
+\end{DoxyItemize}

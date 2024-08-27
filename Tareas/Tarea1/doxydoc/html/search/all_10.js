@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['requisitos_20previos_0',['Requisitos Previos',['../index.html#autotoc_md1',1,'']]]
+  ['y_20búsqueda_20en_20un_20arreglo_0',['Calculadora de Estadísticas y Búsqueda en un Arreglo',['../index.html#autotoc_md2',1,'']]]
 ];

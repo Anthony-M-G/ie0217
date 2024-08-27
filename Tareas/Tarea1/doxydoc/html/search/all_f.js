@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['para_20ingeniería_20ie0217_0',['Tarea 01 del curso Estructuras Abstractas de datos y Algoritmos para ingeniería IE0217',['../index.html',1,'']]],
-  ['previos_1',['Requisitos Previos',['../index.html#autotoc_md1',1,'']]],
-  ['promedio_2',['promedio',['../funciones__estadisticas_8cpp.html#acf8e676ca20dbf3e8cf4161a017c1f47',1,'promedio(int *primer_elemento, int cantidad_numeros):&#160;funciones_estadisticas.cpp'],['../funciones__estadisticas_8hpp.html#a443f40a1e20f132debea823ba00f4f48',1,'promedio(int *, int cantidad_numeros):&#160;funciones_estadisticas.cpp']]]
+  ['un_20arreglo_0',['Calculadora de Estadísticas y Búsqueda en un Arreglo',['../index.html#autotoc_md2',1,'']]],
+  ['unidades_1',['Programa de Conversión de Unidades',['../index.html#autotoc_md1',1,'']]],
+  ['unidades_5fde_5fconversion_2ehpp_2',['unidades_de_conversion.hpp',['../unidades__de__conversion_8hpp.html',1,'']]],
+  ['unidadesdelongitud_3',['UnidadesDeLongitud',['../unidades__de__conversion_8hpp.html#a818a5bc38ca611e7e0401c643a2bfa38',1,'unidades_de_conversion.hpp']]],
+  ['unidadesdemasa_4',['UnidadesDeMasa',['../unidades__de__conversion_8hpp.html#ad22da200463a50ef9b8401cfca17419e',1,'unidades_de_conversion.hpp']]],
+  ['unidadesdetemperatura_5',['UnidadesDeTemperatura',['../unidades__de__conversion_8hpp.html#a34347ad196bbbafbe04b35d495facfc9',1,'unidades_de_conversion.hpp']]]
 ];

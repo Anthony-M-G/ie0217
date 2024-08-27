@@ -1,4 +1,16 @@
 var searchData=
 [
-  ['2_20calculadora_20de_20estadísticas_20y_20búsqueda_20en_20un_20arreglo_0',['2. Calculadora de Estadísticas y Búsqueda en un Arreglo',['../index.html#autotoc_md10',1,'']]]
+  ['c_0',['Documentación de Programas en C++',['../index.html',1,'']]],
+  ['calculadora_20de_20estadísticas_20y_20búsqueda_20en_20un_20arreglo_1',['Calculadora de Estadísticas y Búsqueda en un Arreglo',['../index.html#autotoc_md2',1,'']]],
+  ['celsius_5fa_5ffahrenheit_2',['celsius_a_fahrenheit',['../conversiones_8cpp.html#a0d34077b1f128c7e5b9afc33c7451fe0',1,'celsius_a_fahrenheit(double valor):&#160;conversiones.cpp'],['../conversiones_8hpp.html#a0d34077b1f128c7e5b9afc33c7451fe0',1,'celsius_a_fahrenheit(double valor):&#160;conversiones.cpp'],['../unidades__de__conversion_8hpp.html#a34347ad196bbbafbe04b35d495facfc9ac0346c66e62fcf5815c4ef522a493bb9',1,'celsius_a_fahrenheit:&#160;unidades_de_conversion.hpp']]],
+  ['celsius_5fa_5fkelvin_3',['celsius_a_kelvin',['../conversiones_8cpp.html#a94d18e56bb53ec81ec5459a1e0717e2f',1,'celsius_a_kelvin(double valor):&#160;conversiones.cpp'],['../conversiones_8hpp.html#a94d18e56bb53ec81ec5459a1e0717e2f',1,'celsius_a_kelvin(double valor):&#160;conversiones.cpp'],['../unidades__de__conversion_8hpp.html#a34347ad196bbbafbe04b35d495facfc9a06341d10af3a728c349fe4643d47d99f',1,'celsius_a_kelvin:&#160;unidades_de_conversion.hpp']]],
+  ['centimetros_5fa_5fmetros_4',['centimetros_a_metros',['../conversiones_8cpp.html#aeca82099bcfd35bf49854ac7fde09a21',1,'centimetros_a_metros(double valor):&#160;conversiones.cpp'],['../conversiones_8hpp.html#aeca82099bcfd35bf49854ac7fde09a21',1,'centimetros_a_metros(double valor):&#160;conversiones.cpp'],['../unidades__de__conversion_8hpp.html#a818a5bc38ca611e7e0401c643a2bfa38aa46c1cd49c10fa23532829f2f8ba006e',1,'centimetros_a_metros:&#160;unidades_de_conversion.hpp']]],
+  ['conversión_20de_20unidades_5',['Programa de Conversión de Unidades',['../index.html#autotoc_md1',1,'']]],
+  ['conversiones_2ecpp_6',['conversiones.cpp',['../conversiones_8cpp.html',1,'']]],
+  ['conversiones_2ehpp_7',['conversiones.hpp',['../conversiones_8hpp.html',1,'']]],
+  ['conversionesmetros_5fhpp_8',['CONVERSIONESMETROS_HPP',['../conversiones_8hpp.html#ac4ecdcfe5011466a5105486ba4929e4b',1,'conversiones.hpp']]],
+  ['conversor_9',['conversor',['../convertidor_8cpp.html#a9b98bb6c26a9157820e174952dffc953',1,'conversor(UnidadesDeLongitud t_conversion, double t_valor):&#160;convertidor.cpp'],['../convertidor_8cpp.html#a568458b9594197a0e1506a5425f45e70',1,'conversor(UnidadesDeMasa t_conversion, double t_valor):&#160;convertidor.cpp'],['../convertidor_8cpp.html#ac1d6209d83989845291bcd588f262388',1,'conversor(UnidadesDeTemperatura t_conversion, double t_valor):&#160;convertidor.cpp'],['../fun__conversion_8hpp.html#af22febaf35be689a1667682c208c4fc0',1,'conversor(UnidadesDeLongitud conversion, double valor):&#160;convertidor.cpp'],['../fun__conversion_8hpp.html#a57dd79872728101b36ef773f257012c8',1,'conversor(UnidadesDeMasa conversion, double valor):&#160;convertidor.cpp'],['../fun__conversion_8hpp.html#a9d3782ef8d903e716cde44e41966c73f',1,'conversor(UnidadesDeTemperatura conversion, double valor):&#160;convertidor.cpp']]],
+  ['convertidor_10',['Convertidor',['../structConvertidor.html',1,'']]],
+  ['convertidor_2ecpp_11',['convertidor.cpp',['../convertidor_8cpp.html',1,'']]],
+  ['convertidor_2ehpp_12',['convertidor.hpp',['../convertidor_8hpp.html',1,'']]]
 ];
