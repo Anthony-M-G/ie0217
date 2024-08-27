@@ -1,0 +1,16 @@
+<map id="src/convertidor.cpp" name="src/convertidor.cpp">
+<area shape="rect" id="Node000001" title="Implementación de funciones de conversión para unidades de longitud, masa y temperatura usando el pun..." alt="" coords="401,5,546,31"/>
+<area shape="rect" id="Node000002" href="$unidades__de__conversion_8hpp.html" title=" " alt="" coords="216,152,366,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="401,26,174,46,72,62,39,71,21,81,9,101,12,118,27,131,53,143,124,158,202,165,202,171,123,163,51,148,25,136,8,120,4,100,17,77,37,66,71,57,173,41,400,21"/>
+<area shape="rect" id="Node000003" href="$conversiones_8hpp.html" title=" " alt="" coords="32,79,238,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="420,33,204,78,202,73,419,28"/>
+<area shape="rect" id="Node000004" href="$convertidor_8hpp.html" title=" " alt="" coords="262,79,456,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="457,33,391,74,388,69,454,28"/>
+<area shape="rect" id="Node000005" href="$fun__conversion_8hpp.html" title=" " alt="" coords="480,79,699,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="494,28,560,69,558,74,491,33"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="723,79,803,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="521,28,710,74,709,80,520,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="827,79,886,104"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="547,27,668,47,814,76,813,81,667,52,546,33"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="547,107,377,151,375,146,546,101"/>
+</map>

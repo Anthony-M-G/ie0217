@@ -1,0 +1,146 @@
+\doxysection{src/funciones\+\_\+estadisticas.cpp File Reference}
+\hypertarget{funciones__estadisticas_8cpp}{}\label{funciones__estadisticas_8cpp}\index{src/funciones\_estadisticas.cpp@{src/funciones\_estadisticas.cpp}}
+
+
+Implementación de las funciones estadísticas.  
+
+
+{\ttfamily \#include "{}../includes/funciones\+\_\+estadisticas.\+hpp"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}string"{}}\newline
+Include dependency graph for funciones\+\_\+estadisticas.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{funciones__estadisticas_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funciones__estadisticas_8cpp_a0a1bae684de2d83c9fd5254ea7860e7d}{suma}} (int \texorpdfstring{$\ast$}{*}primer\+\_\+elemento, int cantidad\+\_\+numeros)
+\item 
+void \mbox{\hyperlink{funciones__estadisticas_8cpp_acf8e676ca20dbf3e8cf4161a017c1f47}{promedio}} (int \texorpdfstring{$\ast$}{*}primer\+\_\+elemento, int cantidad\+\_\+numeros)
+\item 
+void \mbox{\hyperlink{funciones__estadisticas_8cpp_a892015e357827efedb64f683ef2b8140}{maximo}} (int \texorpdfstring{$\ast$}{*}primer\+\_\+elemento, int cantidad\+\_\+numeros)
+\begin{DoxyCompactList}\small\item\em Encuentra el número máximo en un arreglo de enteros. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funciones__estadisticas_8cpp_aae84054ee6bd313189dff625482045ce}{minimo}} (int \texorpdfstring{$\ast$}{*}primer\+\_\+elemento, int cantidad\+\_\+numeros)
+\begin{DoxyCompactList}\small\item\em Encuentra el número mínimo en un arreglo de enteros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementación de las funciones estadísticas. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{funciones__estadisticas_8cpp_a892015e357827efedb64f683ef2b8140}\index{funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}!maximo@{maximo}}
+\index{maximo@{maximo}!funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}}
+\doxysubsubsection{\texorpdfstring{maximo()}{maximo()}}
+{\footnotesize\ttfamily \label{funciones__estadisticas_8cpp_a892015e357827efedb64f683ef2b8140} 
+void maximo (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{primer\+\_\+elemento}{, }\item[{int}]{cantidad\+\_\+numeros}{}\end{DoxyParamCaption})}
+
+
+
+Encuentra el número máximo en un arreglo de enteros. 
+
+Esta función recibe un puntero al primer elemento de un arreglo de enteros y la cantidad de números en el arreglo. Itera sobre el arreglo y compara cada elemento con el valor máximo actual. Si encuentra un elemento mayor, actualiza el valor máximi. Al finalizar, imprime el número mínimo encontrado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em primer\+\_\+elemento} & Puntero al primer elemento del arreglo. \\
+\hline
+{\em cantidad\+\_\+numeros} & Cantidad de números en el arreglo. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{funciones__estadisticas_8cpp_a892015e357827efedb64f683ef2b8140_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{funciones__estadisticas_8cpp_a892015e357827efedb64f683ef2b8140_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funciones__estadisticas_8cpp_aae84054ee6bd313189dff625482045ce}\index{funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}!minimo@{minimo}}
+\index{minimo@{minimo}!funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}}
+\doxysubsubsection{\texorpdfstring{minimo()}{minimo()}}
+{\footnotesize\ttfamily \label{funciones__estadisticas_8cpp_aae84054ee6bd313189dff625482045ce} 
+void minimo (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{primer\+\_\+elemento}{, }\item[{int}]{cantidad\+\_\+numeros}{}\end{DoxyParamCaption})}
+
+
+
+Encuentra el número mínimo en un arreglo de enteros. 
+
+Esta función recibe un puntero al primer elemento de un arreglo de enteros y la cantidad de números en el arreglo. Itera sobre el arreglo y compara cada elemento con el valor mínimo actual. Si encuentra un elemento menor, actualiza el valor mínimo. Al finalizar, imprime el número mínimo encontrado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em primer\+\_\+elemento} & Puntero al primer elemento del arreglo. \\
+\hline
+{\em cantidad\+\_\+numeros} & Cantidad de números en el arreglo. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{funciones__estadisticas_8cpp_aae84054ee6bd313189dff625482045ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{funciones__estadisticas_8cpp_aae84054ee6bd313189dff625482045ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funciones__estadisticas_8cpp_acf8e676ca20dbf3e8cf4161a017c1f47}\index{funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}!promedio@{promedio}}
+\index{promedio@{promedio}!funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}}
+\doxysubsubsection{\texorpdfstring{promedio()}{promedio()}}
+{\footnotesize\ttfamily \label{funciones__estadisticas_8cpp_acf8e676ca20dbf3e8cf4161a017c1f47} 
+void promedio (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{primer\+\_\+elemento}{, }\item[{int}]{cantidad\+\_\+numeros}{}\end{DoxyParamCaption})}
+
+Calcula el promedio de un conjunto de números enteros.
+
+Recibe un puntero al primer elemento de un conjunto de números y la cantidad de números en el conjunto. Itera sobre el conjunto y suma los valores de los elementos. Al finalizar, calcula el promedio y lo imprime. 
+\begin{DoxyParams}{Parameters}
+{\em primer\+\_\+elemento} & Puntero al primer elemento del conjunto de números. \\
+\hline
+{\em cantidad\+\_\+numeros} & Cantidad de números en el conjunto. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{funciones__estadisticas_8cpp_acf8e676ca20dbf3e8cf4161a017c1f47_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{funciones__estadisticas_8cpp_acf8e676ca20dbf3e8cf4161a017c1f47_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{funciones__estadisticas_8cpp_a0a1bae684de2d83c9fd5254ea7860e7d}\index{funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}!suma@{suma}}
+\index{suma@{suma}!funciones\_estadisticas.cpp@{funciones\_estadisticas.cpp}}
+\doxysubsubsection{\texorpdfstring{suma()}{suma()}}
+{\footnotesize\ttfamily \label{funciones__estadisticas_8cpp_a0a1bae684de2d83c9fd5254ea7860e7d} 
+void suma (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{primer\+\_\+elemento}{, }\item[{int}]{cantidad\+\_\+numeros}{}\end{DoxyParamCaption})}
+
+Calcula la suma de un conjunto de números enteros.
+
+Recibe un puntero al primer elemento de un conjunto de números y la cantidad de números en el conjunto. Itera sobre el conjunto, suma los valores y los guarda en la variable suma. 
+\begin{DoxyParams}{Parameters}
+{\em primer\+\_\+elemento} & Puntero al primer elemento del conjunto de números. \\
+\hline
+{\em cantidad\+\_\+numeros} & Cantidad de números en el conjunto. \\
+\hline
+\end{DoxyParams}
