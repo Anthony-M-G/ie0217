@@ -22,7 +22,7 @@ public:
 
   virtual ~Producto() = default;
 
-  friend ostream &operator<<(ostream &os, const Producto &Producto);
+  friend ostream &operator<<(ostream &os, const Producto &producto);
 
   virtual void mostrarInformacion() const = 0;
 };
