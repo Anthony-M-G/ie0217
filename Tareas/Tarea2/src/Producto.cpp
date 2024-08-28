@@ -24,8 +24,8 @@ string Producto::getNombre() const
   return this->nombre;
 }
 
-ostream &operator<<(ostream &os, const Producto &Producto)
+ostream &operator<<(ostream &os, const Producto &producto)
 {
-  os << "Nombre: " << Producto.nombre << " Precio: " << Producto.precio;
+  os << "Nombre: " << producto.nombre << " Precio: " << producto.precio;
   return os;
 }
