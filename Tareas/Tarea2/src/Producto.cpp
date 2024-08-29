@@ -1,6 +1,4 @@
 #include "../includes/Producto.hpp"
-#include <iostream>
-using namespace std;
 
 Producto::Producto(const string &t_nombre, double t_precio) : nombre(t_nombre), precio(t_precio) {}
 
