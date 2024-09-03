@@ -3,11 +3,11 @@
 
 #include "Producto.hpp"
 #include <iostream>
-
+// Clase ProductoDigital que hereda de Producto
 class ProductoDigital : public Producto
 {
 private:
-  int id;
+  int id; // Atributo propio de la clase ProductoDigital
 
 public:
   ProductoDigital(int t_id, const string &t_nombre, double t_precio);
