@@ -91,5 +91,7 @@ int main(int argc, char const *argv[])
   cout << "Después de pop:" << endl;
   printStack(s);
 
+  free(s);
+
   return 0;
 }
