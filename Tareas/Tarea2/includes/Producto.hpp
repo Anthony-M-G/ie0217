@@ -1,8 +1,9 @@
 #ifndef PRODUCTO_HPP
 #define PRODUCTO_HPP
 #include <string>
-#include <ostream>
+#include <iostream>
 using namespace std;
+// Clase Producto
 class Producto
 {
 private:
@@ -10,7 +11,7 @@ private:
   double precio;
 
 public:
-  Producto(const string &t_nombre, double t_precio);
+  Producto(const string &t_nombre, double t_precio); // Constructor de la clase Producto
 
   void setPrecio(double t_precio);
 
@@ -22,8 +23,8 @@ public:
 
   virtual ~Producto() = default;
 
-  friend ostream &operator<<(ostream &os, const Producto &producto);
+  friend ostream &operator<<(ostream &os, const Producto &producto); // Sobrecarga del operador de << para mostrar la información de un producto
 
-  virtual void mostrarInformacion() const = 0;
+  virtual void mostrarInformacion() const = 0; // Método virtual puro que muestra la información de un producto
 };
 #endif
