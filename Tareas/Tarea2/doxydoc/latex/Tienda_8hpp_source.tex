@@ -1,0 +1,39 @@
+\doxysection{Tienda.\+hpp}
+\hypertarget{Tienda_8hpp_source}{}\label{Tienda_8hpp_source}\index{includes/Tienda.hpp@{includes/Tienda.hpp}}
+\mbox{\hyperlink{Tienda_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TIENDA\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TIENDA\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Producto_8hpp}{Producto.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Cliente_8hpp}{Cliente.hpp}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTienda}{Tienda}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ vector<Producto\ *>\ productosDisponibles;}
+\DoxyCodeLine{00015\ \ \ vector<Cliente\ *>\ clientes;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classTienda_a792ab42dc0afbd0f51dd734583b329c9}{Tienda}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{classTienda_ac46bbd7ee606e0929dad416f7e25f209}{\string~Tienda}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ vector<Producto\ *>\ \mbox{\hyperlink{classTienda_a4756546f126199fa247265c38c17d85d}{getProductosDisponibles}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ vector<Cliente\ *>\ \mbox{\hyperlink{classTienda_a73bcd72d52c270cfcd0cae6573ae9935}{getClientes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTienda_ae9b5bac98fa3932074d51e2210a54237}{agregarProducto}}(\mbox{\hyperlink{classProducto}{Producto}}\ *producto);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTienda_a9053e8f0bffecb4d6fec4fdec177f630}{agregarCliente}}(\mbox{\hyperlink{classCliente}{Cliente}}\ *cliente);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTienda_a29c898ee67fc22ebcf9d58ffd7edd3ba}{procesarCompra}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

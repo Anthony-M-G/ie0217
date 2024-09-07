@@ -1,0 +1,40 @@
+\doxysection{Cliente.\+hpp}
+\hypertarget{Cliente_8hpp_source}{}\label{Cliente_8hpp_source}\index{includes/Cliente.hpp@{includes/Cliente.hpp}}
+\mbox{\hyperlink{Cliente_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CLIENTE\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CLIENTE\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Producto_8hpp}{Producto.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCliente}{Cliente}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \textcolor{keywordtype}{string}\ nombre;}
+\DoxyCodeLine{00013\ \ \ vector<Producto\ *>\ carrito;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \mbox{\hyperlink{classCliente_ab3fc01c15fd6f3001652aaa3554312ea}{Cliente}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&t\_nombre);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classCliente_a75097cba71f17121840860154d0781b6}{\string~Cliente}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ vector<Producto\ *>\ \mbox{\hyperlink{classCliente_a509d7c51c60d5658fe9a986c265f6621}{getCarrito}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCliente_a213db50ca02288ab5c33328f5e117819}{getNombre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{comment}{//\ Método\ agregar\ producto\ que\ recibe\ un\ producto\ y\ lo\ agrega\ al\ carrito}}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCliente_acd086341b329b077045c9640b77ff4f5}{agregarProducto}}(\mbox{\hyperlink{classProducto}{Producto}}\ *t\_producto);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{comment}{//\ Método\ para\ calcular\ el\ total\ de\ la\ compra\ en\ el\ carrito}}
+\DoxyCodeLine{00028\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCliente_a6fac34db500bb2dc2ab748eebce21aed}{calcularTotal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{comment}{//\ Método\ virtual\ puro\ para\ aplicar\ el\ descuento\ dependiendo\ de\ qué\ tipo\ de\ cliente\ se\ trata}}
+\DoxyCodeLine{00031\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classCliente_ad73d8c44f34e0034344f23ca4dd7d89b}{aplicarDescuento}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

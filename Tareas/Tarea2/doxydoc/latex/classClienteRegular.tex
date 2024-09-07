@@ -1,0 +1,95 @@
+\doxysection{Cliente\+Regular Class Reference}
+\hypertarget{classClienteRegular}{}\label{classClienteRegular}\index{ClienteRegular@{ClienteRegular}}
+
+
+Representa un cliente regular en la tienda sin descuento aplicable.  
+
+
+
+
+{\ttfamily \#include $<$Cliente\+Regular.\+hpp$>$}
+
+
+
+Inheritance diagram for Cliente\+Regular\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classClienteRegular__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cliente\+Regular\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classClienteRegular__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClienteRegular_ab016060bbb76e39f893816fa556f093d}{Cliente\+Regular}} (const string \&t\+\_\+nombre)
+\item 
+double \mbox{\hyperlink{classClienteRegular_a7b2ef460b83750d76d93cb6e369850ec}{aplicar\+Descuento}} () const override
+\begin{DoxyCompactList}\small\item\em Obtiene el porcentaje de descuento aplicable para el cliente regular. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classCliente}{Cliente}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCliente_ab3fc01c15fd6f3001652aaa3554312ea}{Cliente}} (const string \&t\+\_\+nombre)
+\item 
+virtual \mbox{\hyperlink{classCliente_a75097cba71f17121840860154d0781b6}{\texorpdfstring{$\sim$}{\string~}\+Cliente}} ()=default
+\item 
+vector$<$ \mbox{\hyperlink{classProducto}{Producto}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classCliente_a509d7c51c60d5658fe9a986c265f6621}{get\+Carrito}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el carrito de compras del cliente. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCliente_a213db50ca02288ab5c33328f5e117819}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del cliente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCliente_acd086341b329b077045c9640b77ff4f5}{agregar\+Producto}} (\mbox{\hyperlink{classProducto}{Producto}} \texorpdfstring{$\ast$}{*}t\+\_\+producto)
+\begin{DoxyCompactList}\small\item\em Agrega un producto al carrito de compras del cliente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCliente_a6fac34db500bb2dc2ab748eebce21aed}{calcular\+Total}} () const
+\begin{DoxyCompactList}\small\item\em Calcula el total de los productos en el carrito y aplica el descuento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un cliente regular en la tienda sin descuento aplicable. 
+
+La clase {\ttfamily \doxylink{classClienteRegular}{Cliente\+Regular}} hereda de {\ttfamily \doxylink{classCliente}{Cliente}} y representa un cliente que no recibe descuentos en sus compras. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classClienteRegular_ab016060bbb76e39f893816fa556f093d}\index{ClienteRegular@{ClienteRegular}!ClienteRegular@{ClienteRegular}}
+\index{ClienteRegular@{ClienteRegular}!ClienteRegular@{ClienteRegular}}
+\doxysubsubsection{\texorpdfstring{ClienteRegular()}{ClienteRegular()}}
+{\footnotesize\ttfamily \label{classClienteRegular_ab016060bbb76e39f893816fa556f093d} 
+Cliente\+Regular\+::\+Cliente\+Regular (\begin{DoxyParamCaption}\item[{const string \&}]{t\+\_\+nombre}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classClienteRegular_a7b2ef460b83750d76d93cb6e369850ec}\index{ClienteRegular@{ClienteRegular}!aplicarDescuento@{aplicarDescuento}}
+\index{aplicarDescuento@{aplicarDescuento}!ClienteRegular@{ClienteRegular}}
+\doxysubsubsection{\texorpdfstring{aplicarDescuento()}{aplicarDescuento()}}
+{\footnotesize\ttfamily \label{classClienteRegular_a7b2ef460b83750d76d93cb6e369850ec} 
+double Cliente\+Regular\+::aplicar\+Descuento (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtiene el porcentaje de descuento aplicable para el cliente regular. 
+
+Este método devuelve el porcentaje de descuento que se aplica a los productos comprados por el cliente regular. En el caso de un cliente regular, el descuento aplicado es del 0\%, por lo que el valor devuelto es 1, indicando que no se aplica descuento.
+
+\begin{DoxyReturn}{Returns}
+El porcentaje de descuento como un valor decimal (1 para 0\% de descuento). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCliente_ad73d8c44f34e0034344f23ca4dd7d89b}{Cliente}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{ClienteRegular_8hpp}{Cliente\+Regular.\+hpp}}\item 
+src/\mbox{\hyperlink{ClienteRegular_8cpp}{Cliente\+Regular.\+cpp}}\end{DoxyCompactItemize}

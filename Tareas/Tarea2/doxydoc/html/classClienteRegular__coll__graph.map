@@ -1,0 +1,5 @@
+<map id="ClienteRegular" name="ClienteRegular">
+<area shape="rect" id="Node000001" title="Representa un cliente regular en la tienda sin descuento aplicable." alt="" coords="5,239,157,324"/>
+<area shape="rect" id="Node000002" href="$classCliente.html" title="Representa un cliente en la tienda." alt="" coords="5,5,157,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,204,84,239,79,239,79,204"/>
+</map>

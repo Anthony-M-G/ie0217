@@ -1,0 +1,5 @@
+<map id="ProductoFisico" name="ProductoFisico">
+<area shape="rect" id="Node000001" title="Representa un producto físico en la tienda." alt="" coords="5,239,173,364"/>
+<area shape="rect" id="Node000002" href="$classProducto.html" title="Representa un producto en la tienda." alt="" coords="5,5,173,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,204,92,238,87,238,87,204"/>
+</map>

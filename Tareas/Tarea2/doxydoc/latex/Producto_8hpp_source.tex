@@ -1,0 +1,36 @@
+\doxysection{Producto.\+hpp}
+\hypertarget{Producto_8hpp_source}{}\label{Producto_8hpp_source}\index{includes/Producto.hpp@{includes/Producto.hpp}}
+\mbox{\hyperlink{Producto_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRODUCTO\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRODUCTO\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Clase\ Producto}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProducto}{Producto}}}
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \textcolor{keywordtype}{string}\ nombre;}
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{double}\ precio;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classProducto_ac58e4728efd27932c5c99c3dda49bfe2}{Producto}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&t\_nombre,\ \textcolor{keywordtype}{double}\ t\_precio);\ \textcolor{comment}{//\ Constructor\ de\ la\ clase\ Producto}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_a7416677d996d2408461f915953b13d0b}{setPrecio}}(\textcolor{keywordtype}{double}\ t\_precio);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_ab3b0b45c43dab0c1cbce5aa391a58d42}{setNombre}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&t\_nombre);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classProducto_affa9bbcdef125353de829b2fc9718fac}{getPrecio}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classProducto_a1621e979d706af53dc295427da265a95}{getNombre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classProducto_a59c47a304af67d6d9e5aeb8fc44a82c5}{\string~Producto}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{friend}\ ostream\ \&\mbox{\hyperlink{classProducto_a48606964eb16ef973c240fd7e65209b7}{operator<<}}(ostream\ \&os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classProducto}{Producto}}\ \&producto);\ \textcolor{comment}{//\ Sobrecarga\ del\ operador\ de\ <<\ para\ mostrar\ la\ información\ de\ un\ producto}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_a86983a22ec55af0b010ce87ad190ac6e}{mostrarInformacion}}()\ \textcolor{keyword}{const}\ =\ 0;\ \textcolor{comment}{//\ Método\ virtual\ puro\ que\ muestra\ la\ información\ de\ un\ producto}}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

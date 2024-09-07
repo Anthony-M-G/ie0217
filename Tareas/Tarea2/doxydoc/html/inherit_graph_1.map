@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classProducto.html" title="Representa un producto en la tienda." alt="" coords="5,31,84,56"/>
+<area shape="rect" id="Node000001" href="$classProductoDigital.html" title="Representa un producto digital en la tienda." alt="" coords="132,5,255,31"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="97,32,131,26,132,31,98,37"/>
+<area shape="rect" id="Node000002" href="$classProductoFisico.html" title="Representa un producto físico en la tienda." alt="" coords="135,55,251,80"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="98,49,136,55,135,61,97,54"/>
+</map>

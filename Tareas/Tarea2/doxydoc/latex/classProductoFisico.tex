@@ -1,0 +1,126 @@
+\doxysection{Producto\+Fisico Class Reference}
+\hypertarget{classProductoFisico}{}\label{classProductoFisico}\index{ProductoFisico@{ProductoFisico}}
+
+
+Representa un producto físico en la tienda.  
+
+
+
+
+{\ttfamily \#include $<$Producto\+Fisico.\+hpp$>$}
+
+
+
+Inheritance diagram for Producto\+Fisico\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classProductoFisico__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Producto\+Fisico\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classProductoFisico__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProductoFisico_a86c0f95ee6e7a2ce812cc5b60e30e299}{Producto\+Fisico}} (const string \&t\+\_\+nombre, double t\+\_\+precio, double t\+\_\+peso)
+\item 
+void \mbox{\hyperlink{classProductoFisico_ade5d6c2a5d798d3c3e24c59ec69a464f}{set\+Peso}} (double t\+\_\+peso)
+\begin{DoxyCompactList}\small\item\em Establece el peso del producto físico. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classProductoFisico_a398aaf1380c4072692d0e564c6b5288e}{get\+Peso}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el peso del producto físico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProductoFisico_ac29e39e4b980b52802e73e649ed5e941}{mostrar\+Informacion}} () const override
+\begin{DoxyCompactList}\small\item\em Muestra la información del producto físico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classProducto}{Producto}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProducto_ac58e4728efd27932c5c99c3dda49bfe2}{Producto}} (const string \&t\+\_\+nombre, double t\+\_\+precio)
+\item 
+void \mbox{\hyperlink{classProducto_a7416677d996d2408461f915953b13d0b}{set\+Precio}} (double t\+\_\+precio)
+\begin{DoxyCompactList}\small\item\em Establece el precio del producto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProducto_ab3b0b45c43dab0c1cbce5aa391a58d42}{set\+Nombre}} (const string \&t\+\_\+nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del producto. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classProducto_affa9bbcdef125353de829b2fc9718fac}{get\+Precio}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el precio del producto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classProducto_a1621e979d706af53dc295427da265a95}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del producto. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classProducto_a59c47a304af67d6d9e5aeb8fc44a82c5}{\texorpdfstring{$\sim$}{\string~}\+Producto}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un producto físico en la tienda. 
+
+La clase {\ttfamily \doxylink{classProductoFisico}{Producto\+Fisico}} hereda de {\ttfamily \doxylink{classProducto}{Producto}} e incluye un peso específico para los productos físicos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProductoFisico_a86c0f95ee6e7a2ce812cc5b60e30e299}\index{ProductoFisico@{ProductoFisico}!ProductoFisico@{ProductoFisico}}
+\index{ProductoFisico@{ProductoFisico}!ProductoFisico@{ProductoFisico}}
+\doxysubsubsection{\texorpdfstring{ProductoFisico()}{ProductoFisico()}}
+{\footnotesize\ttfamily \label{classProductoFisico_a86c0f95ee6e7a2ce812cc5b60e30e299} 
+Producto\+Fisico\+::\+Producto\+Fisico (\begin{DoxyParamCaption}\item[{const string \&}]{t\+\_\+nombre}{, }\item[{double}]{t\+\_\+precio}{, }\item[{double}]{t\+\_\+peso}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProductoFisico_a398aaf1380c4072692d0e564c6b5288e}\index{ProductoFisico@{ProductoFisico}!getPeso@{getPeso}}
+\index{getPeso@{getPeso}!ProductoFisico@{ProductoFisico}}
+\doxysubsubsection{\texorpdfstring{getPeso()}{getPeso()}}
+{\footnotesize\ttfamily \label{classProductoFisico_a398aaf1380c4072692d0e564c6b5288e} 
+double Producto\+Fisico\+::get\+Peso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el peso del producto físico. 
+
+Este método devuelve el peso actual del producto físico.
+
+\begin{DoxyReturn}{Returns}
+El peso del producto físico. 
+\end{DoxyReturn}
+\Hypertarget{classProductoFisico_ac29e39e4b980b52802e73e649ed5e941}\index{ProductoFisico@{ProductoFisico}!mostrarInformacion@{mostrarInformacion}}
+\index{mostrarInformacion@{mostrarInformacion}!ProductoFisico@{ProductoFisico}}
+\doxysubsubsection{\texorpdfstring{mostrarInformacion()}{mostrarInformacion()}}
+{\footnotesize\ttfamily \label{classProductoFisico_ac29e39e4b980b52802e73e649ed5e941} 
+void Producto\+Fisico\+::mostrar\+Informacion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Muestra la información del producto físico. 
+
+Este método imprime la información del producto físico en la consola, incluyendo el nombre, el precio, el peso y el tipo de producto. Utiliza la sobrecarga del operador de inserción (\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}) definida en la clase \doxylink{classProducto}{Producto} para mostrar el nombre y el precio. 
+
+Implements \mbox{\hyperlink{classProducto_a86983a22ec55af0b010ce87ad190ac6e}{Producto}}.
+
+\Hypertarget{classProductoFisico_ade5d6c2a5d798d3c3e24c59ec69a464f}\index{ProductoFisico@{ProductoFisico}!setPeso@{setPeso}}
+\index{setPeso@{setPeso}!ProductoFisico@{ProductoFisico}}
+\doxysubsubsection{\texorpdfstring{setPeso()}{setPeso()}}
+{\footnotesize\ttfamily \label{classProductoFisico_ade5d6c2a5d798d3c3e24c59ec69a464f} 
+void Producto\+Fisico\+::set\+Peso (\begin{DoxyParamCaption}\item[{double}]{t\+\_\+peso}{}\end{DoxyParamCaption})}
+
+
+
+Establece el peso del producto físico. 
+
+Este método permite actualizar el peso del producto físico.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+peso} & Nuevo peso del producto físico. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{ProductoFisico_8hpp}{Producto\+Fisico.\+hpp}}\item 
+src/\mbox{\hyperlink{ProductoFisico_8cpp}{Producto\+Fisico.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Cliente::calcularTotal" name="Cliente::calcularTotal">
+<area shape="rect" id="Node000001" title="Calcula el total de los productos en el carrito y aplica el descuento." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$classCliente.html#ad73d8c44f34e0034344f23ca4dd7d89b" title=" " alt="" coords="212,5,401,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,15,199,15,199,21,165,21"/>
+</map>

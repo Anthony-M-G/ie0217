@@ -1,0 +1,7 @@
+<map id="Producto" name="Producto">
+<area shape="rect" id="Node000001" title="Representa un producto en la tienda." alt="" coords="101,5,269,191"/>
+<area shape="rect" id="Node000002" href="$classProductoDigital.html" title="Representa un producto digital en la tienda." alt="" coords="5,239,173,364"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,204,121,240,116,237,133,202"/>
+<area shape="rect" id="Node000003" href="$classProductoFisico.html" title="Representa un producto físico en la tienda." alt="" coords="197,239,365,364"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,202,254,237,249,240,233,204"/>
+</map>

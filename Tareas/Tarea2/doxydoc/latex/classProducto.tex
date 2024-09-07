@@ -1,0 +1,181 @@
+\doxysection{Producto Class Reference}
+\hypertarget{classProducto}{}\label{classProducto}\index{Producto@{Producto}}
+
+
+Representa un producto en la tienda.  
+
+
+
+
+{\ttfamily \#include $<$Producto.\+hpp$>$}
+
+
+
+Inheritance diagram for Producto\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProducto__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Producto\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classProducto__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProducto_ac58e4728efd27932c5c99c3dda49bfe2}{Producto}} (const string \&t\+\_\+nombre, double t\+\_\+precio)
+\item 
+void \mbox{\hyperlink{classProducto_a7416677d996d2408461f915953b13d0b}{set\+Precio}} (double t\+\_\+precio)
+\begin{DoxyCompactList}\small\item\em Establece el precio del producto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProducto_ab3b0b45c43dab0c1cbce5aa391a58d42}{set\+Nombre}} (const string \&t\+\_\+nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del producto. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classProducto_affa9bbcdef125353de829b2fc9718fac}{get\+Precio}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el precio del producto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classProducto_a1621e979d706af53dc295427da265a95}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del producto. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classProducto_a59c47a304af67d6d9e5aeb8fc44a82c5}{\texorpdfstring{$\sim$}{\string~}\+Producto}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classProducto_a86983a22ec55af0b010ce87ad190ac6e}{mostrar\+Informacion}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classProducto_a48606964eb16ef973c240fd7e65209b7}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classProducto}{Producto}} \&producto)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para mostrar la información de un producto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un producto en la tienda. 
+
+La clase {\ttfamily \doxylink{classProducto}{Producto}} contiene la información básica de un producto, incluyendo su nombre y precio. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProducto_ac58e4728efd27932c5c99c3dda49bfe2}\index{Producto@{Producto}!Producto@{Producto}}
+\index{Producto@{Producto}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{Producto()}{Producto()}}
+{\footnotesize\ttfamily \label{classProducto_ac58e4728efd27932c5c99c3dda49bfe2} 
+Producto\+::\+Producto (\begin{DoxyParamCaption}\item[{const string \&}]{t\+\_\+nombre}{, }\item[{double}]{t\+\_\+precio}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classProducto_a59c47a304af67d6d9e5aeb8fc44a82c5}\index{Producto@{Producto}!````~Producto@{\texorpdfstring{$\sim$}{\string~}Producto}}
+\index{````~Producto@{\texorpdfstring{$\sim$}{\string~}Producto}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Producto()}{\string~Producto()}}
+{\footnotesize\ttfamily \label{classProducto_a59c47a304af67d6d9e5aeb8fc44a82c5} 
+virtual Producto\+::\texorpdfstring{$\sim$}{\string~}\+Producto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProducto_a1621e979d706af53dc295427da265a95}\index{Producto@{Producto}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{classProducto_a1621e979d706af53dc295427da265a95} 
+string Producto\+::get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre del producto. 
+
+Este método devuelve el nombre actual del producto.
+
+\begin{DoxyReturn}{Returns}
+El nombre del producto. 
+\end{DoxyReturn}
+\Hypertarget{classProducto_affa9bbcdef125353de829b2fc9718fac}\index{Producto@{Producto}!getPrecio@{getPrecio}}
+\index{getPrecio@{getPrecio}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{getPrecio()}{getPrecio()}}
+{\footnotesize\ttfamily \label{classProducto_affa9bbcdef125353de829b2fc9718fac} 
+double Producto\+::get\+Precio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el precio del producto. 
+
+Este método devuelve el precio actual del producto.
+
+\begin{DoxyReturn}{Returns}
+El precio del producto. 
+\end{DoxyReturn}
+\Hypertarget{classProducto_a86983a22ec55af0b010ce87ad190ac6e}\index{Producto@{Producto}!mostrarInformacion@{mostrarInformacion}}
+\index{mostrarInformacion@{mostrarInformacion}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{mostrarInformacion()}{mostrarInformacion()}}
+{\footnotesize\ttfamily \label{classProducto_a86983a22ec55af0b010ce87ad190ac6e} 
+virtual void Producto\+::mostrar\+Informacion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classProductoDigital_aa995b6838569d89e924e35ed588b77ac}{Producto\+Digital}}, and \mbox{\hyperlink{classProductoFisico_ac29e39e4b980b52802e73e649ed5e941}{Producto\+Fisico}}.
+
+\Hypertarget{classProducto_ab3b0b45c43dab0c1cbce5aa391a58d42}\index{Producto@{Producto}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{setNombre()}{setNombre()}}
+{\footnotesize\ttfamily \label{classProducto_ab3b0b45c43dab0c1cbce5aa391a58d42} 
+void Producto\+::set\+Nombre (\begin{DoxyParamCaption}\item[{const string \&}]{t\+\_\+nombre}{}\end{DoxyParamCaption})}
+
+
+
+Establece el nombre del producto. 
+
+Este método permite actualizar el nombre del producto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+nombre} & Nuevo nombre del producto. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProducto_a7416677d996d2408461f915953b13d0b}\index{Producto@{Producto}!setPrecio@{setPrecio}}
+\index{setPrecio@{setPrecio}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{setPrecio()}{setPrecio()}}
+{\footnotesize\ttfamily \label{classProducto_a7416677d996d2408461f915953b13d0b} 
+void Producto\+::set\+Precio (\begin{DoxyParamCaption}\item[{double}]{t\+\_\+precio}{}\end{DoxyParamCaption})}
+
+
+
+Establece el precio del producto. 
+
+Este método permite actualizar el precio del producto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+precio} & Nuevo precio del producto. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classProducto_a48606964eb16ef973c240fd7e65209b7}\index{Producto@{Producto}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classProducto_a48606964eb16ef973c240fd7e65209b7} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classProducto}{Producto}} \&}]{producto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador de inserción para mostrar la información de un producto. 
+
+Este operador permite utilizar el operador de inserción (\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}) para imprimir un objeto {\ttfamily \doxylink{classProducto}{Producto}} en una corriente de salida (ostream). La salida mostrará el nombre y el precio del producto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & La corriente de salida (ostream) donde se imprimirá la información del producto. \\
+\hline
+{\em producto} & El objeto {\ttfamily \doxylink{classProducto}{Producto}} que se imprimirá. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La corriente de salida (ostream) para permitir la encadenación de operaciones. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{Producto_8hpp}{Producto.\+hpp}}\item 
+src/\mbox{\hyperlink{Producto_8cpp}{Producto.\+cpp}}\end{DoxyCompactItemize}
