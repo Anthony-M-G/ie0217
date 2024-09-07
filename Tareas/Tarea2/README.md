@@ -10,24 +10,23 @@ Este programa simula un sistema de gestión para una tienda en línea, permitien
 
 ## Compilación
 
-Para compilar el programa, siga estos pasos:
+Para compilar ambos programas, simplemente utiliza el comando:
 
-1. Abra una terminal en el directorio del proyecto.
-2. Ejecute el siguiente comando:
+#### Linux
 
-```
+```bash
 make
 ```
 
-Esto compilará el programa y generará un ejecutable llamado `main`.
+#### Windows
 
-## Ejecución
+En dado caso que estés usando mingw
 
-Para ejecutar el programa, use el siguiente comando en la terminal:
-
+```bash
+mingw32-make
 ```
-./main
-```
+
+Este comando compilará ambos programas y generará los ejecutables main para Linux o main.exe para Windows
 
 ## Funcionalidades
 
@@ -58,7 +57,7 @@ El programa ofrece las siguientes opciones a través de un menú interactivo:
 
 ## Documentación
 
-La documentación detallada del código, generada con Doxygen, está disponible en [enlace a la documentación en Netlify].
+La documentación detallada del código, generada con Doxygen, está disponible en [text](https://ie0217-83bp-2nal2y4hu-anthonys-projects-fc83cd10.vercel.app/).
 
 ## Respuestas a las Preguntas Teóricas
 
