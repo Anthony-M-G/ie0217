@@ -50,9 +50,16 @@ void Cliente::calcularTotal() const
   {
     total += prod->getPrecio();
   }
-
-  total *= (1 - descuento); // Aplicar el descuento al total final
-  cout << "El precio total es: " << total << endl;
+  if (descuento == 0 || descuento == 1)
+  {
+    cout << "El precio total es: " << total << endl;
+    cout << "No se aplicó descuento" << endl;
+  }
+  else
+  {
+    total *= (1 - descuento); // Aplicar el descuento al total final
+    cout << "El precio total es: " << total << endl;
+  }
 }
 
 /**
