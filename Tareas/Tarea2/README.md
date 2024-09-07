@@ -28,6 +28,20 @@ mingw32-make
 
 Este comando compilará ambos programas y generará los ejecutables main para Linux o main.exe para Windows
 
+Ejecute el siguiente comando para eliminar los archivos generados por la compilación:
+
+Linux:
+
+```bash
+make clean
+```
+
+Windows:
+
+```bash
+mingw32-make clean
+```
+
 ## Funcionalidades
 
 El programa ofrece las siguientes opciones a través de un menú interactivo:
@@ -57,7 +71,7 @@ El programa ofrece las siguientes opciones a través de un menú interactivo:
 
 ## Documentación
 
-La documentación detallada del código, generada con Doxygen, está disponible en [text](https://ie0217-83bp-2nal2y4hu-anthonys-projects-fc83cd10.vercel.app/).
+La documentación detallada del código, generada con Doxygen, está disponible en [aquí](https://ie0217-83bp-2nal2y4hu-anthonys-projects-fc83cd10.vercel.app/).
 
 ## Respuestas a las Preguntas Teóricas
 
