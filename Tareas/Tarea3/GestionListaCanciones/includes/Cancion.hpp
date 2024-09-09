@@ -11,6 +11,7 @@ private:
 public:
   Cancion(const std::string &nombre, const std::string &artista, double duracion);
   ~Cancion();
+  // Setters y Getters
   void setNombre(const std::string &nombre);
   void setArtista(const std::string &artista);
   void setDuracion(double duracion);
