@@ -13,7 +13,7 @@ public:
   ~Cancion();
   void setNombre(const std::string &nombre);
   void setArtista(const std::string &artista);
-  void setDuración(double duracion);
+  void setDuracion(double duracion);
 
   std::string getArtista() const;
   std::string getNombre() const;
