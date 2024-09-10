@@ -33,7 +33,7 @@ void ListaCanciones::insertarEn(Cancion *&cancion, int pos)
 {
   NodoCancion *nuevoNodo = new NodoCancion(*cancion);
   NodoCancion *tmp = nodoCabeza;
-  int i = 0;
+  int posicionCancion = 0;
   if (nodoCabeza == nullptr) // Si la lista está vacía se agrega como la primera
   {
     nodoCabeza = nuevoNodo;
@@ -47,9 +47,10 @@ void ListaCanciones::insertarEn(Cancion *&cancion, int pos)
     nodoCabeza = nuevoNodo;
     return;
   }
-  while (tmp != nullptr && i < pos - 1) // Se recorre la lista hasta llegar a la posición n-1
+  while (tmp != nullptr && posicionCancion < pos - 2) // Se recorre la lista hasta llegar a la posición n-1
   {
     tmp = tmp->siguiente;
+    posicionCancion++;
   }
   if (tmp == nullptr) // Si no encontramos el nodo en la posición n-1
   {
