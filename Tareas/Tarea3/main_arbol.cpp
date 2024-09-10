@@ -1,5 +1,5 @@
-#include "./includes/Arbol.hpp"
-#include "./includes/Nodo.hpp"
+#include "./ArbolBinarioBusqueda/includes/Arbol.hpp"
+#include "./ArbolBinarioBusqueda/includes/Nodo.hpp"
 #include <iostream>
 
 enum Opcion
