@@ -1,0 +1,36 @@
+\doxysection{Lista\+Canciones.\+hpp}
+\hypertarget{ListaCanciones_8hpp_source}{}\label{ListaCanciones_8hpp_source}\index{includes/ListaCanciones.hpp@{includes/ListaCanciones.hpp}}
+\mbox{\hyperlink{ListaCanciones_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LISTA\_CANCIONES\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LISTA\_CANCIONES\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{NodoCancion_8hpp}{NodoCancion.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Cancion_8hpp}{Cancion.hpp}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classListaCanciones}{ListaCanciones}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{structNodoCancion}{NodoCancion}}\ *nodoCabeza;\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{classListaCanciones_a5209132c609de4964924f31ace4b8f15}{ListaCanciones}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{classListaCanciones_a1cf21fbf35d35d6c88bff3e0ee710504}{\string~ListaCanciones}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_a0e1f8ba06d3f0e03f80425851c2158b7}{insertarAlInicio}}(\mbox{\hyperlink{classCancion}{Cancion}}\ *\&cancion);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_a2837b3c59bd16cda8f36c30884b8f378}{insertarAlFinal}}(\mbox{\hyperlink{classCancion}{Cancion}}\ *\&cancion);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_a4c12ed77ffc04d59e2d94803f914e2e2}{insertarEn}}(\mbox{\hyperlink{classCancion}{Cancion}}\ *\&cancion,\ \textcolor{keywordtype}{int}\ pos);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_aef2366a32dabe7c4e3fd987e5c305d8d}{listarCanciones}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_a1808a7314e1faa6e7abaded1f5fee434}{eliminarCancion}}(\textcolor{keyword}{const}\ std::string\ \&nombre);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classListaCanciones_ab8dadc2a4ca37cbff4369161cbd636ca}{modificar}}(\textcolor{keyword}{const}\ std::string\ \&nombreBusqueda,\ \textcolor{keyword}{const}\ std::string\ \&nuevo\_nombre,\ \textcolor{keyword}{const}\ std::string\ \&artista,\ \textcolor{keywordtype}{double}\ nuevaDuración);}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LISTA\_CANCIONES\_HPP}}
+
+\end{DoxyCode}

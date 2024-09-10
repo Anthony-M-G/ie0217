@@ -1,0 +1,6 @@
+<map id="Nodo" name="Nodo">
+<area shape="rect" id="Node000001" title="Nodo que representa un elemento de un Árbol Binario de Búsqueda (ABB)." alt="" coords="5,133,79,199"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="79,151,97,155,105,166,103,173,96,178,93,173,98,170,100,166,94,159,78,157"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,57,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,71,45,117,39,117,39,71"/>
+</map>

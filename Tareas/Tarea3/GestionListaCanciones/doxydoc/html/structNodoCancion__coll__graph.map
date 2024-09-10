@@ -1,0 +1,6 @@
+<map id="NodoCancion" name="NodoCancion">
+<area shape="rect" id="Node000001" title="Nodo que representa un elemento de la lista enlazada de canciones." alt="" coords="5,273,131,339"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="131,292,149,296,157,306,149,316,145,313,152,306,147,300,130,297"/>
+<area shape="rect" id="Node000002" href="$classCancion.html" title="Clase que representa una canción con su nombre, artista y duración." alt="" coords="9,5,127,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,211,71,257,65,257,65,211"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Cancion::getNombre" name="Cancion::getNombre">
+<area shape="rect" id="Node000001" title="Obtiene el nombre de la canción." alt="" coords="281,70,436,95"/>
+<area shape="rect" id="Node000002" href="$classListaCanciones.html#a1808a7314e1faa6e7abaded1f5fee434" title="Elimina una canción de la lista." alt="" coords="28,5,211,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,69,203,48,204,43,292,64"/>
+<area shape="rect" id="Node000003" href="$classListaCanciones.html#aef2366a32dabe7c4e3fd987e5c305d8d" title="Muestra todas las canciones en la lista." alt="" coords="5,70,233,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,85,234,85,234,80,268,80"/>
+<area shape="rect" id="Node000004" href="$classListaCanciones.html#ab8dadc2a4ca37cbff4369161cbd636ca" title="Modifica los detalles de una canción existente en la lista." alt="" coords="25,119,214,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="284,101,182,122,181,117,283,96"/>
+</map>

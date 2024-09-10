@@ -1,0 +1,9 @@
+<map id="ListaCanciones::listarCanciones" name="ListaCanciones::listarCanciones">
+<area shape="rect" id="Node000001" title="Muestra todas las canciones en la lista." alt="" coords="5,55,233,80"/>
+<area shape="rect" id="Node000002" href="$classCancion.html#ac6449c663d36b6a2d443cabc25f92660" title="Obtiene el nombre del artista de la canción." alt="" coords="289,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,52,285,31,286,36,183,57"/>
+<area shape="rect" id="Node000003" href="$classCancion.html#a7f3ba83632617f044d1f9875ebce7dca" title="Obtiene la duración de la canción." alt="" coords="281,55,443,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,65,268,65,268,70,234,70"/>
+<area shape="rect" id="Node000004" href="$classCancion.html#acb87df2d016b521b0c99f03895dae23f" title="Obtiene el nombre de la canción." alt="" coords="285,104,439,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,77,286,99,285,104,182,83"/>
+</map>
