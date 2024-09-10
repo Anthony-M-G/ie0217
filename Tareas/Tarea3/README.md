@@ -94,13 +94,13 @@ Para compilar y ejecutar los programas, utilice el `Makefile` proporcionado. Est
   Linux:
 
   ```bash
-  ./main_lista
+  ./main_lista_canciones
   ```
 
   Windows:
 
   ```bash
-  .\main_lista.exe
+  .\main_lista_canciones.exe
   ```
 
 #### Limpiar Archivos Compilados
