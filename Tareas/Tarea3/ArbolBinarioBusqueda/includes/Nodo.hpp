@@ -6,7 +6,7 @@ typedef struct Nodo
   Nodo *izquierdo;
   Nodo *derecho;
 
-  Nodo(int t_valor) : izquierdo(nullptr), derecho(nullptr), dato(t_valor) {}
+  Nodo(int t_valor) : dato(t_valor), izquierdo(nullptr), derecho(nullptr) {}
 
 } Nodo;
 #endif
