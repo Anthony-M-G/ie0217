@@ -1,0 +1,12 @@
+PROJECT_NAME = "Tarea 03 IE0217 Antony Medina 2024 Universidad de Costa Rica, Gestión de una Lista Enlazada Dinámica de Canciones"
+OUTPUT_DIRECTORY = ./doxydoc/
+BUILTIN_STL_SUPPORT = YES
+EXTRACT_ALL = YES
+INPUT = ./src ./includes ./index.md
+USE_MDFILE_AS_MAINPAGE = index.md
+RECURSIVE = YES
+HIDE_UNDOC_RELATIONS = NO
+HAVE_DOT = YES
+UML_LOOK = YES
+CALL_GRAPH = YES
+CALLER_GRAPH = YES
