@@ -72,7 +72,7 @@ void ListaCanciones::listarCanciones() const
   NodoCancion *tmp = nodoCabeza;
   while (tmp != nullptr) // Se recorre la lista imprimiendo las canciones
   {
-    std::cout << numeroCancion << "." << " Canción: " << tmp->cancion.getNombre() << " Artista: " << tmp->cancion.getArtista() << " Duración: " << tmp->cancion.getDuracion() << std::endl;
+    std::cout << numeroCancion << "." << " Canción: " << tmp->cancion.getNombre() << " Artista: " << tmp->cancion.getArtista() << " Duración: " << tmp->cancion.getDuracion() << " minutos" << std::endl;
     tmp = tmp->siguiente;
     numeroCancion++;
   }
@@ -125,12 +125,12 @@ void ListaCanciones::modificar(const std::string &nombreBusqueda,
     std::cout << "No se encontró la canción" << std::endl;
     return;
   }
-  if (nuevo_nombre != "") // Se modifica el nombre si es diferente de vacío
-    tmp->cancion.setNombre(nuevo_nombre);
-  if (artista != "") // Se modifica el artista si es diferente de vacío
-    tmp->cancion.setArtista(artista);
-  if (nuevaDuracion != 0) // Se modifica la duración si es diferente de 0
-    tmp->cancion.setDuracion(nuevaDuracion);
+
+  tmp->cancion.setNombre(nuevo_nombre);
+
+  tmp->cancion.setArtista(artista);
+
+  tmp->cancion.setDuracion(nuevaDuracion);
 };
 
 ListaCanciones::~ListaCanciones()
