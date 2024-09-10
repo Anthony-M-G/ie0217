@@ -77,6 +77,7 @@ int main()
       break;
 
     case ELIMINAR:
+      std::cout << "Ingrese un valor a eliminar: ";
       std::cin >> valor;
       arbol.eliminar(valor);
       break;
