@@ -106,7 +106,7 @@ int main()
     case Eliminar:
     {
       std::string nombre;
-      std::cout << "Nombre de la canción a eliminar: ";
+      std::cout << "Nombre de la canción a eliminar debe ser exacto: ";
       std::cin.ignore();
       std::getline(std::cin, nombre);
       lista->eliminarCancion(nombre);
@@ -116,7 +116,7 @@ int main()
     {
       std::string nombreBusqueda, nuevoNombre, nuevoArtista;
       double nuevaDuracion;
-      std::cout << "Nombre de la canción a modificar: ";
+      std::cout << "Nombre de la canción a modificar debe ser exacto: ";
       std::cin.ignore();
       std::getline(std::cin, nombreBusqueda);
       std::cout << "Nuevo nombre: ";
