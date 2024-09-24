@@ -33,3 +33,4 @@
 
 # Para ignorar los archivos que me genera vs code 
 .vscode
+.vs
