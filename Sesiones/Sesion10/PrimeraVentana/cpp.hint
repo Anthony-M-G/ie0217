@@ -1,0 +1,5 @@
+// Los archivos de sugerencia ayudan al IDE de Visual Studio a interpretar los identificadores de Visual C++
+// por ejemplo, los nombres de funciones y macros.
+// Para obtener más información, consulte https://go.microsoft.com/fwlink/?linkid=865984
+#define wxEND_EVENT_TABLE() wxDECLARE_EVENT_TABLE_TERMINATOR() };
+#define wxBEGIN_EVENT_TABLE(theClass, baseClass) const wxEventTable theClass::sm_eventTable = { &baseClass::sm_eventTable, &theClass::sm_eventTableEntries[0] }; const wxEventTable *theClass::GetEventTable() const { return &theClass::sm_eventTable; } wxEventHashTable theClass::sm_eventHashTable(theClass::sm_eventTable); wxEventHashTable &theClass::GetEventHashTable() const { return theClass::sm_eventHashTable; } const wxEventTableEntry theClass::sm_eventTableEntries[] = {
