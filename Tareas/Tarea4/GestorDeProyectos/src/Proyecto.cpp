@@ -1,4 +1,5 @@
 #include "../includes/Proyecto.hpp"
+#include "../includes/NotFoundException.hpp"
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -29,7 +30,8 @@ void Proyecto::eliminarTarea(const std::string &nombre) {
     listaDeTareas.erase(element);
     std::cout << "Tarea eliminada con éxito" << std::endl;
   } else {
-    std::cerr << "No se encontró la tarea" << std::endl;
+    throw NotFoundException(
+        "Tarea no encontrada"); // Se lanza una excepción propia
   }
 }
 
@@ -140,4 +142,8 @@ void Proyecto::ordenarTareasPorPrioridad() const {
   listaPorPrioridad.clear(); // Libera la memoria asignada al vector
 
   return;
+}
+
+std::vector<BaseTarea *> Proyecto::getListaDeTareas() const {
+  return this->listaDeTareas;
 }

@@ -22,6 +22,7 @@ public:
   void ordenarTareasPorCosto() const;
   void ordenarTareasPorTiempoEstimado() const;
   void ordenarTareasPorPrioridad() const;
+  std::vector<BaseTarea *> getListaDeTareas() const;
 };
 
 #endif // !PROYECTO_HPP
