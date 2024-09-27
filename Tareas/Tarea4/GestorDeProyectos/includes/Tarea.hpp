@@ -19,7 +19,7 @@ public:
     std::cout << "------------------------------------" << std::endl;
     std::cout << "Nombre: " << this->getNombre() << std::endl;
     std::cout << "Costo: " << this->getCosto() << std::endl;
-    std::cout << "Tiempo estimado: " << this->getTiempoEstimado() << " meses"
+    std::cout << "Tiempo estimado: " << this->getTiempoEstimado() << " semanas"
               << std::endl;
     std::cout << "Prioridad: " << this->getPrioridadStr() << std::endl;
     std::cout << "Recurso: " << this->recurso << std::endl;
