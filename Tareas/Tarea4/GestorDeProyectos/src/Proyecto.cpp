@@ -2,9 +2,12 @@
 #include "../includes/NotFoundException.hpp"
 #include <algorithm>
 #include <iostream>
+#include <string>
 #include <vector>
 
 Proyecto::Proyecto(const std::string &nombre) : nombreDelProyecto(nombre) {}
+
+std::string Proyecto::getNombre() const { return this->nombreDelProyecto; }
 
 Proyecto::~Proyecto() {
   for (auto &tarea : listaDeTareas) {

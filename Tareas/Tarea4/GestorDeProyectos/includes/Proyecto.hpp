@@ -16,6 +16,7 @@ public:
   Proyecto(const std::string &nombre = "Proyecto sin nombre"); // Constructor
   ~Proyecto();                                                 // Destructor
 
+  std::string getNombre() const;
   void agregarTarea(BaseTarea *&tarea);
   void eliminarTarea(const std::string &nombre);
   void mostrarResumen() const;
