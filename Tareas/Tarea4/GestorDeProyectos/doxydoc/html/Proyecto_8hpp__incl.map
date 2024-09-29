@@ -1,0 +1,14 @@
+<map id="includes/Proyecto.hpp" name="includes/Proyecto.hpp">
+<area shape="rect" id="Node000001" title="Definición de la clase Proyecto que gestiona un conjunto de tareas." alt="" coords="227,5,393,31"/>
+<area shape="rect" id="Node000002" href="$BaseTarea_8hpp.html" title="Definición de la clase base para tareas genéricas en un proyecto." alt="" coords="155,79,273,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,33,242,72,239,68,293,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="281,152,339,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="313,31,313,138,307,138,307,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="348,79,411,104"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="323,29,361,67,357,71,320,33"/>
+<area shape="rect" id="Node000003" href="$EnumPrioridad_8hpp.html" title="Define la enumeración Prioridad para la priorización de tareas." alt="" coords="5,152,151,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,106,113,148,111,143,191,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,152,255,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="217,104,218,138,212,139,212,104"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="231,102,285,141,282,146,228,106"/>
+</map>

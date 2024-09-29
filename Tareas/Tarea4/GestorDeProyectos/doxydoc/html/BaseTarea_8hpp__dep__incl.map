@@ -1,0 +1,9 @@
+<map id="includes/BaseTarea.hpp" name="includes/BaseTarea.hpp">
+<area shape="rect" id="Node000001" title="Definición de la clase base para tareas genéricas en un proyecto." alt="" coords="124,5,299,31"/>
+<area shape="rect" id="Node000002" href="$Proyecto_8hpp.html" title="Definición de la clase Proyecto que gestiona un conjunto de tareas." alt="" coords="39,79,205,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,41,138,81,135,76,185,37"/>
+<area shape="rect" id="Node000004" href="$Tarea_8hpp.html" title="Definición de la clase template Tarea que hereda de BaseTarea." alt="" coords="229,79,372,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,37,288,76,284,81,235,41"/>
+<area shape="rect" id="Node000003" href="$GestorDeProyectos_8hpp.html" title=" " alt="" coords="5,152,239,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="125,118,125,152,119,152,119,118"/>
+</map>

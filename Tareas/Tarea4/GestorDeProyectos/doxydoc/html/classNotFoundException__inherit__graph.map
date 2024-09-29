@@ -1,0 +1,5 @@
+<map id="NotFoundException" name="NotFoundException">
+<area shape="rect" id="Node000001" title="Clase de excepción para manejar casos donde un recurso no se encuentra." alt="" coords="5,119,181,224"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="40,5,147,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,85,96,118,91,118,91,85"/>
+</map>

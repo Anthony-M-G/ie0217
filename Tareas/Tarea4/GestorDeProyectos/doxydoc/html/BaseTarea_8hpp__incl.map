@@ -1,0 +1,9 @@
+<map id="includes/BaseTarea.hpp" name="includes/BaseTarea.hpp">
+<area shape="rect" id="Node000001" title="Definición de la clase base para tareas genéricas en un proyecto." alt="" coords="128,5,303,31"/>
+<area shape="rect" id="Node000002" href="$EnumPrioridad_8hpp.html" title="Define la enumeración Prioridad para la priorización de tareas." alt="" coords="5,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,33,114,75,111,70,192,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="175,79,255,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,31,218,65,213,65,213,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="279,79,338,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="232,29,284,68,281,72,229,33"/>
+</map>
