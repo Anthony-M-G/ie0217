@@ -31,8 +31,12 @@ all: $(TARGET)
 # Regla para compilar cada archivo .cpp en su correspondiente .o
 # El patrón '$(BUILD_DIR)/%.o' indica que se compila un .cpp en build/
 $(BUILD_DIR)/%.o: src/%.cpp
-	@mkdir -p $(BUILD_DIR)            # Crear el directorio build si no existe
-	$(CXX) $(CXXFLAGS) -c $< -o $@    # Compilar el archivo fuente .cpp a .o
+ifeq ($(OS),Windows_NT) # Si el sistema operativo es Windows
+	@if not exist $(BUILD_DIR) MD $(BUILD_DIR) # Si no existe el directorio, se crea
+else	# Si el sistema operativo es Linux
+	@mkdir -p $(BUILD_DIR) # Se crea el directorio si no existe
+endif
+	$(CXX) $(CXXFLAGS) -c $< -o $@   
 
 # Regla para generar el ejecutable
 # Se usa la lista de archivos objeto (OBJS) para enlazarlos en el ejecutable
@@ -41,3 +45,4 @@ $(TARGET): $(OBJS)
 
 clean:
 	$(RM) $(BUILD_DIR) main_gestor main_gestor.exe
+
