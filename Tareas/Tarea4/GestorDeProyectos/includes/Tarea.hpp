@@ -82,7 +82,16 @@ template <typename Recurso> void Tarea<Recurso>::mostrarInfo() const {
   std::cout << "Tiempo estimado: " << this->getTiempoEstimado() << " semanas"
             << std::endl;
   std::cout << "Prioridad: " << this->getPrioridadStr() << std::endl;
-  std::cout << "Recurso: " << this->recurso << std::endl;
+  if (typeid(this->recurso) == typeid(std::string)) {
+    std::cout << "Otro recurso: " << this->recurso << std::endl;
+  } else if (typeid(this->recurso) == typeid(int)) {
+    std::cout << "Cantidad de materiales: " << this->recurso << std::endl;
+  } else if (typeid(this->recurso) == typeid(double)) {
+    std::cout << "Costo contratación: " << this->recurso << std::endl;
+  } else {
+    std::cout << "Tipo de recurso: Desconocido" << std::endl;
+  }
+
   std::cout << "------------------------------------" << std::endl;
 }
 

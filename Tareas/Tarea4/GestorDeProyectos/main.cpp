@@ -4,7 +4,9 @@
 #include "includes/Proyecto.hpp"
 #include "includes/Tarea.hpp"
 #include <iostream>
+#include <string>
 
+// Enum para las opciones del menú
 enum class OpcionMenu {
   AGREGAR_PROYECTO = 1,
   AGREGAR_TAREA = 2,
@@ -15,6 +17,7 @@ enum class OpcionMenu {
   SALIR = 7
 };
 
+// Función para mostrar el menú
 void mostrarMenu() {
   std::cout << "\n--- Menú de Gestión de Proyectos ---\n";
   std::cout << "1. Agregar un nuevo proyecto.\n";
@@ -52,17 +55,22 @@ int main() {
     case OpcionMenu::AGREGAR_TAREA: {
       std::string nombreTarea;
       double costo, tiempo;
-      int prioridadInt;
+      int prioridadInt, tipoRecurso;
       Prioridad prioridad;
+
       std::cout << "Ingrese el nombre del proyecto donde agregar la tarea: ";
       std::cin.ignore();
       std::getline(std::cin, nombreProyecto);
+
       std::cout << "Ingrese el nombre de la tarea: ";
       std::getline(std::cin, nombreTarea);
+
       std::cout << "Ingrese el costo de la tarea: ";
       std::cin >> costo;
+
       std::cout << "Ingrese el tiempo estimado (en semanas): ";
       std::cin >> tiempo;
+
       std::cout << "Ingrese la prioridad (1=Alta, 2=Media, 3=Baja): ";
       std::cin >> prioridadInt;
 
@@ -74,14 +82,53 @@ int main() {
         prioridad = Prioridad::BAJA;
       }
 
-      std::string recurso = "Recurso genérico";
-      BaseTarea *nuevaTarea = new Tarea<std::string>(nombreTarea, costo, tiempo,
-                                                     prioridad, recurso);
+      // Preguntar por el tipo de recurso
+      std::cout << "Seleccione el tipo de recurso: \n";
+      std::cout << "1. Recurso tipo string\n";
+      std::cout << "2. Recurso tipo int\n";
+      std::cout << "3. Recurso tipo double\n";
+      std::cin >> tipoRecurso;
 
-      try {
-        gestor.agregarTareaAProyecto(nombreProyecto, nuevaTarea);
-      } catch (const NotFoundException &e) {
-        std::cerr << e.what() << '\n';
+      // Crear tarea en función del tipo de recurso seleccionado
+      BaseTarea *nuevaTarea = nullptr;
+
+      switch (tipoRecurso) {
+      case 1: {
+        std::string recurso;
+        std::cout << "Ingrese el recurso (string): ";
+        std::cin.ignore();
+        std::getline(std::cin, recurso);
+        nuevaTarea = new Tarea<std::string>(nombreTarea, costo, tiempo,
+                                            prioridad, recurso);
+        break;
+      }
+      case 2: {
+        int recurso;
+        std::cout << "Ingrese el recurso (int): ";
+        std::cin >> recurso;
+        nuevaTarea =
+            new Tarea<int>(nombreTarea, costo, tiempo, prioridad, recurso);
+        break;
+      }
+      case 3: {
+        double recurso;
+        std::cout << "Ingrese el recurso (double): ";
+        std::cin >> recurso;
+        nuevaTarea =
+            new Tarea<double>(nombreTarea, costo, tiempo, prioridad, recurso);
+        break;
+      }
+      default:
+        std::cout << "Tipo de recurso no válido.\n";
+        break;
+      }
+
+      if (nuevaTarea) {
+        try {
+          gestor.agregarTareaAProyecto(nombreProyecto, nuevaTarea);
+        } catch (const NotFoundException &e) {
+          std::cerr << e.what() << '\n';
+        }
       }
       break;
     }
