@@ -32,9 +32,9 @@ all: $(TARGET)
 # El patrón '$(BUILD_DIR)/%.o' indica que se compila un .cpp en build/
 $(BUILD_DIR)/%.o: src/%.cpp
 ifeq ($(OS),Windows_NT) # Si el sistema operativo es Windows
-	@if not exist $(BUILD_DIR) MD $(BUILD_DIR) # Si no existe el directorio, se crea
+	@if not exist $(BUILD_DIR) MD $(BUILD_DIR)
 else	# Si el sistema operativo es Linux
-	@mkdir -p $(BUILD_DIR) # Se crea el directorio si no existe
+	@mkdir -p $(BUILD_DIR) 
 endif
 	$(CXX) $(CXXFLAGS) -c $< -o $@   
 
