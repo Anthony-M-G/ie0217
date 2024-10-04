@@ -2,8 +2,6 @@
 
 Este repositorio contiene la implementación de la Tarea 4 del curso **Estructuras Abstractas de Datos y Algoritmos para Ingeniería (IE-0217)** de la Universidad de Costa Rica.
 
-## Respuestas parte teórica:
-
 ## Estructura del Proyecto
 
 ```
