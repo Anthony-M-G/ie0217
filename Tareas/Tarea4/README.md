@@ -1,6 +1,6 @@
 # Tarea 4 - IE-0217
 
-Este repositorio contiene la implementación de la Tarea 4 del curso **Estructuras Abstractas de Datos y Algoritmos para Ingeniería (IE-0217)** de la Universidad de Costa Rica.
+Este es la implementación de la solución Tarea 4 del curso **Estructuras Abstractas de Datos y Algoritmos para Ingeniería (IE-0217)** de la Universidad de Costa Rica.
 
 ## Estructura del Proyecto
 
@@ -61,7 +61,7 @@ Cada subcarpeta incluye su propio archivo `README.md` con instrucciones específ
 
 ## Documentación
 
-La documentación generada por Doxygen está ubicada en la carpeta `doxydoc/html`. Para visualizarla, visita el link [aquí](https://ie0217-tarea04-gestorproyectos.vercel.app/)https://ie0217-tarea04-gestorproyectos.vercel.app/
+La documentación generada por Doxygen para el gestor de proyectos está ubicada en la carpeta `doxydoc/html`. Para visualizarla, visita el link [aquí](https://ie0217-tarea04-gestorproyectos.vercel.app/)
 
 ## Respuestas Parte Teórica
 
