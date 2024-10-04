@@ -44,8 +44,8 @@ void escribirArchivo(vector<long long> &vec, fstream &file) {
 
 int main() {
   AlgoritmosDeOrdenamiento<int> algoritmosDeOrdenamiento;
-  vector<size_t> sizes = {5000,  10000, 20000,
-                          30000, 40000, 50000}; // Tamaños de prueba
+  vector<size_t> sizes = {5000,   10000,  50000,
+                          100000, 200000, 500000}; // Tamaños de prueba
   int num_runs = 10; // Número de ejecuciones por tamaño
   vector<long long> bubble_times, selection_times, insertion_times, quick_times,
       stl_times;
