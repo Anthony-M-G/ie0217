@@ -9,7 +9,10 @@
 
 using namespace std;
 
-vector<int> generate_random_vector(size_t size, unsigned seed) {
+vector<int>
+generate_random_vector(size_t size,
+                       unsigned seed) { // Función que genera un vector de
+                                        // tamaño size con números aleatorios
   vector<int> vec(size);
   mt19937 gen(seed);
   uniform_int_distribution<> dist(1, 10000);
@@ -35,7 +38,9 @@ long long measure_sort_time(
       .count(); // Medir en milisegundos
 }
 
-void escribirArchivo(vector<long long> &vec, fstream &file) {
+void escribirArchivo(vector<long long> &vec,
+                     fstream &file) { // Función que escribe en un archivo los
+                                      // tiempos de ejecución
   for (auto &i : vec) {
     file << i << " ";
   }
@@ -101,7 +106,7 @@ int main() {
     cout << "---------------------------------------------\n";
   }
 
-  try {
+  try { // Manejo de excepciones para la apertura del archivo
     if (!file.is_open()) {
       cerr << "Error al abrir el archivo\n";
       throw runtime_error("Error al abrir el archivo");
@@ -110,13 +115,18 @@ int main() {
     cerr << e.what() << endl;
   }
 
-  escribirArchivo(bubble_times, file);
-  escribirArchivo(insertion_times, file);
-  escribirArchivo(quick_times, file);
-  escribirArchivo(selection_times, file);
-  escribirArchivo(stl_times, file);
+  escribirArchivo(bubble_times,
+                  file); // Escribir en el archivo los tiempos de ejecución
+  escribirArchivo(insertion_times,
+                  file); // Escribir en el archivo los tiempos de ejecución
+  escribirArchivo(quick_times,
+                  file); // Escribir en el archivo los tiempos de ejecución
+  escribirArchivo(selection_times,
+                  file); // Escribir en el archivo los tiempos de ejecución
+  escribirArchivo(stl_times,
+                  file); // Escribir en el archivo los tiempos de ejecución
 
-  file.close();
+  file.close(); // Cerrar archivo
 
   return 0;
 }
