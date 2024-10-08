@@ -56,9 +56,3 @@ mysql -h <endpoint> -u <usuario> -p
 ```
 
 Aquí, `<endpoint>` es la dirección de la instancia en AWS. Esta configuración me permitió realizar consultas y gestionar datos remotamente, aprovechando la infraestructura de la nube.
-
----
-
-## Conclusión
-
-Trabajar con **SQLite3** y **MySQL** me ha permitido comprender mejor las diferencias entre los sistemas de bases de datos locales y en la nube. SQLite es una solución ligera y fácil de implementar para aplicaciones pequeñas, mientras que MySQL, especialmente en combinación con AWS, es una herramienta potente para manejar grandes volúmenes de datos en aplicaciones distribuidas.
