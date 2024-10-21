@@ -34,3 +34,5 @@
 # Para ignorar los archivos que me genera vs code 
 .vscode
 .vs
+# Para ignorar los archivos objeto que me genera el compilador
+build/
