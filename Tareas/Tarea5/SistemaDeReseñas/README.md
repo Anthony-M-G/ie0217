@@ -113,10 +113,4 @@ Las siguientes consultas son ejecutadas desde el código en C++ para interactuar
 
 ## Documentación
 
-Este proyecto está documentado utilizando Doxygen. Para generar la documentación, asegúrate de tener Doxygen instalado y ejecuta el siguiente comando en la terminal:
-
-```bash
-doxygen Doxyfile
-```
-
-Esto generará la documentación en formato HTML en la carpeta `docs`.
+[aquí](https://ie0217-tarea05-p1-ih0fyul7y-anthonys-projects-fc83cd10.vercel.app/)
