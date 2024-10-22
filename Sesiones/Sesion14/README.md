@@ -38,14 +38,20 @@ Para compilar y ejecutar el ejemplo de sincronización de hilos, sigue estos pas
    Usa un compilador compatible con C++11 o superior (como `g++` o `clang++`):
 
    ```bash
-   g++ -std=c++11 -pthread threads.cpp -o threads
+   g++ -std=c++20 -pthread threads.cpp -o thread
    ```
 
 2. **Ejecución**:
    Ejecuta el binario generado:
    ```bash
-   ./threads
+   ./thread
    ```
+
+Ejemplo salida:
+
+![imagen](image.png)
+
+```
 
 ### Consideraciones Finales
 
@@ -56,3 +62,4 @@ Para compilar y ejecutar el ejemplo de sincronización de hilos, sigue estos pas
 
 - Compilador con soporte para C++11 o superior.
 - Sistema operativo que soporte programación multihilo (Linux, Windows, macOS).
+```
