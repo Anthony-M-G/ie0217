@@ -1,0 +1,123 @@
+\doxysection{Profesores\+Servicio Class Reference}
+\hypertarget{classProfesoresServicio}{}\label{classProfesoresServicio}\index{ProfesoresServicio@{ProfesoresServicio}}
+
+
+Clase que proporciona servicios de acceso y consulta de datos de profesores.  
+
+
+
+
+{\ttfamily \#include $<$Profesores\+Servicio.\+h$>$}
+
+
+
+Collaboration diagram for Profesores\+Servicio\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classProfesoresServicio__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProfesoresServicio_a8fbe6e83e5d0929a69649ebace1622a2}{Profesores\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProfesoresServicio_aac7242875c212b94abe4b42177ae024e}{\texorpdfstring{$\sim$}{\string~}\+Profesores\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProfesoresServicio_a9262488419f7865efc70925a485f413d}{todos\+Los\+Profesores}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene todos los profesores registrados en el sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProfesoresServicio_a993faa03db66c06f249168dd96dbf5ef}{profesor\+Por\+Curso\+YEscuela}} (const std\+::string \&curso, const std\+::string \&escuela) const
+\begin{DoxyCompactList}\small\item\em Busca profesores filtrados por curso y escuela. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProfesor}{Profesor}} $>$ \mbox{\hyperlink{classProfesoresServicio_a4b99e5505328b7e643af5a149b39c03c}{get\+Profesores}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene los profesores almacenados en cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que proporciona servicios de acceso y consulta de datos de profesores. 
+
+Esta clase implementa la capa de servicio para gestionar todas las operaciones relacionadas con profesores en la base de datos, principalmente enfocada en consultas y filtrado de información. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProfesoresServicio_a8fbe6e83e5d0929a69649ebace1622a2}\index{ProfesoresServicio@{ProfesoresServicio}!ProfesoresServicio@{ProfesoresServicio}}
+\index{ProfesoresServicio@{ProfesoresServicio}!ProfesoresServicio@{ProfesoresServicio}}
+\doxysubsubsection{\texorpdfstring{ProfesoresServicio()}{ProfesoresServicio()}}
+{\footnotesize\ttfamily \label{classProfesoresServicio_a8fbe6e83e5d0929a69649ebace1622a2} 
+Profesores\+Servicio\+::\+Profesores\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Inicializa la conexión a la base de datos y prepara el servicio para realizar operaciones con la información de profesores. \Hypertarget{classProfesoresServicio_aac7242875c212b94abe4b42177ae024e}\index{ProfesoresServicio@{ProfesoresServicio}!````~ProfesoresServicio@{\texorpdfstring{$\sim$}{\string~}ProfesoresServicio}}
+\index{````~ProfesoresServicio@{\texorpdfstring{$\sim$}{\string~}ProfesoresServicio}!ProfesoresServicio@{ProfesoresServicio}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ProfesoresServicio()}{\string~ProfesoresServicio()}}
+{\footnotesize\ttfamily \label{classProfesoresServicio_aac7242875c212b94abe4b42177ae024e} 
+Profesores\+Servicio\+::\texorpdfstring{$\sim$}{\string~}\+Profesores\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+Libera los recursos utilizados y cierra la conexión a la base de datos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProfesoresServicio_a4b99e5505328b7e643af5a149b39c03c}\index{ProfesoresServicio@{ProfesoresServicio}!getProfesores@{getProfesores}}
+\index{getProfesores@{getProfesores}!ProfesoresServicio@{ProfesoresServicio}}
+\doxysubsubsection{\texorpdfstring{getProfesores()}{getProfesores()}}
+{\footnotesize\ttfamily \label{classProfesoresServicio_a4b99e5505328b7e643af5a149b39c03c} 
+std\+::vector$<$ \mbox{\hyperlink{classProfesor}{Profesor}} $>$ Profesores\+Servicio\+::get\+Profesores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene los profesores almacenados en cache. 
+
+\begin{DoxyReturn}{Returns}
+Vector con los profesores actualmente en cache
+\end{DoxyReturn}
+Este método retorna los profesores que han sido previamente cargados en memoria, útil para acceso rápido a datos frecuentemente consultados. \Hypertarget{classProfesoresServicio_a993faa03db66c06f249168dd96dbf5ef}\index{ProfesoresServicio@{ProfesoresServicio}!profesorPorCursoYEscuela@{profesorPorCursoYEscuela}}
+\index{profesorPorCursoYEscuela@{profesorPorCursoYEscuela}!ProfesoresServicio@{ProfesoresServicio}}
+\doxysubsubsection{\texorpdfstring{profesorPorCursoYEscuela()}{profesorPorCursoYEscuela()}}
+{\footnotesize\ttfamily \label{classProfesoresServicio_a993faa03db66c06f249168dd96dbf5ef} 
+void Profesores\+Servicio\+::profesor\+Por\+Curso\+YEscuela (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{curso}{, }\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca profesores filtrados por curso y escuela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curso} & Nombre del curso para filtrar \\
+\hline
+{\em escuela} & Nombre de la escuela para filtrar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la consulta\\
+\hline
+\end{DoxyExceptions}
+Este método permite encontrar profesores que imparten un curso específico en una escuela determinada. Es útil para búsquedas específicas y reportes filtrados. \Hypertarget{classProfesoresServicio_a9262488419f7865efc70925a485f413d}\index{ProfesoresServicio@{ProfesoresServicio}!todosLosProfesores@{todosLosProfesores}}
+\index{todosLosProfesores@{todosLosProfesores}!ProfesoresServicio@{ProfesoresServicio}}
+\doxysubsubsection{\texorpdfstring{todosLosProfesores()}{todosLosProfesores()}}
+{\footnotesize\ttfamily \label{classProfesoresServicio_a9262488419f7865efc70925a485f413d} 
+void Profesores\+Servicio\+::todos\+Los\+Profesores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene todos los profesores registrados en el sistema. 
+
+\begin{DoxyReturn}{Returns}
+Vector con todos los profesores en la base de datos 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la consulta a la base de datos \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/servicio/\mbox{\hyperlink{ProfesoresServicio_8h}{Profesores\+Servicio.\+h}}\end{DoxyCompactItemize}

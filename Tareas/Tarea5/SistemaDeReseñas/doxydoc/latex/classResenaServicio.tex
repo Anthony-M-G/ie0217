@@ -1,0 +1,150 @@
+\doxysection{Resena\+Servicio Class Reference}
+\hypertarget{classResenaServicio}{}\label{classResenaServicio}\index{ResenaServicio@{ResenaServicio}}
+
+
+Clase que proporciona servicios de gestión de reseñas en la base de datos.  
+
+
+
+
+{\ttfamily \#include $<$Resena\+Servicio.\+h$>$}
+
+
+
+Collaboration diagram for Resena\+Servicio\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classResenaServicio__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResenaServicio_aa03d27b6ff88f0b4be162b1118d2e633}{Resena\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResenaServicio_a357c51d1d639c58e0232e206000e5bd2}{\texorpdfstring{$\sim$}{\string~}\+Resena\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResenaServicio_a56d1b902d8584900761e0a4c2899abe6}{resenas\+No\+Revisadas}} () const
+\begin{DoxyCompactList}\small\item\em Consulta las reseñas que aún no han sido revisadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResenaServicio_aa6c1be80d70a54128244edb99018ce14}{actualizar\+Estado\+Resena}} (int id\+\_\+resena)
+\begin{DoxyCompactList}\small\item\em Actualiza el estado de revisión de una reseña. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResenaServicio_a65c2446ac2d4a39cfe465647d42f683d}{eliminar\+Resena}} (int id\+\_\+resena)
+\begin{DoxyCompactList}\small\item\em Elimina una reseña de la base de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResenaServicio_a20bec643654125798c56806d5818a3c2}{calificacion\+YDificultad}} () const
+\begin{DoxyCompactList}\small\item\em Consulta estadísticas de calificaciones y niveles de dificultad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResenaServicio_af8c47ae7c774ab76c4f6a19b7e1df5ef}{ver\+Todas\+Resenas}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que proporciona servicios de gestión de reseñas en la base de datos. 
+
+Esta clase implementa la capa de servicio para manejar todas las operaciones relacionadas con reseñas, incluyendo la gestión de estados, consultas de calificaciones y eliminación de reseñas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classResenaServicio_aa03d27b6ff88f0b4be162b1118d2e633}\index{ResenaServicio@{ResenaServicio}!ResenaServicio@{ResenaServicio}}
+\index{ResenaServicio@{ResenaServicio}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{ResenaServicio()}{ResenaServicio()}}
+{\footnotesize\ttfamily \label{classResenaServicio_aa03d27b6ff88f0b4be162b1118d2e633} 
+Resena\+Servicio\+::\+Resena\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Inicializa la conexión a la base de datos y prepara el servicio para realizar operaciones con reseñas. \Hypertarget{classResenaServicio_a357c51d1d639c58e0232e206000e5bd2}\index{ResenaServicio@{ResenaServicio}!````~ResenaServicio@{\texorpdfstring{$\sim$}{\string~}ResenaServicio}}
+\index{````~ResenaServicio@{\texorpdfstring{$\sim$}{\string~}ResenaServicio}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ResenaServicio()}{\string~ResenaServicio()}}
+{\footnotesize\ttfamily \label{classResenaServicio_a357c51d1d639c58e0232e206000e5bd2} 
+Resena\+Servicio\+::\texorpdfstring{$\sim$}{\string~}\+Resena\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+Libera los recursos utilizados y cierra la conexión a la base de datos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classResenaServicio_aa6c1be80d70a54128244edb99018ce14}\index{ResenaServicio@{ResenaServicio}!actualizarEstadoResena@{actualizarEstadoResena}}
+\index{actualizarEstadoResena@{actualizarEstadoResena}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{actualizarEstadoResena()}{actualizarEstadoResena()}}
+{\footnotesize\ttfamily \label{classResenaServicio_aa6c1be80d70a54128244edb99018ce14} 
+void Resena\+Servicio\+::actualizar\+Estado\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+resena}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza el estado de revisión de una reseña. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+resena} & Identificador de la reseña a actualizar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & si la reseña no existe o hay error en la actualización\\
+\hline
+\end{DoxyExceptions}
+Cambia el estado de una reseña a revisada, típicamente usado después de que un moderador ha verificado su contenido. \Hypertarget{classResenaServicio_a20bec643654125798c56806d5818a3c2}\index{ResenaServicio@{ResenaServicio}!calificacionYDificultad@{calificacionYDificultad}}
+\index{calificacionYDificultad@{calificacionYDificultad}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{calificacionYDificultad()}{calificacionYDificultad()}}
+{\footnotesize\ttfamily \label{classResenaServicio_a20bec643654125798c56806d5818a3c2} 
+void Resena\+Servicio\+::calificacion\+YDificultad (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Consulta estadísticas de calificaciones y niveles de dificultad. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la consulta\\
+\hline
+\end{DoxyExceptions}
+Obtiene y analiza las calificaciones y niveles de dificultad registrados en las reseñas, útil para análisis y reportes. \Hypertarget{classResenaServicio_a65c2446ac2d4a39cfe465647d42f683d}\index{ResenaServicio@{ResenaServicio}!eliminarResena@{eliminarResena}}
+\index{eliminarResena@{eliminarResena}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{eliminarResena()}{eliminarResena()}}
+{\footnotesize\ttfamily \label{classResenaServicio_a65c2446ac2d4a39cfe465647d42f683d} 
+void Resena\+Servicio\+::eliminar\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+resena}{}\end{DoxyParamCaption})}
+
+
+
+Elimina una reseña de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+resena} & Identificador de la reseña a eliminar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & si la reseña no existe o hay error en la eliminación\\
+\hline
+\end{DoxyExceptions}
+Elimina permanentemente una reseña del sistema, útil para moderar contenido inapropiado o spam. \Hypertarget{classResenaServicio_a56d1b902d8584900761e0a4c2899abe6}\index{ResenaServicio@{ResenaServicio}!resenasNoRevisadas@{resenasNoRevisadas}}
+\index{resenasNoRevisadas@{resenasNoRevisadas}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{resenasNoRevisadas()}{resenasNoRevisadas()}}
+{\footnotesize\ttfamily \label{classResenaServicio_a56d1b902d8584900761e0a4c2899abe6} 
+void Resena\+Servicio\+::resenas\+No\+Revisadas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Consulta las reseñas que aún no han sido revisadas. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la consulta\\
+\hline
+\end{DoxyExceptions}
+Este método recupera todas las reseñas que tienen el estado de revisión en falso, útil para moderación de contenido. \Hypertarget{classResenaServicio_af8c47ae7c774ab76c4f6a19b7e1df5ef}\index{ResenaServicio@{ResenaServicio}!verTodasResenas@{verTodasResenas}}
+\index{verTodasResenas@{verTodasResenas}!ResenaServicio@{ResenaServicio}}
+\doxysubsubsection{\texorpdfstring{verTodasResenas()}{verTodasResenas()}}
+{\footnotesize\ttfamily \label{classResenaServicio_af8c47ae7c774ab76c4f6a19b7e1df5ef} 
+void Resena\+Servicio\+::ver\+Todas\+Resenas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/servicio/\mbox{\hyperlink{ResenaServicio_8h}{Resena\+Servicio.\+h}}\end{DoxyCompactItemize}

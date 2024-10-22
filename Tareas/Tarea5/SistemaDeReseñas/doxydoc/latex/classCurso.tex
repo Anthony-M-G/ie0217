@@ -1,0 +1,209 @@
+\doxysection{Curso Class Reference}
+\hypertarget{classCurso}{}\label{classCurso}\index{Curso@{Curso}}
+
+
+Clase que gestiona la información de un curso académico.  
+
+
+
+
+{\ttfamily \#include $<$Curso.\+h$>$}
+
+
+
+Collaboration diagram for Curso\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classCurso__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCurso_add3bcc7fd065fa02b8fad76cedcc3a8a}{Curso}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCurso_a48e8b50d13e884e3b2e0a4aa24f33439}{Curso}} (int id\+\_\+curso, const std\+::string \&nombre\+\_\+curso, int id\+\_\+profesor)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCurso_af81ae2c50caea1382d28441859ca1eb5}{\texorpdfstring{$\sim$}{\string~}\+Curso}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCurso_aa5f27d8c3be116bf73e27d072bb2c60b}{get\+Id\+Curso}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCurso_a8dede71eb52470e410ea1d6166761c58}{set\+Id\+Curso}} (int id\+\_\+curso)
+\begin{DoxyCompactList}\small\item\em Establece el ID del curso. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCurso_ac254f5194b3763ce0644392d8d243558}{get\+Nombre\+Curso}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCurso_a6579562bd8c8cbfc29b1eba894f6d170}{set\+Nombre\+Curso}} (const std\+::string \&nombre\+\_\+curso)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del curso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCurso_a7f29480ed50cfa2075ee45e9c0657330}{get\+Id\+Profesor}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del profesor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCurso_ac27118155d0d5a6adb607639d07de1b0}{set\+Id\+Profesor}} (int id\+\_\+profesor)
+\begin{DoxyCompactList}\small\item\em Establece el ID del profesor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classCurso_aa46ccecdb3069f00799cbb561fc07115}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classCurso}{Curso}} \&curso)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para imprimir el curso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona la información de un curso académico. 
+
+Esta clase mantiene información sobre un curso específico, incluyendo su identificador único, nombre, profesor asignado y las reseñas asociadas al mismo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCurso_add3bcc7fd065fa02b8fad76cedcc3a8a}\index{Curso@{Curso}!Curso@{Curso}}
+\index{Curso@{Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Curso()}{Curso()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classCurso_add3bcc7fd065fa02b8fad76cedcc3a8a} 
+Curso\+::\+Curso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classCurso_a48e8b50d13e884e3b2e0a4aa24f33439}\index{Curso@{Curso}!Curso@{Curso}}
+\index{Curso@{Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{Curso()}{Curso()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classCurso_a48e8b50d13e884e3b2e0a4aa24f33439} 
+Curso\+::\+Curso (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+curso}{, }\item[{const std\+::string \&}]{nombre\+\_\+curso}{, }\item[{int}]{id\+\_\+profesor}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+curso} & Identificador del curso \\
+\hline
+{\em nombre\+\_\+curso} & Nombre del curso \\
+\hline
+{\em id\+\_\+profesor} & Identificador del profesor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCurso_af81ae2c50caea1382d28441859ca1eb5}\index{Curso@{Curso}!````~Curso@{\texorpdfstring{$\sim$}{\string~}Curso}}
+\index{````~Curso@{\texorpdfstring{$\sim$}{\string~}Curso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Curso()}{\string~Curso()}}
+{\footnotesize\ttfamily \label{classCurso_af81ae2c50caea1382d28441859ca1eb5} 
+Curso\+::\texorpdfstring{$\sim$}{\string~}\+Curso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCurso_aa5f27d8c3be116bf73e27d072bb2c60b}\index{Curso@{Curso}!getIdCurso@{getIdCurso}}
+\index{getIdCurso@{getIdCurso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getIdCurso()}{getIdCurso()}}
+{\footnotesize\ttfamily \label{classCurso_aa5f27d8c3be116bf73e27d072bb2c60b} 
+int Curso\+::get\+Id\+Curso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del curso. 
+
+\begin{DoxyReturn}{Returns}
+Identificador del curso 
+\end{DoxyReturn}
+\Hypertarget{classCurso_a7f29480ed50cfa2075ee45e9c0657330}\index{Curso@{Curso}!getIdProfesor@{getIdProfesor}}
+\index{getIdProfesor@{getIdProfesor}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getIdProfesor()}{getIdProfesor()}}
+{\footnotesize\ttfamily \label{classCurso_a7f29480ed50cfa2075ee45e9c0657330} 
+int Curso\+::get\+Id\+Profesor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del profesor. 
+
+\begin{DoxyReturn}{Returns}
+Identificador del profesor 
+\end{DoxyReturn}
+\Hypertarget{classCurso_ac254f5194b3763ce0644392d8d243558}\index{Curso@{Curso}!getNombreCurso@{getNombreCurso}}
+\index{getNombreCurso@{getNombreCurso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{getNombreCurso()}{getNombreCurso()}}
+{\footnotesize\ttfamily \label{classCurso_ac254f5194b3763ce0644392d8d243558} 
+std\+::string Curso\+::get\+Nombre\+Curso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre del curso. 
+
+\begin{DoxyReturn}{Returns}
+Nombre del curso 
+\end{DoxyReturn}
+\Hypertarget{classCurso_a8dede71eb52470e410ea1d6166761c58}\index{Curso@{Curso}!setIdCurso@{setIdCurso}}
+\index{setIdCurso@{setIdCurso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{setIdCurso()}{setIdCurso()}}
+{\footnotesize\ttfamily \label{classCurso_a8dede71eb52470e410ea1d6166761c58} 
+void Curso\+::set\+Id\+Curso (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+curso}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID del curso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+curso} & Nuevo identificador del curso \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCurso_ac27118155d0d5a6adb607639d07de1b0}\index{Curso@{Curso}!setIdProfesor@{setIdProfesor}}
+\index{setIdProfesor@{setIdProfesor}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{setIdProfesor()}{setIdProfesor()}}
+{\footnotesize\ttfamily \label{classCurso_ac27118155d0d5a6adb607639d07de1b0} 
+void Curso\+::set\+Id\+Profesor (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+profesor}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID del profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+profesor} & Nuevo identificador del profesor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCurso_a6579562bd8c8cbfc29b1eba894f6d170}\index{Curso@{Curso}!setNombreCurso@{setNombreCurso}}
+\index{setNombreCurso@{setNombreCurso}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{setNombreCurso()}{setNombreCurso()}}
+{\footnotesize\ttfamily \label{classCurso_a6579562bd8c8cbfc29b1eba894f6d170} 
+void Curso\+::set\+Nombre\+Curso (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nombre\+\_\+curso}{}\end{DoxyParamCaption})}
+
+
+
+Establece el nombre del curso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre\+\_\+curso} & Nuevo nombre del curso \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classCurso_aa46ccecdb3069f00799cbb561fc07115}\index{Curso@{Curso}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Curso@{Curso}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classCurso_aa46ccecdb3069f00799cbb561fc07115} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classCurso}{Curso}} \&}]{curso}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador de inserción para imprimir el curso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream de salida \\
+\hline
+{\em curso} & Objeto \doxylink{classCurso}{Curso} a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al stream de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/entidades/\mbox{\hyperlink{Curso_8h}{Curso.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\doxysection{My\+SQLConnector Class Reference}
+\hypertarget{classMySQLConnector}{}\label{classMySQLConnector}\index{MySQLConnector@{MySQLConnector}}
+
+
+Clase para manejar la conexión a una base de datos My\+SQL.  
+
+
+
+
+{\ttfamily \#include $<$My\+Sql\+Connector.\+h$>$}
+
+
+
+Collaboration diagram for My\+SQLConnector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classMySQLConnector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMySQLConnector_a223144dfc7eaadecd2e87100dca7f892}{My\+SQLConnector}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classMySQLConnector}{My\+SQLConnector}. \end{DoxyCompactList}\item 
+sql\+::\+Connection \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMySQLConnector_a0fa848fabf7306773aff120ced6e03db}{get\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la conexión a la base de datos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMySQLConnector_aa5dd71a10782ff11039a59cfdc71ece6}{\texorpdfstring{$\sim$}{\string~}\+My\+SQLConnector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{classMySQLConnector}{My\+SQLConnector}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para manejar la conexión a una base de datos My\+SQL. 
+
+Esta clase proporciona métodos para establecer y obtener una conexión a una base de datos My\+SQL. Utiliza el controlador My\+SQL de la biblioteca {\ttfamily mysqlcppconn}.
+
+\begin{DoxyNote}{Note}
+Asegúrese de tener la biblioteca {\ttfamily mysqlcppconn} correctamente instalada y configurada. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMySQLConnector_a223144dfc7eaadecd2e87100dca7f892}\index{MySQLConnector@{MySQLConnector}!MySQLConnector@{MySQLConnector}}
+\index{MySQLConnector@{MySQLConnector}!MySQLConnector@{MySQLConnector}}
+\doxysubsubsection{\texorpdfstring{MySQLConnector()}{MySQLConnector()}}
+{\footnotesize\ttfamily \label{classMySQLConnector_a223144dfc7eaadecd2e87100dca7f892} 
+My\+SQLConnector\+::\+My\+SQLConnector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classMySQLConnector}{My\+SQLConnector}. 
+
+Inicializa los parámetros necesarios para establecer una conexión a la base de datos. \Hypertarget{classMySQLConnector_aa5dd71a10782ff11039a59cfdc71ece6}\index{MySQLConnector@{MySQLConnector}!````~MySQLConnector@{\texorpdfstring{$\sim$}{\string~}MySQLConnector}}
+\index{````~MySQLConnector@{\texorpdfstring{$\sim$}{\string~}MySQLConnector}!MySQLConnector@{MySQLConnector}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MySQLConnector()}{\string~MySQLConnector()}}
+{\footnotesize\ttfamily \label{classMySQLConnector_aa5dd71a10782ff11039a59cfdc71ece6} 
+My\+SQLConnector\+::\texorpdfstring{$\sim$}{\string~}\+My\+SQLConnector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase \doxylink{classMySQLConnector}{My\+SQLConnector}. 
+
+Libera los recursos asociados con la conexión a la base de datos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMySQLConnector_a0fa848fabf7306773aff120ced6e03db}\index{MySQLConnector@{MySQLConnector}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!MySQLConnector@{MySQLConnector}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{classMySQLConnector_a0fa848fabf7306773aff120ced6e03db} 
+sql\+::\+Connection \texorpdfstring{$\ast$}{*} My\+SQLConnector\+::get\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la conexión a la base de datos. 
+
+\begin{DoxyReturn}{Returns}
+Puntero a la conexión de la base de datos. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/database/\mbox{\hyperlink{MySqlConnector_8h}{My\+Sql\+Connector.\+h}}\end{DoxyCompactItemize}

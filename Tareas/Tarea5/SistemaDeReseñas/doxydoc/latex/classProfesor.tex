@@ -1,0 +1,209 @@
+\doxysection{Profesor Class Reference}
+\hypertarget{classProfesor}{}\label{classProfesor}\index{Profesor@{Profesor}}
+
+
+Clase que gestiona la información de un profesor.  
+
+
+
+
+{\ttfamily \#include $<$Profesor.\+h$>$}
+
+
+
+Collaboration diagram for Profesor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classProfesor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProfesor_abf158f1b3c5f3f6bcb36159795356515}{Profesor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProfesor_a1cad8110d293a81770e20e17178095e4}{Profesor}} (int id\+\_\+profesor, const std\+::string \&nombre, const std\+::string \&escuela)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classProfesor_a57384a8d3f532160126a1ae2f463f624}{\texorpdfstring{$\sim$}{\string~}\+Profesor}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classProfesor_a91e5b7e72bc3ad55a3b0c75e81f13746}{get\+Id\+Profesor}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del profesor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProfesor_a544942eb72ba327cbfa64bfcd5b6399a}{set\+Id\+Profesor}} (int id\+\_\+profesor)
+\begin{DoxyCompactList}\small\item\em Establece el ID del profesor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProfesor_aba16af13764e273c11c3399e294e1bd7}{get\+Nombre}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre del profesor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProfesor_a8ccb1970d4c57bee70671dd3aca84e18}{set\+Nombre}} (const std\+::string \&nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre del profesor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classProfesor_a171ab9d1631be9897c42da86bc2da6c2}{get\+Escuela}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nombre de la escuela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProfesor_a04630089c73d13331ee3c25b407e8cd0}{set\+Escuela}} (const std\+::string \&escuela)
+\begin{DoxyCompactList}\small\item\em Establece el nombre de la escuela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classProfesor_a7792b76dc1e8902609afee5af7389c38}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classProfesor}{Profesor}} \&profesor)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para imprimir los datos del profesor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona la información de un profesor. 
+
+Esta clase mantiene la información básica de un profesor, incluyendo su identificador único, nombre y la escuela a la que pertenece. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProfesor_abf158f1b3c5f3f6bcb36159795356515}\index{Profesor@{Profesor}!Profesor@{Profesor}}
+\index{Profesor@{Profesor}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{Profesor()}{Profesor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classProfesor_abf158f1b3c5f3f6bcb36159795356515} 
+Profesor\+::\+Profesor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classProfesor_a1cad8110d293a81770e20e17178095e4}\index{Profesor@{Profesor}!Profesor@{Profesor}}
+\index{Profesor@{Profesor}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{Profesor()}{Profesor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classProfesor_a1cad8110d293a81770e20e17178095e4} 
+Profesor\+::\+Profesor (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+profesor}{, }\item[{const std\+::string \&}]{nombre}{, }\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+profesor} & Identificador único del profesor \\
+\hline
+{\em nombre} & Nombre completo del profesor \\
+\hline
+{\em escuela} & Nombre de la escuela donde trabaja \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProfesor_a57384a8d3f532160126a1ae2f463f624}\index{Profesor@{Profesor}!````~Profesor@{\texorpdfstring{$\sim$}{\string~}Profesor}}
+\index{````~Profesor@{\texorpdfstring{$\sim$}{\string~}Profesor}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Profesor()}{\string~Profesor()}}
+{\footnotesize\ttfamily \label{classProfesor_a57384a8d3f532160126a1ae2f463f624} 
+Profesor\+::\texorpdfstring{$\sim$}{\string~}\+Profesor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProfesor_a171ab9d1631be9897c42da86bc2da6c2}\index{Profesor@{Profesor}!getEscuela@{getEscuela}}
+\index{getEscuela@{getEscuela}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{getEscuela()}{getEscuela()}}
+{\footnotesize\ttfamily \label{classProfesor_a171ab9d1631be9897c42da86bc2da6c2} 
+std\+::string Profesor\+::get\+Escuela (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre de la escuela. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de la escuela donde trabaja el profesor 
+\end{DoxyReturn}
+\Hypertarget{classProfesor_a91e5b7e72bc3ad55a3b0c75e81f13746}\index{Profesor@{Profesor}!getIdProfesor@{getIdProfesor}}
+\index{getIdProfesor@{getIdProfesor}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{getIdProfesor()}{getIdProfesor()}}
+{\footnotesize\ttfamily \label{classProfesor_a91e5b7e72bc3ad55a3b0c75e81f13746} 
+int Profesor\+::get\+Id\+Profesor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del profesor. 
+
+\begin{DoxyReturn}{Returns}
+Identificador único del profesor 
+\end{DoxyReturn}
+\Hypertarget{classProfesor_aba16af13764e273c11c3399e294e1bd7}\index{Profesor@{Profesor}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily \label{classProfesor_aba16af13764e273c11c3399e294e1bd7} 
+std\+::string Profesor\+::get\+Nombre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nombre del profesor. 
+
+\begin{DoxyReturn}{Returns}
+Nombre completo del profesor 
+\end{DoxyReturn}
+\Hypertarget{classProfesor_a04630089c73d13331ee3c25b407e8cd0}\index{Profesor@{Profesor}!setEscuela@{setEscuela}}
+\index{setEscuela@{setEscuela}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{setEscuela()}{setEscuela()}}
+{\footnotesize\ttfamily \label{classProfesor_a04630089c73d13331ee3c25b407e8cd0} 
+void Profesor\+::set\+Escuela (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption})}
+
+
+
+Establece el nombre de la escuela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escuela} & Nueva escuela del profesor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProfesor_a544942eb72ba327cbfa64bfcd5b6399a}\index{Profesor@{Profesor}!setIdProfesor@{setIdProfesor}}
+\index{setIdProfesor@{setIdProfesor}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{setIdProfesor()}{setIdProfesor()}}
+{\footnotesize\ttfamily \label{classProfesor_a544942eb72ba327cbfa64bfcd5b6399a} 
+void Profesor\+::set\+Id\+Profesor (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+profesor}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID del profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+profesor} & Nuevo identificador del profesor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProfesor_a8ccb1970d4c57bee70671dd3aca84e18}\index{Profesor@{Profesor}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{setNombre()}{setNombre()}}
+{\footnotesize\ttfamily \label{classProfesor_a8ccb1970d4c57bee70671dd3aca84e18} 
+void Profesor\+::set\+Nombre (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nombre}{}\end{DoxyParamCaption})}
+
+
+
+Establece el nombre del profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Nuevo nombre del profesor \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classProfesor_a7792b76dc1e8902609afee5af7389c38}\index{Profesor@{Profesor}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Profesor@{Profesor}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classProfesor_a7792b76dc1e8902609afee5af7389c38} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classProfesor}{Profesor}} \&}]{profesor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador de inserción para imprimir los datos del profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream de salida \\
+\hline
+{\em profesor} & Objeto \doxylink{classProfesor}{Profesor} a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al stream de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/entidades/\mbox{\hyperlink{Profesor_8h}{Profesor.\+h}}\end{DoxyCompactItemize}

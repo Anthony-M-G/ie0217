@@ -1,0 +1,49 @@
+\doxysection{Curso\+Servicio.\+h}
+\hypertarget{CursoServicio_8h_source}{}\label{CursoServicio_8h_source}\index{includes/servicio/CursoServicio.h@{includes/servicio/CursoServicio.h}}
+\mbox{\hyperlink{CursoServicio_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ CURSO\_SERVICIO\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ CURSO\_SERVICIO\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MySqlConnector_8h}{../database/MySqlConnector.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Curso_8h}{../entidades/Curso.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cppconn/connection.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <cppconn/driver.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <cppconn/exception.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <cppconn/prepared\_statement.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <cppconn/resultset.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <cppconn/statement.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <mysql\_connection.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <mysql\_driver.h>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCursoServicio}{CursoServicio}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classMySQLConnector}{MySQLConnector}}\ *connector;\ }
+\DoxyCodeLine{00038\ \ \ std::vector<Curso>\ cursos;\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classCursoServicio_a187be876dee844c446641755f313eeb0}{CursoServicio}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \mbox{\hyperlink{classCursoServicio_a920e3f4668952beafdee17cd9d61e549}{\string~CursoServicio}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCursoServicio_a19ad2e7cc0af352cf34312208eec404a}{todosLosCursos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{classCurso}{Curso}}\ \mbox{\hyperlink{classCursoServicio_a7d5039000dd0ec1ada8e52bbd1f30a42}{infoCurso}}(\textcolor{keywordtype}{int}\ id\_curso)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCursoServicio_a5b44525ad7871c0541d43c1c2d9a164e}{anhadirCurso}}(\mbox{\hyperlink{classCurso}{Curso}}\ curso);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCursoServicio_a958270fc62b02cbe9799eb34d154f88e}{actualizarCurso}}(\mbox{\hyperlink{classCurso}{Curso}}\ curso);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCursoServicio_a2afe30fc4c22cc7848a38344077ef3f8}{eliminarCurso}}(\textcolor{keywordtype}{int}\ id\_curso);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCursoServicio_a079582c8250f8a37db9dd30787aef0fb}{cursosPorDificultadYCalificacion}}(\textcolor{keyword}{const}\ std::string\ \&escuela)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ std::vector<Curso>\ \mbox{\hyperlink{classCursoServicio_a2e511e1df03b5539a25a6e800497d4f2}{getCursos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CURSO\_SERVICIO\_H\_}}
+
+\end{DoxyCode}

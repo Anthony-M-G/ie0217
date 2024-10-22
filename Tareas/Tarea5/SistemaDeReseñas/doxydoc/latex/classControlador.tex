@@ -1,0 +1,204 @@
+\doxysection{Controlador Class Reference}
+\hypertarget{classControlador}{}\label{classControlador}\index{Controlador@{Controlador}}
+
+
+Clase que gestiona la interacción entre diferentes servicios relacionados con reseñas, cursos y profesores.  
+
+
+
+
+{\ttfamily \#include $<$Controlador.\+h$>$}
+
+
+
+Collaboration diagram for Controlador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classControlador__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classControlador_a5a58f54150aa88302ef37fa6e3d37a09}{Controlador}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \doxylink{classControlador}{Controlador}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classControlador_a1590ee94067cc1aa385c247aca66a7ff}{\texorpdfstring{$\sim$}{\string~}\+Controlador}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{classControlador}{Controlador}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a1b007bbb561f180512517666e1982aba}{ver\+Resenas\+No\+Revisadas}} () const
+\begin{DoxyCompactList}\small\item\em Muestra las reseñas que no han sido revisadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_ab6807930eb2d92808f3516d66c39df9c}{actualizar\+Estado\+De\+Una\+Resena}} (int id\+\_\+resena)
+\begin{DoxyCompactList}\small\item\em Actualiza el estado de una reseña específica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_ae27af473ce2aabbe29dc4014483e777c}{cursos\+Por\+Calificacion\+YDificultad}} (const std\+::string \&escuela) const
+\begin{DoxyCompactList}\small\item\em Muestra los cursos por dificultad y calificación de una escuela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a5535702570572e8fc5b989d6b8f93af4}{eliminar\+Resena}} (int id\+\_\+resena)
+\begin{DoxyCompactList}\small\item\em Elimina una reseña específica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a0070452b827c7110e0427b456ce3cc9e}{profesores\+Por\+Curso\+YEscuela}} (const std\+::string \&curso, const std\+::string \&escuela) const
+\begin{DoxyCompactList}\small\item\em Muestra los profesores que imparten un curso específico en una escuela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a6db6d476ee5f07001e7448def84dafaf}{resenas\+No\+Revisadas}} () const
+\begin{DoxyCompactList}\small\item\em Muestra todas las reseñas que no han sido revisadas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a30d782f716eb403f0f4be3f0531b07b6}{ver\+Todos\+Los\+Profesores}} () const
+\begin{DoxyCompactList}\small\item\em Muestra la lista de todos los profesores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_a65749900487cabe937d37b20f3c07906}{ver\+Todos\+Los\+Cursos}} () const
+\begin{DoxyCompactList}\small\item\em Muestra la lista de todos los cursos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_ac5528bcb4d4b5ea2d7302be1864bc29e}{resenas\+Por\+Calificacion\+YDificultad}} () const
+\begin{DoxyCompactList}\small\item\em Muestra las reseñas organizadas por calificación y dificultad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControlador_afd65f04f8de9fc5de7a93fc0272030b6}{ver\+Todas\+Las\+Resenas}} () const
+\begin{DoxyCompactList}\small\item\em Muestra todas las reseñas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona la interacción entre diferentes servicios relacionados con reseñas, cursos y profesores. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classControlador_a5a58f54150aa88302ef37fa6e3d37a09}\index{Controlador@{Controlador}!Controlador@{Controlador}}
+\index{Controlador@{Controlador}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{Controlador()}{Controlador()}}
+{\footnotesize\ttfamily \label{classControlador_a5a58f54150aa88302ef37fa6e3d37a09} 
+Controlador\+::\+Controlador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor por defecto de la clase \doxylink{classControlador}{Controlador}. 
+
+\Hypertarget{classControlador_a1590ee94067cc1aa385c247aca66a7ff}\index{Controlador@{Controlador}!````~Controlador@{\texorpdfstring{$\sim$}{\string~}Controlador}}
+\index{````~Controlador@{\texorpdfstring{$\sim$}{\string~}Controlador}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Controlador()}{\string~Controlador()}}
+{\footnotesize\ttfamily \label{classControlador_a1590ee94067cc1aa385c247aca66a7ff} 
+Controlador\+::\texorpdfstring{$\sim$}{\string~}\+Controlador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor de la clase \doxylink{classControlador}{Controlador}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classControlador_ab6807930eb2d92808f3516d66c39df9c}\index{Controlador@{Controlador}!actualizarEstadoDeUnaResena@{actualizarEstadoDeUnaResena}}
+\index{actualizarEstadoDeUnaResena@{actualizarEstadoDeUnaResena}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{actualizarEstadoDeUnaResena()}{actualizarEstadoDeUnaResena()}}
+{\footnotesize\ttfamily \label{classControlador_ab6807930eb2d92808f3516d66c39df9c} 
+void Controlador\+::actualizar\+Estado\+De\+Una\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+resena}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza el estado de una reseña específica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+resena} & Identificador de la reseña a actualizar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classControlador_ae27af473ce2aabbe29dc4014483e777c}\index{Controlador@{Controlador}!cursosPorCalificacionYDificultad@{cursosPorCalificacionYDificultad}}
+\index{cursosPorCalificacionYDificultad@{cursosPorCalificacionYDificultad}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{cursosPorCalificacionYDificultad()}{cursosPorCalificacionYDificultad()}}
+{\footnotesize\ttfamily \label{classControlador_ae27af473ce2aabbe29dc4014483e777c} 
+void Controlador\+::cursos\+Por\+Calificacion\+YDificultad (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra los cursos por dificultad y calificación de una escuela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escuela} & Nombre de la escuela. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classControlador_a5535702570572e8fc5b989d6b8f93af4}\index{Controlador@{Controlador}!eliminarResena@{eliminarResena}}
+\index{eliminarResena@{eliminarResena}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{eliminarResena()}{eliminarResena()}}
+{\footnotesize\ttfamily \label{classControlador_a5535702570572e8fc5b989d6b8f93af4} 
+void Controlador\+::eliminar\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+resena}{}\end{DoxyParamCaption})}
+
+
+
+Elimina una reseña específica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+resena} & Identificador de la reseña a eliminar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classControlador_a0070452b827c7110e0427b456ce3cc9e}\index{Controlador@{Controlador}!profesoresPorCursoYEscuela@{profesoresPorCursoYEscuela}}
+\index{profesoresPorCursoYEscuela@{profesoresPorCursoYEscuela}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{profesoresPorCursoYEscuela()}{profesoresPorCursoYEscuela()}}
+{\footnotesize\ttfamily \label{classControlador_a0070452b827c7110e0427b456ce3cc9e} 
+void Controlador\+::profesores\+Por\+Curso\+YEscuela (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{curso}{, }\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra los profesores que imparten un curso específico en una escuela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curso} & Nombre del curso. \\
+\hline
+{\em escuela} & Nombre de la escuela. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classControlador_a6db6d476ee5f07001e7448def84dafaf}\index{Controlador@{Controlador}!resenasNoRevisadas@{resenasNoRevisadas}}
+\index{resenasNoRevisadas@{resenasNoRevisadas}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{resenasNoRevisadas()}{resenasNoRevisadas()}}
+{\footnotesize\ttfamily \label{classControlador_a6db6d476ee5f07001e7448def84dafaf} 
+void Controlador\+::resenas\+No\+Revisadas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra todas las reseñas que no han sido revisadas. 
+
+\Hypertarget{classControlador_ac5528bcb4d4b5ea2d7302be1864bc29e}\index{Controlador@{Controlador}!resenasPorCalificacionYDificultad@{resenasPorCalificacionYDificultad}}
+\index{resenasPorCalificacionYDificultad@{resenasPorCalificacionYDificultad}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{resenasPorCalificacionYDificultad()}{resenasPorCalificacionYDificultad()}}
+{\footnotesize\ttfamily \label{classControlador_ac5528bcb4d4b5ea2d7302be1864bc29e} 
+void Controlador\+::resenas\+Por\+Calificacion\+YDificultad (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra las reseñas organizadas por calificación y dificultad. 
+
+\Hypertarget{classControlador_a1b007bbb561f180512517666e1982aba}\index{Controlador@{Controlador}!verResenasNoRevisadas@{verResenasNoRevisadas}}
+\index{verResenasNoRevisadas@{verResenasNoRevisadas}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{verResenasNoRevisadas()}{verResenasNoRevisadas()}}
+{\footnotesize\ttfamily \label{classControlador_a1b007bbb561f180512517666e1982aba} 
+void Controlador\+::ver\+Resenas\+No\+Revisadas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra las reseñas que no han sido revisadas. 
+
+\Hypertarget{classControlador_afd65f04f8de9fc5de7a93fc0272030b6}\index{Controlador@{Controlador}!verTodasLasResenas@{verTodasLasResenas}}
+\index{verTodasLasResenas@{verTodasLasResenas}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{verTodasLasResenas()}{verTodasLasResenas()}}
+{\footnotesize\ttfamily \label{classControlador_afd65f04f8de9fc5de7a93fc0272030b6} 
+void Controlador\+::ver\+Todas\+Las\+Resenas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra todas las reseñas. 
+
+\Hypertarget{classControlador_a65749900487cabe937d37b20f3c07906}\index{Controlador@{Controlador}!verTodosLosCursos@{verTodosLosCursos}}
+\index{verTodosLosCursos@{verTodosLosCursos}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{verTodosLosCursos()}{verTodosLosCursos()}}
+{\footnotesize\ttfamily \label{classControlador_a65749900487cabe937d37b20f3c07906} 
+void Controlador\+::ver\+Todos\+Los\+Cursos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra la lista de todos los cursos. 
+
+\Hypertarget{classControlador_a30d782f716eb403f0f4be3f0531b07b6}\index{Controlador@{Controlador}!verTodosLosProfesores@{verTodosLosProfesores}}
+\index{verTodosLosProfesores@{verTodosLosProfesores}!Controlador@{Controlador}}
+\doxysubsubsection{\texorpdfstring{verTodosLosProfesores()}{verTodosLosProfesores()}}
+{\footnotesize\ttfamily \label{classControlador_a30d782f716eb403f0f4be3f0531b07b6} 
+void Controlador\+::ver\+Todos\+Los\+Profesores (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra la lista de todos los profesores. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/controlador/\mbox{\hyperlink{Controlador_8h}{Controlador.\+h}}\end{DoxyCompactItemize}

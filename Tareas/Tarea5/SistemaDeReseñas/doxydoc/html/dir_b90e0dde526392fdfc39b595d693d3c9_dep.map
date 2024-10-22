@@ -1,0 +1,10 @@
+<map id="includes/servicio" name="includes/servicio">
+<area shape="rect" id="node1" href="dir_85573641a7bad78e3e63f2bdf9f41574.html" title="database" alt="" coords="27,125,109,151"/>
+<area shape="rect" id="node2" href="dir_fea8e331ec4e1c727b431d7a2e55a896.html" title="entidades" alt="" coords="134,125,221,151"/>
+<area shape="rect" id="node3" href="dir_b90e0dde526392fdfc39b595d693d3c9.html" title="servicio" alt="" coords="86,52,159,77"/>
+<area shape="poly" id="edge1" href="dir_000004_000001.html" alt="" coords="116,79,87,116,83,113,112,76"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000001.html" title="3" alt="" coords="90,109,99,123"/>
+<area shape="poly" id="edge2" href="dir_000004_000002.html" alt="" coords="134,76,162,113,158,116,130,79"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000002.html" title="3" alt="" coords="159,98,169,113"/>
+<area shape="rect" id="clust1" href="dir_09e761304027c904456130627fd4dcf5.html" title="includes" alt="" coords="16,16,232,161"/>
+</map>

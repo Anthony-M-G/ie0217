@@ -1,0 +1,33 @@
+\doxysection{My\+Sql\+Connector.\+h}
+\hypertarget{MySqlConnector_8h_source}{}\label{MySqlConnector_8h_source}\index{includes/database/MySqlConnector.h@{includes/database/MySqlConnector.h}}
+\mbox{\hyperlink{MySqlConnector_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MYSQLCONNECTOR\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MYSQLCONNECTOR\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <mysql\_connection.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <mysql\_driver.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMySQLConnector}{MySQLConnector}}\ \{}
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ sql::mysql::MySQL\_Driver\ *driver;}
+\DoxyCodeLine{00055\ \ \ sql::Connection\ *connection;}
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{string}\ host;}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{string}\ user;}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{string}\ password;}
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{string}\ database;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{classMySQLConnector_a223144dfc7eaadecd2e87100dca7f892}{MySQLConnector}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ sql::Connection\ *\mbox{\hyperlink{classMySQLConnector_a0fa848fabf7306773aff120ced6e03db}{getConnection}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \mbox{\hyperlink{classMySQLConnector_aa5dd71a10782ff11039a59cfdc71ece6}{\string~MySQLConnector}}();}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PERSISTENCY\_MYSQLCONNECTOR\_H\_}}
+
+\end{DoxyCode}

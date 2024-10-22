@@ -1,0 +1,12 @@
+<map id="includes/entidades/Resena.h" name="includes/entidades/Resena.h">
+<area shape="rect" id="Node000001" title="Clase que representa una reseña de un curso y profesor." alt="" coords="167,5,311,45"/>
+<area shape="rect" id="Node000002" href="$Curso_8h.html" title="Clase que representa un curso en el sistema educativo." alt="" coords="82,93,226,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,57,175,95,171,91,209,53"/>
+<area shape="rect" id="Node000005" href="$ResenaServicio_8h.html" title="Clase de servicio para gestionar operaciones de reseñas en la base de datos." alt="" coords="265,181,448,221"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="262,55,346,180,342,183,257,58"/>
+<area shape="rect" id="Node000003" href="$CursoServicio_8h.html" title="Clase de servicio para gestionar operaciones de cursos en la base de datos." alt="" coords="5,189,241,214"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,147,130,189,125,187,140,145"/>
+<area shape="rect" id="Node000004" href="$Controlador_8h.html" title=" " alt="" coords="162,269,317,309"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,220,215,267,212,271,148,224"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="321,232,267,271,264,267,318,228"/>
+</map>

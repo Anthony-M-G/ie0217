@@ -1,0 +1,24 @@
+<map id="includes/servicio/ResenaServicio.h" name="includes/servicio/ResenaServicio.h">
+<area shape="rect" id="Node000001" title="Clase de servicio para gestionar operaciones de reseñas en la base de datos." alt="" coords="521,5,703,45"/>
+<area shape="rect" id="Node000002" href="$MySqlConnector_8h.html" title=" " alt="" coords="122,93,337,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="521,48,299,93,298,88,520,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="335,167,415,192"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="521,38,457,58,428,74,402,95,392,108,386,123,379,154,373,152,380,121,388,105,398,91,425,70,455,53,520,33"/>
+<area shape="rect" id="Node000006" href="$Resena_8h.html" title="Clase que representa una reseña de un curso y profesor." alt="" coords="412,93,575,119"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="585,48,524,88,521,84,582,43"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="523,167,581,192"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="611,46,602,81,589,120,569,157,565,154,584,118,597,79,606,45"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="649,93,873,119"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="649,43,728,84,726,89,647,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="897,93,1047,119"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="699,43,907,88,906,93,698,48"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1071,93,1134,119"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="704,35,865,57,1058,91,1057,96,864,62,703,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="254,116,340,158,338,163,252,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,167,157,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="207,121,119,163,117,158,204,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="182,167,301,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="234,119,240,153,234,154,229,119"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="476,121,407,162,405,157,473,116"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="505,117,536,155,532,158,501,121"/>
+</map>

@@ -1,0 +1,212 @@
+\doxysection{Curso\+Servicio Class Reference}
+\hypertarget{classCursoServicio}{}\label{classCursoServicio}\index{CursoServicio@{CursoServicio}}
+
+
+Clase que proporciona servicios de acceso y manipulación de datos de cursos.  
+
+
+
+
+{\ttfamily \#include $<$Curso\+Servicio.\+h$>$}
+
+
+
+Collaboration diagram for Curso\+Servicio\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classCursoServicio__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCursoServicio_a187be876dee844c446641755f313eeb0}{Curso\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCursoServicio_a920e3f4668952beafdee17cd9d61e549}{\texorpdfstring{$\sim$}{\string~}\+Curso\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCursoServicio_a19ad2e7cc0af352cf34312208eec404a}{todos\+Los\+Cursos}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene todos los cursos disponibles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCurso}{Curso}} \mbox{\hyperlink{classCursoServicio_a7d5039000dd0ec1ada8e52bbd1f30a42}{info\+Curso}} (int id\+\_\+curso) const
+\begin{DoxyCompactList}\small\item\em Obtiene información detallada de un curso específico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCursoServicio_a5b44525ad7871c0541d43c1c2d9a164e}{anhadir\+Curso}} (\mbox{\hyperlink{classCurso}{Curso}} curso)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo curso a la base de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCursoServicio_a958270fc62b02cbe9799eb34d154f88e}{actualizar\+Curso}} (\mbox{\hyperlink{classCurso}{Curso}} curso)
+\begin{DoxyCompactList}\small\item\em Actualiza la información de un curso existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCursoServicio_a2afe30fc4c22cc7848a38344077ef3f8}{eliminar\+Curso}} (int id\+\_\+curso)
+\begin{DoxyCompactList}\small\item\em Elimina un curso de la base de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCursoServicio_a079582c8250f8a37db9dd30787aef0fb}{cursos\+Por\+Dificultad\+YCalificacion}} (const std\+::string \&escuela) const
+\begin{DoxyCompactList}\small\item\em Consulta cursos filtrados por dificultad y calificación para una escuela. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCurso}{Curso}} $>$ \mbox{\hyperlink{classCursoServicio_a2e511e1df03b5539a25a6e800497d4f2}{get\+Cursos}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene los cursos almacenados en cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que proporciona servicios de acceso y manipulación de datos de cursos. 
+
+Esta clase implementa la capa de servicio para gestionar todas las operaciones relacionadas con cursos en la base de datos, incluyendo consultas, inserciones, actualizaciones y eliminaciones. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCursoServicio_a187be876dee844c446641755f313eeb0}\index{CursoServicio@{CursoServicio}!CursoServicio@{CursoServicio}}
+\index{CursoServicio@{CursoServicio}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{CursoServicio()}{CursoServicio()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a187be876dee844c446641755f313eeb0} 
+Curso\+Servicio\+::\+Curso\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+Inicializa la conexión a la base de datos y prepara el servicio para realizar operaciones. \Hypertarget{classCursoServicio_a920e3f4668952beafdee17cd9d61e549}\index{CursoServicio@{CursoServicio}!````~CursoServicio@{\texorpdfstring{$\sim$}{\string~}CursoServicio}}
+\index{````~CursoServicio@{\texorpdfstring{$\sim$}{\string~}CursoServicio}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CursoServicio()}{\string~CursoServicio()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a920e3f4668952beafdee17cd9d61e549} 
+Curso\+Servicio\+::\texorpdfstring{$\sim$}{\string~}\+Curso\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+Libera los recursos y cierra la conexión a la base de datos. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCursoServicio_a958270fc62b02cbe9799eb34d154f88e}\index{CursoServicio@{CursoServicio}!actualizarCurso@{actualizarCurso}}
+\index{actualizarCurso@{actualizarCurso}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{actualizarCurso()}{actualizarCurso()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a958270fc62b02cbe9799eb34d154f88e} 
+void Curso\+Servicio\+::actualizar\+Curso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCurso}{Curso}}}]{curso}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza la información de un curso existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curso} & Objeto \doxylink{classCurso}{Curso} con la información actualizada \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & si el curso no existe o hay error en la actualización \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classCursoServicio_a5b44525ad7871c0541d43c1c2d9a164e}\index{CursoServicio@{CursoServicio}!anhadirCurso@{anhadirCurso}}
+\index{anhadirCurso@{anhadirCurso}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{anhadirCurso()}{anhadirCurso()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a5b44525ad7871c0541d43c1c2d9a164e} 
+void Curso\+Servicio\+::anhadir\+Curso (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCurso}{Curso}}}]{curso}{}\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo curso a la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curso} & Objeto \doxylink{classCurso}{Curso} con la información a insertar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la inserción \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classCursoServicio_a079582c8250f8a37db9dd30787aef0fb}\index{CursoServicio@{CursoServicio}!cursosPorDificultadYCalificacion@{cursosPorDificultadYCalificacion}}
+\index{cursosPorDificultadYCalificacion@{cursosPorDificultadYCalificacion}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{cursosPorDificultadYCalificacion()}{cursosPorDificultadYCalificacion()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a079582c8250f8a37db9dd30787aef0fb} 
+void Curso\+Servicio\+::cursos\+Por\+Dificultad\+YCalificacion (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{escuela}{}\end{DoxyParamCaption}) const}
+
+
+
+Consulta cursos filtrados por dificultad y calificación para una escuela. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escuela} & Nombre de la escuela para filtrar los cursos \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la consulta \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classCursoServicio_a2afe30fc4c22cc7848a38344077ef3f8}\index{CursoServicio@{CursoServicio}!eliminarCurso@{eliminarCurso}}
+\index{eliminarCurso@{eliminarCurso}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{eliminarCurso()}{eliminarCurso()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a2afe30fc4c22cc7848a38344077ef3f8} 
+void Curso\+Servicio\+::eliminar\+Curso (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+curso}{}\end{DoxyParamCaption})}
+
+
+
+Elimina un curso de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+curso} & Identificador del curso a eliminar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & si el curso no existe o hay error en la eliminación \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classCursoServicio_a2e511e1df03b5539a25a6e800497d4f2}\index{CursoServicio@{CursoServicio}!getCursos@{getCursos}}
+\index{getCursos@{getCursos}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{getCursos()}{getCursos()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a2e511e1df03b5539a25a6e800497d4f2} 
+std\+::vector$<$ \mbox{\hyperlink{classCurso}{Curso}} $>$ Curso\+Servicio\+::get\+Cursos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene los cursos almacenados en cache. 
+
+\begin{DoxyReturn}{Returns}
+Vector con los cursos actualmente en cache 
+\end{DoxyReturn}
+\Hypertarget{classCursoServicio_a7d5039000dd0ec1ada8e52bbd1f30a42}\index{CursoServicio@{CursoServicio}!infoCurso@{infoCurso}}
+\index{infoCurso@{infoCurso}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{infoCurso()}{infoCurso()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a7d5039000dd0ec1ada8e52bbd1f30a42} 
+\mbox{\hyperlink{classCurso}{Curso}} Curso\+Servicio\+::info\+Curso (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+curso}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene información detallada de un curso específico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+curso} & Identificador del curso a consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Objeto \doxylink{classCurso}{Curso} con la información completa 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & si el curso no existe o hay error en la consulta \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classCursoServicio_a19ad2e7cc0af352cf34312208eec404a}\index{CursoServicio@{CursoServicio}!todosLosCursos@{todosLosCursos}}
+\index{todosLosCursos@{todosLosCursos}!CursoServicio@{CursoServicio}}
+\doxysubsubsection{\texorpdfstring{todosLosCursos()}{todosLosCursos()}}
+{\footnotesize\ttfamily \label{classCursoServicio_a19ad2e7cc0af352cf34312208eec404a} 
+void Curso\+Servicio\+::todos\+Los\+Cursos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene todos los cursos disponibles. 
+
+\begin{DoxyReturn}{Returns}
+Vector con todos los cursos en la base de datos 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em sql\+::\+SQLException} & en caso de error en la base de datos \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/servicio/\mbox{\hyperlink{CursoServicio_8h}{Curso\+Servicio.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,373 @@
+\doxysection{Resena Class Reference}
+\hypertarget{classResena}{}\label{classResena}\index{Resena@{Resena}}
+
+
+Clase que gestiona las reseñas de cursos y profesores.  
+
+
+
+
+{\ttfamily \#include $<$Resena.\+h$>$}
+
+
+
+Collaboration diagram for Resena\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classResena__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResena_a72ad49f143cc718aee81c4ee62103477}{Resena}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResena_add8ccbdc88bdb8c763bd05ce56627fc7}{Resena}} (int id\+\_\+profesor, int id\+\_\+curso, int calificacion, int nivel\+\_\+dificultad, const std\+::string \&comentario)
+\begin{DoxyCompactList}\small\item\em Constructor parametrizado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResena_a3808ffa4bfe7c3e34c1b5149b7af4c8d}{\texorpdfstring{$\sim$}{\string~}\+Resena}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_a757549d5c0f9ba6a038b3120cbfb28b9}{get\+Id\+Resena}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID de la reseña. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_aad2e40b3d47bbbc4157ee568a587669f}{set\+Id\+Resena}} (int id\+\_\+resena)
+\begin{DoxyCompactList}\small\item\em Establece el ID de la reseña. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classResena_a55a8b095ab31686483a4c16ef83b9b86}{get\+Comentario}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el comentario de la reseña. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_a2fc0462ddb4a495b0ca7e7d8361b74c8}{set\+Comentario}} (const std\+::string \&comentario)
+\begin{DoxyCompactList}\small\item\em Establece el comentario de la reseña. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_a8b25a370da9c0ac5568052fe93477590}{get\+Calificacion}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la calificación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_ac5f0b11cf587349abd906f7f2ff0172f}{set\+Calificacion}} (int calificacion)
+\begin{DoxyCompactList}\small\item\em Establece la calificación. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_acd1c987fa8feb56be169a68e5b7a8e09}{get\+Id\+Profesor}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del profesor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_aa7ac3b25813b645d4ee6b020321fba46}{set\+Id\+Profesor}} (int id\+\_\+profesor)
+\begin{DoxyCompactList}\small\item\em Establece el ID del profesor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_af4f2b0e463e2f191c5e7c8123d72b927}{get\+Id\+Curso}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el ID del curso. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_ab7f26a8f31efb4ca09716313476dc044}{set\+Id\+Curso}} (int id\+\_\+curso)
+\begin{DoxyCompactList}\small\item\em Establece el ID del curso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_a2237354c449a1b45b79426ade0b9bbcf}{get\+Calificacion\+General}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la calificación general. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_a7c71e947daa9572e316e3841840d5b15}{set\+Calificacion\+General}} (int calificacion\+\_\+general)
+\begin{DoxyCompactList}\small\item\em Establece la calificación general. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResena_a67fc5a990db4bf9566ee5f64244e2fae}{get\+Nivel\+Dificultad}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el nivel de dificultad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_a3e92ea2b74b95190114687b50b356872}{set\+Nivel\+Dificultad}} (int nivel\+\_\+dificultad)
+\begin{DoxyCompactList}\small\item\em Establece el nivel de dificultad. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classResena_ae3d9a40efd3fbc1d636659b2d3c5c8ad}{get\+Revisado}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el estado de revisión. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResena_a7f8b187a13fbd126ac63d629a6c14006}{set\+Revisado}} (bool revisado)
+\begin{DoxyCompactList}\small\item\em Establece el estado de revisión. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classResena_a2a7cf8c71c461530098669b3e3803b6e}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classResena}{Resena}} \&resena)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de inserción para imprimir la reseña. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que gestiona las reseñas de cursos y profesores. 
+
+Esta clase maneja las reseñas que los estudiantes pueden hacer sobre los cursos y profesores, incluyendo calificaciones, comentarios y niveles de dificultad. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classResena_a72ad49f143cc718aee81c4ee62103477}\index{Resena@{Resena}!Resena@{Resena}}
+\index{Resena@{Resena}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{Resena()}{Resena()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classResena_a72ad49f143cc718aee81c4ee62103477} 
+Resena\+::\+Resena (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\Hypertarget{classResena_add8ccbdc88bdb8c763bd05ce56627fc7}\index{Resena@{Resena}!Resena@{Resena}}
+\index{Resena@{Resena}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{Resena()}{Resena()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classResena_add8ccbdc88bdb8c763bd05ce56627fc7} 
+Resena\+::\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+profesor}{, }\item[{int}]{id\+\_\+curso}{, }\item[{int}]{calificacion}{, }\item[{int}]{nivel\+\_\+dificultad}{, }\item[{const std\+::string \&}]{comentario}{}\end{DoxyParamCaption})}
+
+
+
+Constructor parametrizado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+profesor} & ID del profesor evaluado \\
+\hline
+{\em id\+\_\+curso} & ID del curso evaluado \\
+\hline
+{\em calificacion} & Calificación numérica \\
+\hline
+{\em nivel\+\_\+dificultad} & Nivel de dificultad del curso \\
+\hline
+{\em comentario} & Comentario textual de la reseña \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_a3808ffa4bfe7c3e34c1b5149b7af4c8d}\index{Resena@{Resena}!````~Resena@{\texorpdfstring{$\sim$}{\string~}Resena}}
+\index{````~Resena@{\texorpdfstring{$\sim$}{\string~}Resena}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Resena()}{\string~Resena()}}
+{\footnotesize\ttfamily \label{classResena_a3808ffa4bfe7c3e34c1b5149b7af4c8d} 
+Resena\+::\texorpdfstring{$\sim$}{\string~}\+Resena (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classResena_a8b25a370da9c0ac5568052fe93477590}\index{Resena@{Resena}!getCalificacion@{getCalificacion}}
+\index{getCalificacion@{getCalificacion}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getCalificacion()}{getCalificacion()}}
+{\footnotesize\ttfamily \label{classResena_a8b25a370da9c0ac5568052fe93477590} 
+int Resena\+::get\+Calificacion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la calificación. 
+
+\begin{DoxyReturn}{Returns}
+Calificación numérica 
+\end{DoxyReturn}
+\Hypertarget{classResena_a2237354c449a1b45b79426ade0b9bbcf}\index{Resena@{Resena}!getCalificacionGeneral@{getCalificacionGeneral}}
+\index{getCalificacionGeneral@{getCalificacionGeneral}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getCalificacionGeneral()}{getCalificacionGeneral()}}
+{\footnotesize\ttfamily \label{classResena_a2237354c449a1b45b79426ade0b9bbcf} 
+int Resena\+::get\+Calificacion\+General (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la calificación general. 
+
+\begin{DoxyReturn}{Returns}
+Calificación general del curso/profesor 
+\end{DoxyReturn}
+\Hypertarget{classResena_a55a8b095ab31686483a4c16ef83b9b86}\index{Resena@{Resena}!getComentario@{getComentario}}
+\index{getComentario@{getComentario}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getComentario()}{getComentario()}}
+{\footnotesize\ttfamily \label{classResena_a55a8b095ab31686483a4c16ef83b9b86} 
+std\+::string Resena\+::get\+Comentario (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el comentario de la reseña. 
+
+\begin{DoxyReturn}{Returns}
+Comentario textual 
+\end{DoxyReturn}
+\Hypertarget{classResena_af4f2b0e463e2f191c5e7c8123d72b927}\index{Resena@{Resena}!getIdCurso@{getIdCurso}}
+\index{getIdCurso@{getIdCurso}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getIdCurso()}{getIdCurso()}}
+{\footnotesize\ttfamily \label{classResena_af4f2b0e463e2f191c5e7c8123d72b927} 
+int Resena\+::get\+Id\+Curso (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del curso. 
+
+\begin{DoxyReturn}{Returns}
+ID del curso evaluado 
+\end{DoxyReturn}
+\Hypertarget{classResena_acd1c987fa8feb56be169a68e5b7a8e09}\index{Resena@{Resena}!getIdProfesor@{getIdProfesor}}
+\index{getIdProfesor@{getIdProfesor}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getIdProfesor()}{getIdProfesor()}}
+{\footnotesize\ttfamily \label{classResena_acd1c987fa8feb56be169a68e5b7a8e09} 
+int Resena\+::get\+Id\+Profesor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID del profesor. 
+
+\begin{DoxyReturn}{Returns}
+ID del profesor evaluado 
+\end{DoxyReturn}
+\Hypertarget{classResena_a757549d5c0f9ba6a038b3120cbfb28b9}\index{Resena@{Resena}!getIdResena@{getIdResena}}
+\index{getIdResena@{getIdResena}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getIdResena()}{getIdResena()}}
+{\footnotesize\ttfamily \label{classResena_a757549d5c0f9ba6a038b3120cbfb28b9} 
+int Resena\+::get\+Id\+Resena (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el ID de la reseña. 
+
+\begin{DoxyReturn}{Returns}
+Identificador único de la reseña 
+\end{DoxyReturn}
+\Hypertarget{classResena_a67fc5a990db4bf9566ee5f64244e2fae}\index{Resena@{Resena}!getNivelDificultad@{getNivelDificultad}}
+\index{getNivelDificultad@{getNivelDificultad}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getNivelDificultad()}{getNivelDificultad()}}
+{\footnotesize\ttfamily \label{classResena_a67fc5a990db4bf9566ee5f64244e2fae} 
+int Resena\+::get\+Nivel\+Dificultad (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el nivel de dificultad. 
+
+\begin{DoxyReturn}{Returns}
+Nivel de dificultad del curso 
+\end{DoxyReturn}
+\Hypertarget{classResena_ae3d9a40efd3fbc1d636659b2d3c5c8ad}\index{Resena@{Resena}!getRevisado@{getRevisado}}
+\index{getRevisado@{getRevisado}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{getRevisado()}{getRevisado()}}
+{\footnotesize\ttfamily \label{classResena_ae3d9a40efd3fbc1d636659b2d3c5c8ad} 
+bool Resena\+::get\+Revisado (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el estado de revisión. 
+
+\begin{DoxyReturn}{Returns}
+true si la reseña ha sido revisada, false en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{classResena_ac5f0b11cf587349abd906f7f2ff0172f}\index{Resena@{Resena}!setCalificacion@{setCalificacion}}
+\index{setCalificacion@{setCalificacion}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setCalificacion()}{setCalificacion()}}
+{\footnotesize\ttfamily \label{classResena_ac5f0b11cf587349abd906f7f2ff0172f} 
+void Resena\+::set\+Calificacion (\begin{DoxyParamCaption}\item[{int}]{calificacion}{}\end{DoxyParamCaption})}
+
+
+
+Establece la calificación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calificacion} & Nueva calificación \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_a7c71e947daa9572e316e3841840d5b15}\index{Resena@{Resena}!setCalificacionGeneral@{setCalificacionGeneral}}
+\index{setCalificacionGeneral@{setCalificacionGeneral}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setCalificacionGeneral()}{setCalificacionGeneral()}}
+{\footnotesize\ttfamily \label{classResena_a7c71e947daa9572e316e3841840d5b15} 
+void Resena\+::set\+Calificacion\+General (\begin{DoxyParamCaption}\item[{int}]{calificacion\+\_\+general}{}\end{DoxyParamCaption})}
+
+
+
+Establece la calificación general. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calificacion\+\_\+general} & Nueva calificación general \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_a2fc0462ddb4a495b0ca7e7d8361b74c8}\index{Resena@{Resena}!setComentario@{setComentario}}
+\index{setComentario@{setComentario}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setComentario()}{setComentario()}}
+{\footnotesize\ttfamily \label{classResena_a2fc0462ddb4a495b0ca7e7d8361b74c8} 
+void Resena\+::set\+Comentario (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{comentario}{}\end{DoxyParamCaption})}
+
+
+
+Establece el comentario de la reseña. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comentario} & Nuevo comentario \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_ab7f26a8f31efb4ca09716313476dc044}\index{Resena@{Resena}!setIdCurso@{setIdCurso}}
+\index{setIdCurso@{setIdCurso}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setIdCurso()}{setIdCurso()}}
+{\footnotesize\ttfamily \label{classResena_ab7f26a8f31efb4ca09716313476dc044} 
+void Resena\+::set\+Id\+Curso (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+curso}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID del curso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+curso} & Nuevo ID del curso \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_aa7ac3b25813b645d4ee6b020321fba46}\index{Resena@{Resena}!setIdProfesor@{setIdProfesor}}
+\index{setIdProfesor@{setIdProfesor}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setIdProfesor()}{setIdProfesor()}}
+{\footnotesize\ttfamily \label{classResena_aa7ac3b25813b645d4ee6b020321fba46} 
+void Resena\+::set\+Id\+Profesor (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+profesor}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID del profesor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+profesor} & Nuevo ID del profesor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_aad2e40b3d47bbbc4157ee568a587669f}\index{Resena@{Resena}!setIdResena@{setIdResena}}
+\index{setIdResena@{setIdResena}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setIdResena()}{setIdResena()}}
+{\footnotesize\ttfamily \label{classResena_aad2e40b3d47bbbc4157ee568a587669f} 
+void Resena\+::set\+Id\+Resena (\begin{DoxyParamCaption}\item[{int}]{id\+\_\+resena}{}\end{DoxyParamCaption})}
+
+
+
+Establece el ID de la reseña. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+resena} & Nuevo identificador de la reseña \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_a3e92ea2b74b95190114687b50b356872}\index{Resena@{Resena}!setNivelDificultad@{setNivelDificultad}}
+\index{setNivelDificultad@{setNivelDificultad}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setNivelDificultad()}{setNivelDificultad()}}
+{\footnotesize\ttfamily \label{classResena_a3e92ea2b74b95190114687b50b356872} 
+void Resena\+::set\+Nivel\+Dificultad (\begin{DoxyParamCaption}\item[{int}]{nivel\+\_\+dificultad}{}\end{DoxyParamCaption})}
+
+
+
+Establece el nivel de dificultad. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nivel\+\_\+dificultad} & Nuevo nivel de dificultad \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classResena_a7f8b187a13fbd126ac63d629a6c14006}\index{Resena@{Resena}!setRevisado@{setRevisado}}
+\index{setRevisado@{setRevisado}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{setRevisado()}{setRevisado()}}
+{\footnotesize\ttfamily \label{classResena_a7f8b187a13fbd126ac63d629a6c14006} 
+void Resena\+::set\+Revisado (\begin{DoxyParamCaption}\item[{bool}]{revisado}{}\end{DoxyParamCaption})}
+
+
+
+Establece el estado de revisión. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em revisado} & Nuevo estado de revisión \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classResena_a2a7cf8c71c461530098669b3e3803b6e}\index{Resena@{Resena}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Resena@{Resena}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{classResena_a2a7cf8c71c461530098669b3e3803b6e} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{classResena}{Resena}} \&}]{resena}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador de inserción para imprimir la reseña. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream de salida \\
+\hline
+{\em resena} & Objeto \doxylink{classResena}{Resena} a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia al stream de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/entidades/\mbox{\hyperlink{Resena_8h}{Resena.\+h}}\end{DoxyCompactItemize}

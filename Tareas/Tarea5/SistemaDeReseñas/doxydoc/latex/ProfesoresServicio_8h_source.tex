@@ -1,0 +1,42 @@
+\doxysection{Profesores\+Servicio.\+h}
+\hypertarget{ProfesoresServicio_8h_source}{}\label{ProfesoresServicio_8h_source}\index{includes/servicio/ProfesoresServicio.h@{includes/servicio/ProfesoresServicio.h}}
+\mbox{\hyperlink{ProfesoresServicio_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ PROFESORES\_SERVICIO\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ PROFESORES\_SERVICIO\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{MySqlConnector_8h}{../database/MySqlConnector.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Profesor_8h}{../entidades/Profesor.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cppconn/connection.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <cppconn/driver.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <cppconn/exception.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <cppconn/prepared\_statement.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <cppconn/resultset.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <cppconn/statement.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <mysql\_connection.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <mysql\_driver.h>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProfesoresServicio}{ProfesoresServicio}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{classMySQLConnector}{MySQLConnector}}\ *connector;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ std::vector<Profesor>\ profesores;\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classProfesoresServicio_a8fbe6e83e5d0929a69649ebace1622a2}{ProfesoresServicio}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \mbox{\hyperlink{classProfesoresServicio_aac7242875c212b94abe4b42177ae024e}{\string~ProfesoresServicio}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProfesoresServicio_a9262488419f7865efc70925a485f413d}{todosLosProfesores}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProfesoresServicio_a993faa03db66c06f249168dd96dbf5ef}{profesorPorCursoYEscuela}}(\textcolor{keyword}{const}\ std::string\ \&curso,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&escuela)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00085\ \ \ std::vector<Profesor>\ \mbox{\hyperlink{classProfesoresServicio_a4b99e5505328b7e643af5a149b39c03c}{getProfesores}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROFESORES\_SERVICIO\_H\_}}
+
+\end{DoxyCode}
