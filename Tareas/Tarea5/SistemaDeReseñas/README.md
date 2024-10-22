@@ -111,6 +111,50 @@ Las siguientes consultas son ejecutadas desde el código en C++ para interactuar
 
 3. Asegúrate de que las tablas `Profesores`, `Cursos`, y `Resenas` estén creadas y de que tengan los datos necesarios para ejecutar las consultas.
 
+## Código SQL
+
+```sql
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS SistemaResenas;
+USE SistemaResenas;
+
+-- Crear la tabla Profesores
+CREATE TABLE Profesores (
+    id_profesor INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    escuela VARCHAR(255) NOT NULL
+);
+
+-- Crear la tabla Cursos
+CREATE TABLE Cursos (
+    id_curso INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_curso VARCHAR(255) NOT NULL,
+    id_profesor INT,
+    FOREIGN KEY (id_profesor) REFERENCES Profesores(id_profesor) ON DELETE CASCADE
+);
+
+-- Crear la tabla Reseñas
+CREATE TABLE Resenas (
+    id_resena INT AUTO_INCREMENT PRIMARY KEY,
+    id_profesor INT,
+    id_curso INT,
+    calificacion_general INT CHECK (calificacion_general >= 1 AND calificacion_general <= 5),
+    nivel_dificultad INT CHECK (nivel_dificultad >= 1 AND nivel_dificultad <= 5),
+    comentario TEXT,
+    revisado BOOLEAN DEFAULT 0,
+    FOREIGN KEY (id_profesor) REFERENCES Profesores(id_profesor) ON DELETE CASCADE,
+    FOREIGN KEY (id_curso) REFERENCES Cursos(id_curso) ON DELETE CASCADE
+);
+
+-- Crear índices para optimizar las consultas
+CREATE INDEX idx_profesor ON Resenas(id_profesor);
+CREATE INDEX idx_curso ON Resenas(id_curso);
+CREATE INDEX idx_calificacion ON Resenas(calificacion_general);
+CREATE INDEX idx_dificultad ON Resenas(nivel_dificultad);
+
+
+```
+
 ## Documentación
 
 [aquí](https://ie0217-tarea05-p1-ih0fyul7y-anthonys-projects-fc83cd10.vercel.app/)
