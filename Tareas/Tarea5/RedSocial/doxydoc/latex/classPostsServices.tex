@@ -1,0 +1,199 @@
+\doxysection{Posts\+Services Class Reference}
+\hypertarget{classPostsServices}{}\label{classPostsServices}\index{PostsServices@{PostsServices}}
+
+
+Clase que maneja las operaciones relacionadas con las publicaciones en una red social.  
+
+
+
+
+{\ttfamily \#include $<$Posts\+Services.\+h$>$}
+
+
+
+Collaboration diagram for Posts\+Services\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classPostsServices__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPostsServices_ab4565f51fa5d27480e6e8ed6cdc4ce74}{Posts\+Services}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_a5c2c305f659d5b72a2e2b628a694868f}{get\+Posts}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las publicaciones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_ab7e2015f8fe2f0e827186fc11b169fc5}{insert\+Post}} (const std\+::string \&author, const std\+::string \&content)
+\begin{DoxyCompactList}\small\item\em Inserta una nueva publicación en la base de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_ada6d7b0e2de1a6691bc4e1205659fe7b}{get\+Posts\+By\+Author}} (const std\+::string \&author)
+\begin{DoxyCompactList}\small\item\em Obtiene publicaciones de un autor específico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_a9b5800d66c6410dac901f3734416e692}{get\+Posts\+Ordered\+By\+Date}} (const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Obtiene publicaciones ordenadas por fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_af3c19773dd385fbffcffc924ba0f82e9}{add\+Comment\+To\+Post}} (const std\+::string \&author, const std\+::string \&date, const std\+::string \&username, const std\+::string \&content)
+\begin{DoxyCompactList}\small\item\em Agrega un comentario a una publicación existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_a874a44ef603aa28a938594c44cc136ea}{update\+Post\+Content}} (const std\+::string \&author, const std\+::string \&date, const std\+::string \&new\+Content)
+\begin{DoxyCompactList}\small\item\em Actualiza el contenido de una publicación por autor y fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_ae9f053d04f74069487ff78e663896f41}{delete\+Post\+By\+Author\+And\+Date}} (const std\+::string \&author, const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Elimina una publicación por autor y fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsServices_a6292e22230f3047ca50a5b99c7f342c5}{mark\+Post\+As\+Featured}} (const std\+::string \&author, const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Marca una publicación como destacada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que maneja las operaciones relacionadas con las publicaciones en una red social. 
+
+La clase {\ttfamily \doxylink{classPostsServices}{Posts\+Services}} proporciona métodos para gestionar publicaciones en una base de datos Mongo\+DB, permitiendo insertar, consultar, actualizar, eliminar publicaciones, y manejar comentarios. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPostsServices_ab4565f51fa5d27480e6e8ed6cdc4ce74}\index{PostsServices@{PostsServices}!PostsServices@{PostsServices}}
+\index{PostsServices@{PostsServices}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{PostsServices()}{PostsServices()}}
+{\footnotesize\ttfamily \label{classPostsServices_ab4565f51fa5d27480e6e8ed6cdc4ce74} 
+Posts\+Services\+::\+Posts\+Services (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor por defecto. 
+
+Inicializa un nuevo servicio de publicaciones. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPostsServices_af3c19773dd385fbffcffc924ba0f82e9}\index{PostsServices@{PostsServices}!addCommentToPost@{addCommentToPost}}
+\index{addCommentToPost@{addCommentToPost}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{addCommentToPost()}{addCommentToPost()}}
+{\footnotesize\ttfamily \label{classPostsServices_af3c19773dd385fbffcffc924ba0f82e9} 
+void Posts\+Services\+::add\+Comment\+To\+Post (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{, }\item[{const std\+::string \&}]{username}{, }\item[{const std\+::string \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un comentario a una publicación existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+{\em username} & El nombre de usuario que agrega el comentario. \\
+\hline
+{\em content} & El contenido del comentario. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_ae9f053d04f74069487ff78e663896f41}\index{PostsServices@{PostsServices}!deletePostByAuthorAndDate@{deletePostByAuthorAndDate}}
+\index{deletePostByAuthorAndDate@{deletePostByAuthorAndDate}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{deletePostByAuthorAndDate()}{deletePostByAuthorAndDate()}}
+{\footnotesize\ttfamily \label{classPostsServices_ae9f053d04f74069487ff78e663896f41} 
+void Posts\+Services\+::delete\+Post\+By\+Author\+And\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Elimina una publicación por autor y fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_a5c2c305f659d5b72a2e2b628a694868f}\index{PostsServices@{PostsServices}!getPosts@{getPosts}}
+\index{getPosts@{getPosts}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{getPosts()}{getPosts()}}
+{\footnotesize\ttfamily \label{classPostsServices_a5c2c305f659d5b72a2e2b628a694868f} 
+void Posts\+Services\+::get\+Posts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene todas las publicaciones. 
+
+Recupera todas las publicaciones de la base de datos. \Hypertarget{classPostsServices_ada6d7b0e2de1a6691bc4e1205659fe7b}\index{PostsServices@{PostsServices}!getPostsByAuthor@{getPostsByAuthor}}
+\index{getPostsByAuthor@{getPostsByAuthor}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{getPostsByAuthor()}{getPostsByAuthor()}}
+{\footnotesize\ttfamily \label{classPostsServices_ada6d7b0e2de1a6691bc4e1205659fe7b} 
+void Posts\+Services\+::get\+Posts\+By\+Author (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene publicaciones de un autor específico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor cuyas publicaciones se desean obtener. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_a9b5800d66c6410dac901f3734416e692}\index{PostsServices@{PostsServices}!getPostsOrderedByDate@{getPostsOrderedByDate}}
+\index{getPostsOrderedByDate@{getPostsOrderedByDate}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{getPostsOrderedByDate()}{getPostsOrderedByDate()}}
+{\footnotesize\ttfamily \label{classPostsServices_a9b5800d66c6410dac901f3734416e692} 
+void Posts\+Services\+::get\+Posts\+Ordered\+By\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene publicaciones ordenadas por fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & La fecha utilizada para ordenar las publicaciones. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_ab7e2015f8fe2f0e827186fc11b169fc5}\index{PostsServices@{PostsServices}!insertPost@{insertPost}}
+\index{insertPost@{insertPost}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{insertPost()}{insertPost()}}
+{\footnotesize\ttfamily \label{classPostsServices_ab7e2015f8fe2f0e827186fc11b169fc5} 
+void Posts\+Services\+::insert\+Post (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Inserta una nueva publicación en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em content} & El contenido de la publicación. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_a6292e22230f3047ca50a5b99c7f342c5}\index{PostsServices@{PostsServices}!markPostAsFeatured@{markPostAsFeatured}}
+\index{markPostAsFeatured@{markPostAsFeatured}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{markPostAsFeatured()}{markPostAsFeatured()}}
+{\footnotesize\ttfamily \label{classPostsServices_a6292e22230f3047ca50a5b99c7f342c5} 
+void Posts\+Services\+::mark\+Post\+As\+Featured (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Marca una publicación como destacada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classPostsServices_a874a44ef603aa28a938594c44cc136ea}\index{PostsServices@{PostsServices}!updatePostContent@{updatePostContent}}
+\index{updatePostContent@{updatePostContent}!PostsServices@{PostsServices}}
+\doxysubsubsection{\texorpdfstring{updatePostContent()}{updatePostContent()}}
+{\footnotesize\ttfamily \label{classPostsServices_a874a44ef603aa28a938594c44cc136ea} 
+void Posts\+Services\+::update\+Post\+Content (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{, }\item[{const std\+::string \&}]{new\+Content}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza el contenido de una publicación por autor y fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+{\em new\+Content} & El nuevo contenido para la publicación. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/servicios/\mbox{\hyperlink{PostsServices_8h}{Posts\+Services.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\doxysection{Posts\+Controller Class Reference}
+\hypertarget{classPostsController}{}\label{classPostsController}\index{PostsController@{PostsController}}
+
+
+Controlador para manejar las solicitudes relacionadas con las publicaciones.  
+
+
+
+
+{\ttfamily \#include $<$Posts\+Controller.\+h$>$}
+
+
+
+Collaboration diagram for Posts\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classPostsController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPostsController_a9d7494916e5df14f36f43c1ace087e50}{Posts\+Controller}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPostsController_abf7afb4e3c0396bf1e52487395cdb8ff}{\texorpdfstring{$\sim$}{\string~}\+Posts\+Controller}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a5660ea72adf0e830532951447d5d8cbf}{get\+Posts}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las publicaciones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a10cc0fef6980e12b1ff7020edc904ec5}{insert\+Post}} (const std\+::string \&author, const std\+::string \&content)
+\begin{DoxyCompactList}\small\item\em Inserta una nueva publicación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a68b4adc45c18b3061879e415879076a0}{get\+Posts\+By\+Author}} (const std\+::string \&author)
+\begin{DoxyCompactList}\small\item\em Obtiene publicaciones por autor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a6d84bca4f908475dbc05c3ea15777b9b}{get\+Posts\+Ordered\+By\+Date}} (const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Obtiene publicaciones ordenadas por fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_af2485ef89563104d771367cd7ea4ca3c}{add\+Comment\+To\+Post}} (const std\+::string \&author, const std\+::string \&date, const std\+::string \&username, const std\+::string \&content)
+\begin{DoxyCompactList}\small\item\em Agrega un comentario a una publicación existente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a5b0e4a37a8dfe0a52f7e3c780c76b27d}{update\+Post\+Content}} (const std\+::string \&author, const std\+::string \&date, const std\+::string \&new\+Content)
+\begin{DoxyCompactList}\small\item\em Actualiza el contenido de una publicación por autor y fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a24e1f89612a401631d41d8a0b07cbc9f}{delete\+Post\+By\+Author\+And\+Date}} (const std\+::string \&author, const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Elimina una publicación por autor y fecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPostsController_a738dc59f183cf5ba3dbc0e38300bcf40}{mark\+Post\+As\+Featured}} (const std\+::string \&author, const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Marca una publicación como destacada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador para manejar las solicitudes relacionadas con las publicaciones. 
+
+La clase {\ttfamily \doxylink{classPostsController}{Posts\+Controller}} es responsable de recibir y procesar solicitudes para gestionar las publicaciones en la red social. Llama a los métodos de {\ttfamily \doxylink{classPostsServices}{Posts\+Services}} para interactuar con la base de datos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPostsController_a9d7494916e5df14f36f43c1ace087e50}\index{PostsController@{PostsController}!PostsController@{PostsController}}
+\index{PostsController@{PostsController}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{PostsController()}{PostsController()}}
+{\footnotesize\ttfamily \label{classPostsController_a9d7494916e5df14f36f43c1ace087e50} 
+Posts\+Controller\+::\+Posts\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor por defecto. 
+
+Inicializa un nuevo controlador de publicaciones. \Hypertarget{classPostsController_abf7afb4e3c0396bf1e52487395cdb8ff}\index{PostsController@{PostsController}!````~PostsController@{\texorpdfstring{$\sim$}{\string~}PostsController}}
+\index{````~PostsController@{\texorpdfstring{$\sim$}{\string~}PostsController}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PostsController()}{\string~PostsController()}}
+{\footnotesize\ttfamily \label{classPostsController_abf7afb4e3c0396bf1e52487395cdb8ff} 
+Posts\+Controller\+::\texorpdfstring{$\sim$}{\string~}\+Posts\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor por defecto. 
+
+Destruye el controlador de publicaciones. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPostsController_af2485ef89563104d771367cd7ea4ca3c}\index{PostsController@{PostsController}!addCommentToPost@{addCommentToPost}}
+\index{addCommentToPost@{addCommentToPost}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{addCommentToPost()}{addCommentToPost()}}
+{\footnotesize\ttfamily \label{classPostsController_af2485ef89563104d771367cd7ea4ca3c} 
+void Posts\+Controller\+::add\+Comment\+To\+Post (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{, }\item[{const std\+::string \&}]{username}{, }\item[{const std\+::string \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un comentario a una publicación existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+{\em username} & El nombre de usuario que agrega el comentario. \\
+\hline
+{\em content} & El contenido del comentario.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para agregar un comentario a una publicación. \Hypertarget{classPostsController_a24e1f89612a401631d41d8a0b07cbc9f}\index{PostsController@{PostsController}!deletePostByAuthorAndDate@{deletePostByAuthorAndDate}}
+\index{deletePostByAuthorAndDate@{deletePostByAuthorAndDate}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{deletePostByAuthorAndDate()}{deletePostByAuthorAndDate()}}
+{\footnotesize\ttfamily \label{classPostsController_a24e1f89612a401631d41d8a0b07cbc9f} 
+void Posts\+Controller\+::delete\+Post\+By\+Author\+And\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Elimina una publicación por autor y fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para eliminar una publicación específica de la base de datos. \Hypertarget{classPostsController_a5660ea72adf0e830532951447d5d8cbf}\index{PostsController@{PostsController}!getPosts@{getPosts}}
+\index{getPosts@{getPosts}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{getPosts()}{getPosts()}}
+{\footnotesize\ttfamily \label{classPostsController_a5660ea72adf0e830532951447d5d8cbf} 
+void Posts\+Controller\+::get\+Posts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene todas las publicaciones. 
+
+Llama al servicio para recuperar todas las publicaciones de la base de datos. \Hypertarget{classPostsController_a68b4adc45c18b3061879e415879076a0}\index{PostsController@{PostsController}!getPostsByAuthor@{getPostsByAuthor}}
+\index{getPostsByAuthor@{getPostsByAuthor}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{getPostsByAuthor()}{getPostsByAuthor()}}
+{\footnotesize\ttfamily \label{classPostsController_a68b4adc45c18b3061879e415879076a0} 
+void Posts\+Controller\+::get\+Posts\+By\+Author (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene publicaciones por autor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor cuyas publicaciones se desean obtener.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para recuperar las publicaciones de un autor específico. \Hypertarget{classPostsController_a6d84bca4f908475dbc05c3ea15777b9b}\index{PostsController@{PostsController}!getPostsOrderedByDate@{getPostsOrderedByDate}}
+\index{getPostsOrderedByDate@{getPostsOrderedByDate}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{getPostsOrderedByDate()}{getPostsOrderedByDate()}}
+{\footnotesize\ttfamily \label{classPostsController_a6d84bca4f908475dbc05c3ea15777b9b} 
+void Posts\+Controller\+::get\+Posts\+Ordered\+By\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene publicaciones ordenadas por fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & La fecha utilizada para ordenar las publicaciones.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para obtener publicaciones ordenadas cronológicamente. \Hypertarget{classPostsController_a10cc0fef6980e12b1ff7020edc904ec5}\index{PostsController@{PostsController}!insertPost@{insertPost}}
+\index{insertPost@{insertPost}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{insertPost()}{insertPost()}}
+{\footnotesize\ttfamily \label{classPostsController_a10cc0fef6980e12b1ff7020edc904ec5} 
+void Posts\+Controller\+::insert\+Post (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Inserta una nueva publicación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em content} & El contenido de la publicación.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para insertar una nueva publicación en la base de datos. \Hypertarget{classPostsController_a738dc59f183cf5ba3dbc0e38300bcf40}\index{PostsController@{PostsController}!markPostAsFeatured@{markPostAsFeatured}}
+\index{markPostAsFeatured@{markPostAsFeatured}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{markPostAsFeatured()}{markPostAsFeatured()}}
+{\footnotesize\ttfamily \label{classPostsController_a738dc59f183cf5ba3dbc0e38300bcf40} 
+void Posts\+Controller\+::mark\+Post\+As\+Featured (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{}\end{DoxyParamCaption})}
+
+
+
+Marca una publicación como destacada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para marcar una publicación como destacada. \Hypertarget{classPostsController_a5b0e4a37a8dfe0a52f7e3c780c76b27d}\index{PostsController@{PostsController}!updatePostContent@{updatePostContent}}
+\index{updatePostContent@{updatePostContent}!PostsController@{PostsController}}
+\doxysubsubsection{\texorpdfstring{updatePostContent()}{updatePostContent()}}
+{\footnotesize\ttfamily \label{classPostsController_a5b0e4a37a8dfe0a52f7e3c780c76b27d} 
+void Posts\+Controller\+::update\+Post\+Content (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{author}{, }\item[{const std\+::string \&}]{date}{, }\item[{const std\+::string \&}]{new\+Content}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza el contenido de una publicación por autor y fecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em author} & El nombre del autor de la publicación. \\
+\hline
+{\em date} & La fecha de la publicación. \\
+\hline
+{\em new\+Content} & El nuevo contenido para la publicación.\\
+\hline
+\end{DoxyParams}
+Llama al servicio para actualizar el contenido de una publicación. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/controlador/\mbox{\hyperlink{PostsController_8h}{Posts\+Controller.\+h}}\end{DoxyCompactItemize}

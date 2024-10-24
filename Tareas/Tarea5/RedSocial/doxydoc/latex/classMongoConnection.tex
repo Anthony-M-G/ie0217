@@ -1,0 +1,84 @@
+\doxysection{Mongo\+Connection Class Reference}
+\hypertarget{classMongoConnection}{}\label{classMongoConnection}\index{MongoConnection@{MongoConnection}}
+
+
+Esta clase maneja la conexión a una base de datos Mongo\+DB y proporciona métodos para interactuar con ella.  
+
+
+
+
+{\ttfamily \#include $<$Mongodb\+Conn.\+h$>$}
+
+
+
+Collaboration diagram for Mongo\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classMongoConnection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMongoConnection_a11739b3299b6866a420ab5f85b7398fb}{Mongo\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classMongoConnection}{Mongo\+Connection}. \end{DoxyCompactList}\item 
+mongocxx\+::collection \mbox{\hyperlink{classMongoConnection_aea582169bb2a2aa3cbfdc2be9f1d6923}{get\+Collection}} (const std\+::string \&collection\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Obtiene una colección específica de la base de datos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMongoConnection_a44c91620f6181bf3d5c2c6a5fde2f269}{\texorpdfstring{$\sim$}{\string~}\+Mongo\+Connection}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \doxylink{classMongoConnection}{Mongo\+Connection}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta clase maneja la conexión a una base de datos Mongo\+DB y proporciona métodos para interactuar con ella. 
+
+La clase {\ttfamily \doxylink{classMongoConnection}{Mongo\+Connection}} se encarga de inicializar la instancia de Mongo\+DB, crear el cliente para conectarse a la base de datos y proporcionar acceso a las colecciones de la base de datos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMongoConnection_a11739b3299b6866a420ab5f85b7398fb}\index{MongoConnection@{MongoConnection}!MongoConnection@{MongoConnection}}
+\index{MongoConnection@{MongoConnection}!MongoConnection@{MongoConnection}}
+\doxysubsubsection{\texorpdfstring{MongoConnection()}{MongoConnection()}}
+{\footnotesize\ttfamily \label{classMongoConnection_a11739b3299b6866a420ab5f85b7398fb} 
+Mongo\+Connection\+::\+Mongo\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classMongoConnection}{Mongo\+Connection}. 
+
+Inicializa una nueva instancia de Mongo\+DB y establece la conexión con la base de datos. \Hypertarget{classMongoConnection_a44c91620f6181bf3d5c2c6a5fde2f269}\index{MongoConnection@{MongoConnection}!````~MongoConnection@{\texorpdfstring{$\sim$}{\string~}MongoConnection}}
+\index{````~MongoConnection@{\texorpdfstring{$\sim$}{\string~}MongoConnection}!MongoConnection@{MongoConnection}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MongoConnection()}{\string~MongoConnection()}}
+{\footnotesize\ttfamily \label{classMongoConnection_a44c91620f6181bf3d5c2c6a5fde2f269} 
+Mongo\+Connection\+::\texorpdfstring{$\sim$}{\string~}\+Mongo\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase \doxylink{classMongoConnection}{Mongo\+Connection}. 
+
+Cierra la conexión a la base de datos y limpia los recursos utilizados. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMongoConnection_aea582169bb2a2aa3cbfdc2be9f1d6923}\index{MongoConnection@{MongoConnection}!getCollection@{getCollection}}
+\index{getCollection@{getCollection}!MongoConnection@{MongoConnection}}
+\doxysubsubsection{\texorpdfstring{getCollection()}{getCollection()}}
+{\footnotesize\ttfamily \label{classMongoConnection_aea582169bb2a2aa3cbfdc2be9f1d6923} 
+mongocxx\+::collection Mongo\+Connection\+::get\+Collection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{collection\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene una colección específica de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collection\+\_\+name} & El nombre de la colección a la que se desea acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objeto {\ttfamily mongocxx\+::collection} que representa la colección. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+includes/database/\mbox{\hyperlink{MongodbConn_8h}{Mongodb\+Conn.\+h}}\end{DoxyCompactItemize}

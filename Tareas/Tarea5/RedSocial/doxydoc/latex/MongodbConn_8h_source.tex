@@ -1,0 +1,37 @@
+\doxysection{Mongodb\+Conn.\+h}
+\hypertarget{MongodbConn_8h_source}{}\label{MongodbConn_8h_source}\index{includes/database/MongodbConn.h@{includes/database/MongodbConn.h}}
+\mbox{\hyperlink{MongodbConn_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MONGODB\_CONN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MONGODB\_CONN\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}mongocxx/collection-\/fwd.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <mongocxx/client.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <mongocxx/collection.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <mongocxx/database.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <mongocxx/instance.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <mongocxx/uri.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <mongocxx/v\_noabi/mongocxx/client.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <mongocxx/v\_noabi/mongocxx/database.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <mongocxx/v\_noabi/mongocxx/instance.hpp>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }mongocxx;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMongoConnection}{MongoConnection}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{classMongoConnection_a11739b3299b6866a420ab5f85b7398fb}{MongoConnection}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \ \ mongocxx::collection\ \mbox{\hyperlink{classMongoConnection_aea582169bb2a2aa3cbfdc2be9f1d6923}{getCollection}}(\textcolor{keyword}{const}\ std::string\ \&collection\_name);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{classMongoConnection_a44c91620f6181bf3d5c2c6a5fde2f269}{\string~MongoConnection}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ mongocxx::instance}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ instance\_;\ }
+\DoxyCodeLine{00053\ \ \ mongocxx::client\ client\_;\ }
+\DoxyCodeLine{00054\ \ \ mongocxx::database\ db\_;\ \ \ }
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MONGODB\_CONN\_H}}
+
+\end{DoxyCode}

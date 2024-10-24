@@ -1,0 +1,42 @@
+\doxysection{Posts\+Controller.\+h}
+\hypertarget{PostsController_8h_source}{}\label{PostsController_8h_source}\index{includes/controlador/PostsController.h@{includes/controlador/PostsController.h}}
+\mbox{\hyperlink{PostsController_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POSTS\_CONTROLLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POSTS\_CONTROLLER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{PostsServices_8h}{../servicios/PostsServices.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPostsController}{PostsController}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classPostsServices}{PostsServices}}\ postsServices;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{classPostsController_a9d7494916e5df14f36f43c1ace087e50}{PostsController}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{classPostsController_abf7afb4e3c0396bf1e52487395cdb8ff}{\string~PostsController}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a5660ea72adf0e830532951447d5d8cbf}{getPosts}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a10cc0fef6980e12b1ff7020edc904ec5}{insertPost}}(\textcolor{keyword}{const}\ std::string\ \&author,\ \textcolor{keyword}{const}\ std::string\ \&content);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a68b4adc45c18b3061879e415879076a0}{getPostsByAuthor}}(\textcolor{keyword}{const}\ std::string\ \&author);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a6d84bca4f908475dbc05c3ea15777b9b}{getPostsOrderedByDate}}(\textcolor{keyword}{const}\ std::string\ \&date);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_af2485ef89563104d771367cd7ea4ca3c}{addCommentToPost}}(\textcolor{keyword}{const}\ std::string\ \&author,\ \textcolor{keyword}{const}\ std::string\ \&date,}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&username,}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&content);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a5b0e4a37a8dfe0a52f7e3c780c76b27d}{updatePostContent}}(\textcolor{keyword}{const}\ std::string\ \&author,\ \textcolor{keyword}{const}\ std::string\ \&date,}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&newContent);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00106\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a24e1f89612a401631d41d8a0b07cbc9f}{deletePostByAuthorAndDate}}(\textcolor{keyword}{const}\ std::string\ \&author,}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&date);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00117\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPostsController_a738dc59f183cf5ba3dbc0e38300bcf40}{markPostAsFeatured}}(\textcolor{keyword}{const}\ std::string\ \&author,\ \textcolor{keyword}{const}\ std::string\ \&date);}
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POSTS\_CONTROLLER\_H}}
+
+\end{DoxyCode}
