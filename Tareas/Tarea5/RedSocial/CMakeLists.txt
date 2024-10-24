@@ -16,7 +16,7 @@ include_directories(/usr/local/include/mongocxx/v_noabi/mongocxx/stdx)
 # Añadir las rutas de las bibliotecas manualmente si es necesario
 link_directories(/usr/local/lib)
 
-add_executable(main main.cpp ./src/controlador/PostsController.cpp ./src/database/MongodbConn.cpp)
+add_executable(main main.cpp ./src/servicios/PostsServices.cpp ./src/controlador/PostsController.cpp ./src/database/MongodbConn.cpp )
 
 # Vincular las bibliotecas compartidas
 target_link_libraries(main PRIVATE bsoncxx mongocxx)
