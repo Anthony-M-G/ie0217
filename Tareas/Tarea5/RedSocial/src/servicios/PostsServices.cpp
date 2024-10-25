@@ -1,4 +1,5 @@
 #include "../../includes/servicios/PostsServices.h"
+#include "../../includes/validadores/Validadores.h"
 #include "./Utils.h"
 
 void PostsServices::getPosts() { // Método para obtener todas las publicaciones
@@ -17,16 +18,16 @@ void PostsServices::getPosts() { // Método para obtener todas las publicaciones
     std::cerr << e.what() << std::endl;
   }
 }
+
 void PostsServices::insertPost(
     const std::string &author,
     const std::string &content) { // Método para insertar una nueva publicación
   try {
-    if (author.empty() ||
-        content.empty()) { // Validación de campos obligatorios
+    if (author.empty() || content.empty() || !validarSoloLetras(author) ||
+        !validarContenido(content)) {
       throw std::runtime_error(
-          "Todos los campos son obligatorios."); // Lanzar una excepción si no
-                                                 // se proporcionan todos los
-                                                 // campos
+          "Todos los campos son obligatorios y deben contener solo letras y "
+          "caracteres especiales básicos.");
       return;
     }
 
@@ -55,6 +56,12 @@ void PostsServices::insertPost(
 
 void PostsServices::getPostsByAuthor(const std::string &author) {
   try {
+    if (author.empty() || !validarSoloLetras(author)) {
+      throw std::runtime_error(
+          "Error: El autor debe contener solo letras y no puede estar vacío.");
+      return;
+    }
+
     mongocxx::cursor posts =
         this->mongo_conn_.getCollection("posts")
             .find( // Obtener las publicaciones por autor de la colección
@@ -72,6 +79,7 @@ void PostsServices::getPostsByAuthor(const std::string &author) {
                                                                 // para el autor
       return;
     }
+
     postsView(posts); // Abstracción para mayor claridad en el código a la hora
                       // de imprimir en consola las publicaciones
 
@@ -82,8 +90,13 @@ void PostsServices::getPostsByAuthor(const std::string &author) {
 }
 
 void PostsServices::getPostsOrderedByDate(const std::string &date) {
-
   try {
+    if (date.empty() || !validarFecha(date)) {
+      throw std::runtime_error("Error: La fecha debe tener el formato "
+                               "dd/mm/yyyy y no puede estar vacía.");
+      return;
+    }
+
     auto posts = this->mongo_conn_.getCollection("posts").find(
         bsoncxx::builder::stream::document{}
         // Obtener las publicaciones por fecha de la colección 'posts' pasando
@@ -95,11 +108,11 @@ void PostsServices::getPostsOrderedByDate(const std::string &date) {
           "No hay publicaciones para la fecha proporcionada.");
       return;
     }
+
     postsView(posts);
 
   } catch (const std::exception &e) {
-    std::cerr << "Error al obtener publicaciones por fecha: " << e.what()
-              << std::endl;
+    std::cerr << e.what() << std::endl;
   }
 }
 
@@ -108,9 +121,12 @@ void PostsServices::addCommentToPost(const std::string &author,
                                      const std::string &username,
                                      const std::string &content) {
   try {
-    if (author.empty() || date.empty() || username.empty() ||
-        content.empty()) { // Validación de campos obligatorios
-      std::cerr << "Error: Todos los campos son obligatorios." << std::endl;
+    if (author.empty() || date.empty() || username.empty() || content.empty() ||
+        !validarSoloLetras(author) || !validarSoloLetras(username) ||
+        !validarContenido(content)) {
+      throw std::runtime_error(
+          "Error: Todos los campos son obligatorios y deben contener solo "
+          "letras y caracteres especiales básicos.");
       return;
     }
 
@@ -181,8 +197,12 @@ void PostsServices::updatePostContent(const std::string &author,
                                       const std::string &date,
                                       const std::string &newContent) {
   try {
-    if (author.empty() || date.empty() || newContent.empty()) {
-      throw std::runtime_error("Todos los campos son obligatorios.");
+    if (author.empty() || date.empty() || newContent.empty() ||
+        !validarSoloLetras(author) || !validarContenido(newContent)) {
+      throw std::runtime_error(
+          "Todos los campos son obligatorios y deben contener solo letras y "
+          "caracteres especiales básicos.");
+      return;
     }
 
     // Buscar el post por autor y fecha
@@ -221,9 +241,9 @@ void PostsServices::updatePostContent(const std::string &author,
 void PostsServices::deletePostByAuthorAndDate(const std::string &author,
                                               const std::string &date) {
   try {
-    if (author.empty() || date.empty()) {
-      throw std::runtime_error("Todos los campos son obligatorios.");
-
+    if (author.empty() || date.empty() || !validarSoloLetras(author)) {
+      throw std::runtime_error("Todos los campos son obligatorios y el autor "
+                               "debe contener solo letras.");
       return;
     }
 
@@ -268,6 +288,12 @@ void PostsServices::markPostAsFeatured(const std::string &author,
                                        const std::string &date) {
   bool isFeatured = true;
   try {
+    if (author.empty() || date.empty() || !validarSoloLetras(author)) {
+      throw std::runtime_error("Todos los campos son obligatorios y el autor "
+                               "debe contener solo letras.");
+      return;
+    }
+
     auto postAddIsFeatured =
         this->mongo_conn_.getCollection("posts").update_one(
             bsoncxx::builder::stream::document{}
