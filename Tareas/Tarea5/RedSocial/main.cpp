@@ -46,7 +46,7 @@ int main() {
       std::cout << "Mostrando publicaciones de " << author << "\n";
       break;
     case 4:
-      std::cout << "Ingrese la fecha (YYYY-MM-DD): ";
+      std::cout << "Ingrese la fecha (dd/mm/yyyy): ";
       std::cin >> date;
       postsController.getPostsOrderedByDate(date);
       std::cout << "Mostrando publicaciones ordenadas por la fecha " << date
@@ -55,7 +55,7 @@ int main() {
     case 5:
       std::cout << "Ingrese el autor de la publicación: ";
       std::cin >> author;
-      std::cout << "Ingrese la fecha de la publicación (YYYY-MM-DD): ";
+      std::cout << "Ingrese la fecha de la publicación (dd/mm/yyyy): ";
       std::cin >> date;
       std::cout << "Ingrese su nombre de usuario: ";
       std::cin >> username;
@@ -68,7 +68,7 @@ int main() {
     case 6:
       std::cout << "Ingrese el autor de la publicación: ";
       std::cin >> author;
-      std::cout << "Ingrese la fecha de la publicación (YYYY-MM-DD): ";
+      std::cout << "Ingrese la fecha de la publicación (dd/mm/yyyy): ";
       std::cin >> date;
       std::cout << "Ingrese el nuevo contenido: ";
       std::cin.ignore();
@@ -79,7 +79,7 @@ int main() {
     case 7:
       std::cout << "Ingrese el autor de la publicación: ";
       std::cin >> author;
-      std::cout << "Ingrese la fecha de la publicación (YYYY-MM-DD): ";
+      std::cout << "Ingrese la fecha de la publicación (dd/mm/yyyy): ";
       std::cin >> date;
       postsController.deletePostByAuthorAndDate(author, date);
       std::cout << "Publicación eliminada\n";
@@ -87,7 +87,7 @@ int main() {
     case 8:
       std::cout << "Ingrese el autor de la publicación: ";
       std::cin >> author;
-      std::cout << "Ingrese la fecha de la publicación (YYYY-MM-DD): ";
+      std::cout << "Ingrese la fecha de la publicación (dd/mm/yyyy): ";
       std::cin >> date;
       postsController.markPostAsFeatured(author, date);
       std::cout << "Publicación marcada como destacada\n";
