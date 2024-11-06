@@ -16,9 +16,9 @@ jobs:
         run: sudo apt-get install -y build-essential libgtest-dev
       - name: Build project
         run: |
-          cd Laboratorios/Laboratorio10/CalculatorProject
-          mkdir build
-          cd build
+          cd ./Laboratorios/Laboratorio10/CalculatorProject
+          mkdir ./Laboratorios/Laboratorio10/CalculatorProject/build
+          cd ./Laboratorios/Laboratorio10/CalculatorProject/build
           cmake ..  # Asegúrate de que este comando apunte al directorio correcto
           make
       - name: Run tests
