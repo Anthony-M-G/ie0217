@@ -1,5 +1,5 @@
 # Agregar el ejecutable de pruebas
-add_executable(run_tests test_calculator.cpp)
+add_executable(run_tests testCalculator.cpp)
 
 # Enlazar GoogleTest y la biblioteca de la calculadora
 target_link_libraries(run_tests gtest gtest_main calculator_lib)
