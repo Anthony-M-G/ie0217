@@ -1,5 +1,4 @@
-# Laboratorio 09, ie0217
-
+# Laboratorio 7
 ## Depuración gdb, valgrind y sanitizers
 
 ### Ejercicio 1
